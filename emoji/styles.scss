@@ -1,4 +1,4 @@
-body {
+:root {
   align-items: center;
   background-color: #8390b4;
   display: flex;
@@ -6,7 +6,7 @@ body {
   margin: 0;
   justify-content: center;
 
-  #emoji {
+  .emoji {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,17 +24,15 @@ body {
     );
     box-shadow: inset 0px 0px 3px 3px rgba(232, 132, 26, 0.4);
 
-    #eyes {
+    .eyes {
       display: flex;
       flex-wrap: nowrap;
       position: absolute;
       justify-content: space-between;
       top: 35px;
       width: 80%;
-      // background-color: rgba(0.1, 150, 200, 150);
 
-      #left,
-      #right {
+      .eye {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -72,18 +70,18 @@ body {
           );
           background-position: 10% 50%;
         }
-      }
 
-      #left {
-        left: 0px;
-      }
+        &:nth-child(1) {
+          left: 0px;
+        }
 
-      #right {
-        right: 0px;
+        &:nth-child(2) {
+          right: 0px;
+        }
       }
     }
 
-    #mouth {
+    .mouth {
       position: absolute;
       background-color: #7a6017;
       border-radius: 4px;
