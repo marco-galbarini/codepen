@@ -1,0 +1,102 @@
+:root {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8390b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+:root .emoji {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-color: #e0ad1f;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background: yellow;
+  background: radial-gradient(circle, yellow 0%, #fff000 50%, #ff8b00 99%);
+  -webkit-box-shadow: inset 0px 0px 3px 3px rgba(232, 132, 26, 0.4);
+          box-shadow: inset 0px 0px 3px 3px rgba(232, 132, 26, 0.4);
+}
+
+:root .emoji .eyes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 35px;
+  width: 80%;
+}
+
+:root .emoji .eyes .eye {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fafafa 0%, #fafafa 84%, #474747 92%, #141414 100%);
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  -webkit-box-shadow: 0px 0px 8px 5px rgba(231, 166, 26, 0.78), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 8px 5px rgba(231, 166, 26, 0.78), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25), inset 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+:root .emoji .eyes .eye:before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  top: -4px;
+  background: radial-gradient(circle at 50% 30%, #a6a6a6 11%, #242424 35%);
+  background-position: 10% 50%;
+}
+
+:root .emoji .eyes .eye:nth-child(1) {
+  left: 0px;
+}
+
+:root .emoji .eyes .eye:nth-child(2) {
+  right: 0px;
+}
+
+:root .emoji .mouth {
+  position: absolute;
+  background-color: #7a6017;
+  border-radius: 4px;
+  height: 8px;
+  width: 37%;
+  top: 72%;
+}
+/*# sourceMappingURL=styles.css.map */
