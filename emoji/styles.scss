@@ -1,6 +1,9 @@
+$color-background: #8390b4;
+$color-mouth: #7a6017;
+
 :root {
   align-items: center;
-  background-color: #8390b4;
+  background-color: $color-background;
   display: flex;
   height: 100vh;
   margin: 0;
@@ -11,11 +14,9 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #e0ad1f;
     border-radius: 50%;
     width: 140px;
     height: 140px;
-    background: rgb(255, 255, 0);
     background: radial-gradient(
       circle,
       rgba(255, 255, 0, 1) 0%,
@@ -83,7 +84,7 @@
 
     .mouth {
       position: absolute;
-      background-color: #7a6017;
+      background-color: $color-mouth;
       border-radius: 4px;
       height: 8px;
       width: 37%;
