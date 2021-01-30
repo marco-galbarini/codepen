@@ -58,18 +58,18 @@ $color-mouth: #7a6017;
         &:before {
           content: "";
           position: absolute;
+          top: -4px;
           display: block;
-          margin: 0 auto;
           width: 22px;
           height: 22px;
-          border-radius: 50%;
-          top: -4px;
+          margin: 0 auto;
           background: radial-gradient(
             circle at 50% 30%,
             rgba(166, 166, 166, 1) 11%,
             rgba(36, 36, 36, 1) 35%
           );
           background-position: 10% 50%;
+          border-radius: 50%;
         }
 
         &:nth-child(1) {
@@ -84,11 +84,11 @@ $color-mouth: #7a6017;
 
     .mouth {
       position: absolute;
+      top: 72%;
+      width: 37%;
+      height: 8px;
       background-color: $color-mouth;
       border-radius: 4px;
-      height: 8px;
-      width: 37%;
-      top: 72%;
     }
   }
 }
