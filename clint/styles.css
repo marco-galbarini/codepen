@@ -188,4 +188,22 @@
 :root #clint .face .moustache + .moustache:before {
   border-bottom-color: #b16653;
 }
+
+:root #clint .face .mouth {
+  position: absolute;
+  left: 14vmin;
+  background-color: #e9a87e;
+  width: 6vmin;
+  height: 7vmin;
+  bottom: 11vmin;
+  border-bottom-left-radius: 50%;
+}
+
+:root #clint .face .mouth + .mouth {
+  left: unset;
+  right: 14vmin;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-color: #ecc2a9;
+}
 /*# sourceMappingURL=styles.css.map */
