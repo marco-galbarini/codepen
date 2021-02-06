@@ -102,11 +102,11 @@
 }
 
 :root #clint .face .beard {
+  position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
-  height: 0;
   width: 20vmin;
+  height: 0;
 }
 
 :root #clint .face .beard:nth-child(1) {

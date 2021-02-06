@@ -96,10 +96,10 @@
       background-color: rgba(200, 200, 200, 0.6);
 
       .beard {
-        box-sizing: border-box;
         position: absolute;
-        height: 0;
+        box-sizing: border-box;
         width: 20vmin;
+        height: 0;
 
         &:nth-child(1) {
           border-top: 43vmin solid #9e4d32;
