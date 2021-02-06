@@ -15,8 +15,8 @@
   left: 50%;
   width: 72%;
   height: 34%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 :root #clint .hat .crown {
@@ -86,5 +86,39 @@
   height: 50%;
   background-color: #481e32;
   border-radius: 50% 0 0 50%;
+}
+
+:root #clint .face {
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  width: 40vmin;
+  height: 43vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background-color: rgba(200, 200, 200, 0.6);
+}
+
+:root #clint .face .beard {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  height: 0;
+  width: 20vmin;
+}
+
+:root #clint .face .beard:nth-child(1) {
+  border-top: 43vmin solid #9e4d32;
+  border-left: 2vmin solid transparent;
+  border-bottom-left-radius: 100% 55%;
+}
+
+:root #clint .face .beard:nth-child(2) {
+  left: 50%;
+  border-top: 43vmin solid #b16653;
+  border-right: 2vmin solid transparent;
+  border-bottom-right-radius: 100% 55%;
 }
 /*# sourceMappingURL=styles.css.map */
