@@ -1,0 +1,212 @@
+@-webkit-keyframes sparks {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1) rotate(45deg);
+            transform: scale(1) rotate(45deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  15%,
+  40% {
+    opacity: 1;
+    -webkit-transform: scale(2) rotate(45deg);
+            transform: scale(2) rotate(45deg);
+  }
+  45%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sparks {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1) rotate(45deg);
+            transform: scale(1) rotate(45deg);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  15%,
+  40% {
+    opacity: 1;
+    -webkit-transform: scale(2) rotate(45deg);
+            transform: scale(2) rotate(45deg);
+  }
+  45%,
+  100% {
+    opacity: 0;
+  }
+}
+
+:root {
+  font-size: 62.5%;
+  background-color: #faebd7;
+}
+
+:root #book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 55vmin;
+  height: 55vmin;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+:root #book .cover {
+  position: relative;
+  z-index: 4;
+  width: 90%;
+  height: 90%;
+  background-color: #deb887;
+  border-radius: 4vmin 2vmin 2vmin 0;
+}
+
+:root #book .cover:before {
+  position: absolute;
+  width: 4vmin;
+  height: 110%;
+  content: "";
+  background-color: #d3a15f;
+  border-radius: 4vmin 0 0 0;
+}
+
+:root #book .cover .illustration {
+  position: relative;
+  top: 15%;
+  left: 19%;
+  width: 70%;
+  height: 40%;
+  background-color: #a06e2c;
+}
+
+:root #book .raised-band {
+  position: absolute;
+  top: 20%;
+  z-index: 4;
+  width: 4vmin;
+  height: 20%;
+  content: "";
+  background-color: #a06e2c;
+  border-radius: 4vmin 0 0 0;
+}
+
+:root #book .raised-band:after {
+  position: absolute;
+  top: 60%;
+  width: 4vmin;
+  height: 50%;
+  content: "";
+  background-color: #d3a15f;
+  border-radius: 4vmin 0 0 0;
+}
+
+:root #book .raised-band:nth-child(2) {
+  top: 60%;
+}
+
+:root #book .text-block {
+  position: relative;
+  left: 1%;
+  z-index: 5;
+  width: 85%;
+  height: 8vmin;
+  background-color: #fff;
+  border-radius: 4vmin 0vmin 1vmin 4vmin;
+}
+
+:root #book .text-block:before {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 0;
+  height: 0;
+  content: "";
+  background-color: #fff;
+  border-top: 0.3vmin solid #fff;
+  border-right: 40vmin solid #555;
+  border-bottom: 0.8vmin solid #fff;
+}
+
+:root #book .text-block:after {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  width: 0;
+  height: 0;
+  content: "";
+  border-top: 0.2vmin solid #fff;
+  border-bottom: 0.6vmin solid #fff;
+  border-right: 25vmin solid #555;
+  background-color: #fff;
+}
+
+:root #book .back-cover {
+  position: relative;
+  top: -10vmin;
+  z-index: 1;
+  width: 90%;
+  height: 11vmin;
+  background-color: #ce954b;
+  border-radius: 4vmin 0vmin 2vmin 4vmin;
+}
+
+.sparks .spark {
+  position: absolute;
+  left: -2vmin;
+  top: 5vmin;
+  z-index: 6;
+  width: 1vmin;
+  height: 1vmin;
+  background-color: #ffd700;
+  -webkit-animation-name: sparks;
+          animation-name: sparks;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.sparks .spark:nth-child(1) {
+  top: 5vmin;
+  left: -1vmin;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.sparks .spark:nth-child(2) {
+  top: 6vmin;
+  left: 2vmin;
+  width: 0.5vmin;
+  height: 0.5vmin;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.sparks .spark:nth-child(3) {
+  top: 45vmin;
+  left: 46vmin;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.sparks .spark:nth-child(4) {
+  top: 44vmin;
+  left: 49vmin;
+  width: 0.6vmin;
+  height: 0.6vmin;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.sparks .spark:nth-child(5) {
+  top: -0.7vmin;
+  left: 45vmin;
+  width: 0.8vmin;
+  height: 0.8vmin;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+/*# sourceMappingURL=styles.css.map */
