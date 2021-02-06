@@ -1,0 +1,189 @@
+$color-back-cover: #ce954b;
+$color-background: #faebd7;
+$color-cover: #deb887;
+$color-illustration: #a06e2c;
+$color-pages: #555;
+$color-sparks: #ffd700;
+$color-spine: #d3a15f;
+$color-text-block: #fff;
+
+@keyframes sparks {
+  0% {
+    opacity: 0;
+    transform: scale(1) rotate(45deg);
+    transform-origin: center;
+  }
+  15%,
+  40% {
+    opacity: 1;
+    transform: scale(2) rotate(45deg);
+  }
+  45%,
+  100% {
+    opacity: 0;
+  }
+}
+
+:root {
+  font-size: 62.5%;
+  background-color: $color-background;
+
+  #book {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55vmin;
+    height: 55vmin;
+    transform: translate(-50%, -50%);
+
+    .cover {
+      position: relative;
+      z-index: 4;
+      width: 90%;
+      height: 90%;
+      background-color: $color-cover;
+      border-radius: 4vmin 2vmin 2vmin 0;
+
+      &:before {
+        position: absolute;
+        width: 4vmin;
+        height: 110%;
+        content: "";
+        background-color: $color-spine;
+        border-radius: 4vmin 0 0 0;
+      }
+
+      .illustration {
+        position: relative;
+        top: 15%;
+        left: 19%;
+        width: 70%;
+        height: 40%;
+        background-color: $color-illustration;
+      }
+    }
+
+    .raised-band {
+      position: absolute;
+      top: 20%;
+      z-index: 4;
+      width: 4vmin;
+      height: 20%;
+      content: "";
+      background-color: $color-illustration;
+      border-radius: 4vmin 0 0 0;
+
+      &:after {
+        position: absolute;
+        top: 60%;
+        width: 4vmin;
+        height: 50%;
+        content: "";
+        background-color: $color-spine;
+        border-radius: 4vmin 0 0 0;
+      }
+
+      &:nth-child(2) {
+        top: 60%;
+      }
+    }
+
+    .text-block {
+      position: relative;
+      left: 1%;
+      z-index: 5;
+      width: 85%;
+      height: 8vmin;
+      background-color: $color-text-block;
+      border-radius: 4vmin 0vmin 1vmin 4vmin;
+
+      &:before {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        width: 0;
+        height: 0;
+        content: "";
+        background-color: $color-text-block;
+        border-top: 0.3vmin solid $color-text-block;
+        border-right: 40vmin solid $color-pages;
+        border-bottom: 0.8vmin solid $color-text-block;
+      }
+
+      &:after {
+        position: absolute;
+        top: 65%;
+        right: 0;
+        width: 0;
+        height: 0;
+        content: "";
+        border-top: 0.2vmin solid $color-text-block;
+        border-bottom: 0.6vmin solid $color-text-block;
+        border-right: 25vmin solid $color-pages;
+        background-color: $color-text-block;
+      }
+    }
+
+    .back-cover {
+      position: relative;
+      top: -10vmin;
+      z-index: 1;
+      width: 90%;
+      height: 11vmin;
+      background-color: $color-back-cover;
+      border-radius: 4vmin 0vmin 2vmin 4vmin;
+    }
+  }
+}
+
+.sparks {
+  .spark {
+    position: absolute;
+    left: -2vmin;
+    top: 5vmin;
+    z-index: 6;
+    width: 1vmin;
+    height: 1vmin;
+    background-color: $color-sparks;
+    animation-name: sparks;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+    &:nth-child(1) {
+      top: 5vmin;
+      left: -1vmin;
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(2) {
+      top: 6vmin;
+      left: 2vmin;
+      width: 0.5vmin;
+      height: 0.5vmin;
+      animation-delay: 0.6s;
+    }
+
+    &:nth-child(3) {
+      top: 45vmin;
+      left: 46vmin;
+      animation-delay: 0.8s;
+    }
+
+    &:nth-child(4) {
+      top: 44vmin;
+      left: 49vmin;
+      width: 0.6vmin;
+      height: 0.6vmin;
+      animation-delay: 1s;
+    }
+
+    &:nth-child(5) {
+      top: -0.7vmin;
+      left: 45vmin;
+      width: 0.8vmin;
+      height: 0.8vmin;
+      animation-duration: 1.2s;
+      animation-delay: 0.3s;
+    }
+  }
+}
