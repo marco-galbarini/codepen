@@ -68,14 +68,14 @@
           .inside {
             left: 0;
             width: 58%;
-            height: 45%;
+            height: 46%;
             border-radius: 0 120% 100% 0;
           }
         }
 
         .inside {
           position: absolute;
-          top: 35%;
+          top: 36%;
           right: 0;
           width: 65%;
           height: 50%;
@@ -87,10 +87,10 @@
 
     .face {
       position: absolute;
-      top: 37%;
+      top: 38%;
       left: 50%;
       width: 40vmin;
-      height: 43vmin;
+      height: 42vmin;
       box-sizing: border-box;
       transform: translate(-50%, 0);
       background-color: rgba(200, 200, 200, 0.6);
@@ -102,16 +102,16 @@
         height: 0;
 
         &:nth-child(1) {
-          border-top: 43vmin solid #9e4d32;
+          border-top: 42vmin solid #9e4d32;
           border-left: 2vmin solid transparent;
-          border-bottom-left-radius: 100% 55%;
+          border-bottom-left-radius: 100% 50%;
         }
 
         &:nth-child(2) {
-          left: 50%;
-          border-top: 43vmin solid #b16653;
+          left: 20vmin;
+          border-top: 42vmin solid #b16653;
           border-right: 2vmin solid transparent;
-          border-bottom-right-radius: 100% 55%;
+          border-bottom-right-radius: 100% 50%;
         }
       }
 
@@ -123,12 +123,12 @@
         background-color: #e9a87e;
 
         &:before {
-          content: "";
+          position: absolute;
           bottom: -16vmin;
           box-sizing: border-box;
-          position: absolute;
           width: 17vmin;
           height: 0;
+          content: "";
           border-top: 16vmin solid #e9a87e;
           border-left: 10vmin solid transparent;
         }
@@ -141,6 +141,42 @@
             border-top: 16vmin solid #ecc2a9;
             border-right: 10vmin solid transparent;
             border-left: 0;
+          }
+        }
+      }
+
+      .moustache {
+        position: absolute;
+        box-sizing: border-box;
+        left: 10vmin;
+        bottom: 8vmin;
+        width: 10vmin;
+        border-bottom: 12vmin solid #9e4d32;
+        border-left: 2vmin solid transparent;
+        margin-top: -2vmin;
+
+        &:before {
+          position: absolute;
+          box-sizing: border-box;
+          top: -2vmin;
+          width: 8vmin;
+          margin-bottom: -2vmin;
+          content: "";
+          border-bottom: 2vmin solid #9e4d32;
+          border-left: 2vmin solid transparent;
+        }
+
+        + .moustache {
+          left: unset;
+          right: 10vmin;
+          border-bottom: 12vmin solid #b16653;
+          border-left: unset;
+          border-right: 2vmin solid transparent;
+
+          &:before {
+            border-right: 2vmin solid transparent;
+            border-left: unset;
+            border-bottom: 2vmin solid #b16653;
           }
         }
       }
