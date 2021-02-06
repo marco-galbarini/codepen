@@ -1,0 +1,51 @@
+:root {
+  background-size: 80px 80px;
+  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+}
+
+:root #clint {
+  position: absolute;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vmin;
+  height: 100vmin;
+  background-color: #eee;
+}
+
+:root #clint .hat-crown {
+  position: absolute;
+  display: inline-block;
+  width: 15%;
+  height: 20%;
+  background: #5f2740;
+}
+
+:root #clint .hat-crown:nth-child(1) {
+  border-top-left-radius: 80% 22%;
+}
+
+:root #clint .hat-crown:nth-child(1):before {
+  content: "";
+  position: absolute;
+  background-color: #7f5f6a;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+}
+
+:root #clint .hat-crown:nth-child(2) {
+  border-top-right-radius: 80% 22%;
+  background: #82434b;
+  left: 15%;
+}
+
+:root #clint .hat-crown:nth-child(2):before {
+  content: "";
+  position: absolute;
+  background-color: #9f8e94;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+}
+/*# sourceMappingURL=styles.css.map */
