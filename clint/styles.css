@@ -1,51 +1,90 @@
-:root {
-  background-size: 80px 80px;
-  background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+:root div {
+  margin: 0;
 }
 
 :root #clint {
   position: absolute;
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100vmin;
+  width: 120vmin;
   height: 100vmin;
-  background-color: #eee;
+  background-color: #bbe;
 }
 
-:root #clint .hat-crown {
+:root #clint .hat {
   position: absolute;
-  display: inline-block;
-  width: 15%;
-  height: 20%;
-  background: #5f2740;
+  top: 10%;
+  left: 50%;
+  width: 72%;
+  height: 34%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
-:root #clint .hat-crown:nth-child(1) {
+:root #clint .hat .crown {
+  position: absolute;
+  left: 26%;
+  width: 24%;
+  height: 80%;
+  background-color: #5f2740;
+}
+
+:root #clint .hat .crown:nth-child(1) {
   border-top-left-radius: 80% 22%;
 }
 
-:root #clint .hat-crown:nth-child(1):before {
-  content: "";
-  position: absolute;
-  background-color: #7f5f6a;
-  width: 100%;
-  height: 20%;
-  bottom: 0;
-}
-
-:root #clint .hat-crown:nth-child(2) {
+:root #clint .hat .crown:nth-child(2) {
+  left: 50%;
+  background-color: #82434b;
   border-top-right-radius: 80% 22%;
-  background: #82434b;
-  left: 15%;
 }
 
-:root #clint .hat-crown:nth-child(2):before {
-  content: "";
-  position: absolute;
+:root #clint .hat .crown:nth-child(2):before {
   background-color: #9f8e94;
-  width: 100%;
-  height: 20%;
+}
+
+:root #clint .hat .crown:before {
+  position: absolute;
   bottom: 0;
+  width: 100%;
+  height: 25%;
+  content: "";
+  background-color: #7f5f6a;
+}
+
+:root #clint .hat .brim {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  width: 50%;
+  height: 25%;
+  background-color: #5f2740;
+  border-radius: 50% 0 0 50%;
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
+}
+
+:root #clint .hat .brim:nth-child(4) {
+  bottom: 2%;
+  left: 50%;
+  background-color: #82434b;
+  border-radius: 0 120% 100% 0;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+}
+
+:root #clint .hat .brim:nth-child(4) .inside {
+  left: 0;
+  width: 58%;
+  height: 45%;
+  border-radius: 0 120% 100% 0;
+}
+
+:root #clint .hat .brim .inside {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  width: 65%;
+  height: 50%;
+  background-color: #481e32;
+  border-radius: 50% 0 0 50%;
 }
 /*# sourceMappingURL=styles.css.map */
