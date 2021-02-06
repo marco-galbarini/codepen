@@ -114,6 +114,36 @@
           border-bottom-right-radius: 100% 55%;
         }
       }
+
+      .skin {
+        position: absolute;
+        left: 3vmin;
+        width: 17vmin;
+        height: 18vmin;
+        background-color: #e9a87e;
+
+        &:before {
+          content: "";
+          bottom: -16vmin;
+          box-sizing: border-box;
+          position: absolute;
+          width: 17vmin;
+          height: 0;
+          border-top: 16vmin solid #e9a87e;
+          border-left: 10vmin solid transparent;
+        }
+
+        &:nth-child(4) {
+          left: 20vmin;
+          background-color: #ecc2a9;
+
+          &:before {
+            border-top: 16vmin solid #ecc2a9;
+            border-right: 10vmin solid transparent;
+            border-left: 0;
+          }
+        }
+      }
     }
   }
 }
