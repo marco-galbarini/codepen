@@ -6,7 +6,7 @@
   position: absolute;
   width: 120vmin;
   height: 100vmin;
-  background-color: #bbe;
+  background-color: #ffe9bf;
 }
 
 :root #clint .hat {
@@ -98,7 +98,6 @@
           box-sizing: border-box;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  background-color: rgba(200, 200, 200, 0.6);
 }
 
 :root #clint .head:before, :root #clint .head:after {
