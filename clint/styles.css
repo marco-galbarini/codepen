@@ -25,19 +25,18 @@
   width: 24%;
   height: 80%;
   background-color: #5f2740;
-}
-
-:root #clint .hat .crown:nth-child(1) {
   border-top-left-radius: 80% 22%;
 }
 
-:root #clint .hat .crown:nth-child(2) {
-  left: 50%;
+:root #clint .hat .crown + .crown {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
   background-color: #82434b;
-  border-top-right-radius: 80% 22%;
+  right: 26%;
+  left: unset;
 }
 
-:root #clint .hat .crown:nth-child(2):before {
+:root #clint .hat .crown + .crown:before {
   background-color: #9f8e94;
 }
 
@@ -62,7 +61,7 @@
           transform: skewY(7deg);
 }
 
-:root #clint .hat .brim:nth-child(4) {
+:root #clint .hat .brim + .brim {
   bottom: 2%;
   left: 50%;
   background-color: #82434b;
@@ -71,7 +70,7 @@
           transform: skewY(-5deg);
 }
 
-:root #clint .hat .brim:nth-child(4) .inside {
+:root #clint .hat .brim + .brim .inside {
   left: 0;
   width: 58%;
   height: 46%;
@@ -107,19 +106,16 @@
           box-sizing: border-box;
   width: 20vmin;
   height: 0;
-}
-
-:root #clint .face .beard:nth-child(1) {
   border-top: 42vmin solid #9e4d32;
   border-left: 2vmin solid transparent;
   border-bottom-left-radius: 100% 50%;
 }
 
-:root #clint .face .beard:nth-child(2) {
-  left: 20vmin;
-  border-top: 42vmin solid #b16653;
-  border-right: 2vmin solid transparent;
-  border-bottom-right-radius: 100% 50%;
+:root #clint .face .beard + .beard {
+  right: 0;
+  border-top-color: #b16653;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 :root #clint .face .skin {
@@ -142,15 +138,16 @@
   border-left: 10vmin solid transparent;
 }
 
-:root #clint .face .skin:nth-child(4) {
-  left: 20vmin;
+:root #clint .face .skin + .skin {
+  right: 3vmin;
+  left: unset;
   background-color: #ecc2a9;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
-:root #clint .face .skin:nth-child(4):before {
-  border-top: 16vmin solid #ecc2a9;
-  border-right: 10vmin solid transparent;
-  border-left: 0;
+:root #clint .face .skin + .skin:before {
+  border-top-color: #ecc2a9;
 }
 
 :root #clint .face .moustache {
