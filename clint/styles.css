@@ -68,6 +68,14 @@
   }
 }
 
+:root {
+  background-color: #ffe9bf;
+}
+
+:root body {
+  position: relative;
+}
+
 :root * {
   position: absolute;
   -webkit-box-sizing: border-box;
@@ -83,9 +91,11 @@
 }
 
 :root #clint {
+  left: 50%;
   width: 120vmin;
   height: 100vmin;
-  background-color: #ffe9bf;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 :root #clint .hat {

@@ -54,6 +54,12 @@ $color-cigar-border-3: #3a2a2a;
 }
 
 :root {
+  background-color: $color-background;
+
+  body {
+    position: relative;
+  }
+
   * {
     position: absolute;
     box-sizing: border-box;
@@ -68,9 +74,10 @@ $color-cigar-border-3: #3a2a2a;
   }
 
   #clint {
+    left: 50%;
     width: 120vmin;
     height: 100vmin;
-    background-color: $color-background;
+    transform: translate(-50%, 0);
 
     .hat {
       top: 10%;
