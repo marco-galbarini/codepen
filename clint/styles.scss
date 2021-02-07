@@ -142,9 +142,9 @@
       .moustache {
         position: absolute;
         bottom: 8vmin;
-        left: 10vmin;
+        left: 9vmin;
         box-sizing: border-box;
-        width: 10vmin;
+        width: 11vmin;
         margin-top: -2vmin;
         border-bottom: 12vmin solid #9e4d32;
         border-left: 2vmin solid transparent;
@@ -153,16 +153,16 @@
           position: absolute;
           top: -2vmin;
           box-sizing: border-box;
-          width: 8vmin;
+          width: 9vmin;
           margin-bottom: -2vmin;
           content: "";
           border-bottom: 2vmin solid #9e4d32;
-          border-left: 2vmin solid transparent;
+          border-left: 3vmin solid transparent;
         }
 
         + .moustache {
           left: unset;
-          right: 10vmin;
+          right: 9vmin;
           transform: scaleX(-1);
           border-bottom-color: #b16653;
 
@@ -174,16 +174,16 @@
 
       .mouth {
         position: absolute;
-        left: 14vmin;
+        left: 13vmin;
         background-color: #e9a87e;
-        width: 6vmin;
+        width: 7vmin;
         height: 7vmin;
         bottom: 11vmin;
         border-bottom-left-radius: 50%;
 
         + .mouth {
           left: unset;
-          right: 14vmin;
+          right: 13vmin;
           transform: scaleX(-1);
           background-color: #ecc2a9;
         }

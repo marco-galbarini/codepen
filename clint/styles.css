@@ -153,10 +153,10 @@
 :root #clint .face .moustache {
   position: absolute;
   bottom: 8vmin;
-  left: 10vmin;
+  left: 9vmin;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 10vmin;
+  width: 11vmin;
   margin-top: -2vmin;
   border-bottom: 12vmin solid #9e4d32;
   border-left: 2vmin solid transparent;
@@ -167,16 +167,16 @@
   top: -2vmin;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 8vmin;
+  width: 9vmin;
   margin-bottom: -2vmin;
   content: "";
   border-bottom: 2vmin solid #9e4d32;
-  border-left: 2vmin solid transparent;
+  border-left: 3vmin solid transparent;
 }
 
 :root #clint .face .moustache + .moustache {
   left: unset;
-  right: 10vmin;
+  right: 9vmin;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   border-bottom-color: #b16653;
@@ -188,9 +188,9 @@
 
 :root #clint .face .mouth {
   position: absolute;
-  left: 14vmin;
+  left: 13vmin;
   background-color: #e9a87e;
-  width: 6vmin;
+  width: 7vmin;
   height: 7vmin;
   bottom: 11vmin;
   border-bottom-left-radius: 50%;
@@ -198,7 +198,7 @@
 
 :root #clint .face .mouth + .mouth {
   left: unset;
-  right: 14vmin;
+  right: 13vmin;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   background-color: #ecc2a9;
