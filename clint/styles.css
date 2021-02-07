@@ -1,3 +1,39 @@
+@-webkit-keyframes cigar {
+  0%,
+  35%,
+  100% {
+    background-color: #80313a;
+    border-color: #302e2e;
+  }
+  60%,
+  75% {
+    background-color: #f83f11;
+    border-color: #a31010;
+  }
+  90% {
+    background-color: #8a1a03;
+    border-color: #3a2a2a;
+  }
+}
+
+@keyframes cigar {
+  0%,
+  35%,
+  100% {
+    background-color: #80313a;
+    border-color: #302e2e;
+  }
+  60%,
+  75% {
+    background-color: #f83f11;
+    border-color: #a31010;
+  }
+  90% {
+    background-color: #8a1a03;
+    border-color: #3a2a2a;
+  }
+}
+
 :root div {
   margin: 0;
 }
@@ -249,8 +285,14 @@
           box-sizing: border-box;
   width: 4vmin;
   height: 4vmin;
-  background-color: #4d2126;
-  border: 0.5vmin solid #eee;
+  border-style: solid;
+  border-width: 0.5vmin;
   border-radius: 50%;
+  -webkit-animation-name: cigar;
+          animation-name: cigar;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 /*# sourceMappingURL=styles.css.map */

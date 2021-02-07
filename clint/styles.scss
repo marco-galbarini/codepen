@@ -1,4 +1,4 @@
-$color-background: rgb(255, 233, 191);
+$color-background: #ffe9bf;
 $color-hat-dark: #5f2740;
 $color-hat-light: #82434b;
 $color-band-dark: #7f5f6a;
@@ -11,8 +11,30 @@ $color-skin-light: #ecc2a9;
 $color-skin-light: #ecc2a9;
 $color-mole-moustache: #6e3522;
 $color-mole-skin: #b47c57;
-$color-cigar: #4d2126;
-$color-cigar-border: #eee;
+$color-cigar-1: #80313a;
+$color-cigar-2: #f83f11;
+$color-cigar-3: #8a1a03;
+$color-cigar-border-1: #302e2e;
+$color-cigar-border-2: #a31010;
+$color-cigar-border-3: #3a2a2a;
+
+@keyframes cigar {
+  0%,
+  35%,
+  100% {
+    background-color: $color-cigar-1;
+    border-color: $color-cigar-border-1;
+  }
+  60%,
+  75% {
+    background-color: $color-cigar-2;
+    border-color: $color-cigar-border-2;
+  }
+  90% {
+    background-color: $color-cigar-3;
+    border-color: $color-cigar-border-3;
+  }
+}
 
 :root {
   div {
@@ -248,9 +270,12 @@ $color-cigar-border: #eee;
         box-sizing: border-box;
         width: 4vmin;
         height: 4vmin;
-        background-color: $color-cigar;
-        border: 0.5vmin solid $color-cigar-border;
+        border-style: solid;
+        border-width: 0.5vmin;
         border-radius: 50%;
+        animation-name: cigar;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
       }
     }
   }
