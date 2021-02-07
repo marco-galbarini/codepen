@@ -207,13 +207,20 @@
   border-bottom-color: #b16653;
 }
 
+:root #clint .head .moustache .mole {
+  top: 1vmin;
+  left: 2vmin;
+  background-color: #6e3522;
+}
+
 :root #clint .head .mouth {
   position: absolute;
+  bottom: 11vmin;
   left: 13vmin;
-  background-color: #e9a87e;
   width: 7vmin;
   height: 7vmin;
-  bottom: 11vmin;
+  overflow: hidden;
+  background-color: #e9a87e;
   border-bottom-left-radius: 50%;
 }
 
@@ -223,5 +230,15 @@
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   background-color: #ecc2a9;
+}
+
+:root #clint .head .mole {
+  position: absolute;
+  left: 0vmin;
+  top: -1vmin;
+  width: 2vmin;
+  height: 2vmin;
+  background-color: #b47c57;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
