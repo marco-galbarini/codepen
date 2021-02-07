@@ -34,6 +34,40 @@
   }
 }
 
+@-webkit-keyframes cherry {
+  0%,
+  55% {
+    top: var(--cherry-initial-position);
+    opacity: 0;
+  }
+  65% {
+    top: var(--cherry-initial-position);
+    opacity: 0.8;
+  }
+  70%,
+  100% {
+    top: var(--cherry-final-position);
+    opacity: 0;
+  }
+}
+
+@keyframes cherry {
+  0%,
+  55% {
+    top: var(--cherry-initial-position);
+    opacity: 0;
+  }
+  65% {
+    top: var(--cherry-initial-position);
+    opacity: 0.8;
+  }
+  70%,
+  100% {
+    top: var(--cherry-final-position);
+    opacity: 0;
+  }
+}
+
 :root div {
   margin: 0;
 }
@@ -294,5 +328,29 @@
           animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+:root #clint .head .cigar:before, :root #clint .head .cigar:after {
+  position: absolute;
+  left: 0;
+  width: 3vmin;
+  height: 3vmin;
+  content: "";
+  background-color: #f83f11;
+  border-radius: 50%;
+  --cherry-initial-position: 0vmin;
+  --cherry-final-position: 5vmin;
+  -webkit-animation-name: cherry;
+          animation-name: cherry;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+:root #clint .head .cigar:after {
+  --cherry-final-position: 3vmin;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 /*# sourceMappingURL=styles.css.map */

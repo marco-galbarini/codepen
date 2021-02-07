@@ -36,6 +36,23 @@ $color-cigar-border-3: #3a2a2a;
   }
 }
 
+@keyframes cherry {
+  0%,
+  55% {
+    top: var(--cherry-initial-position);
+    opacity: 0;
+  }
+  65% {
+    top: var(--cherry-initial-position);
+    opacity: 0.8;
+  }
+  70%,
+  100% {
+    top: var(--cherry-final-position);
+    opacity: 0;
+  }
+}
+
 :root {
   div {
     margin: 0;
@@ -276,6 +293,27 @@ $color-cigar-border-3: #3a2a2a;
         animation-name: cigar;
         animation-duration: 20s;
         animation-iteration-count: infinite;
+
+        &:before,
+        &:after {
+          position: absolute;
+          left: 0;
+          width: 3vmin;
+          height: 3vmin;
+          content: "";
+          background-color: $color-cigar-2;
+          border-radius: 50%;
+          --cherry-initial-position: 0vmin;
+          --cherry-final-position: 5vmin;
+          animation-name: cherry;
+          animation-duration: 20s;
+          animation-iteration-count: infinite;
+        }
+
+        &:after {
+          --cherry-final-position: 3vmin;
+          animation-delay: 0.3s;
+        }
       }
     }
   }
