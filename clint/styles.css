@@ -68,19 +68,27 @@
   }
 }
 
-:root div {
+:root * {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
 }
 
-:root #clint {
+:root *:before, :root *:after {
   position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: "";
+}
+
+:root #clint {
   width: 120vmin;
   height: 100vmin;
   background-color: #ffe9bf;
 }
 
 :root #clint .hat {
-  position: absolute;
   top: 10%;
   left: 50%;
   width: 72%;
@@ -90,7 +98,6 @@
 }
 
 :root #clint .hat .crown {
-  position: absolute;
   left: 26%;
   width: 24%;
   height: 80%;
@@ -111,16 +118,13 @@
 }
 
 :root #clint .hat .crown:before {
-  position: absolute;
   bottom: 0;
   width: 100%;
   height: 25%;
-  content: "";
   background-color: #7f5f6a;
 }
 
 :root #clint .hat .brim {
-  position: absolute;
   bottom: 4%;
   left: 0;
   width: 50%;
@@ -149,7 +153,6 @@
 }
 
 :root #clint .hat .brim .inside {
-  position: absolute;
   top: 40%;
   right: 0;
   width: 65%;
@@ -159,27 +162,20 @@
 }
 
 :root #clint .head {
-  position: absolute;
   top: 38%;
   left: 50%;
   width: 40vmin;
   height: 42vmin;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
 
 :root #clint .head:before, :root #clint .head:after {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   top: 0;
   width: 20vmin;
   height: 0;
   border-left: 19vmin solid transparent;
   border-top: 3vmin solid #5f2740;
-  content: "";
   z-index: 100;
 }
 
@@ -191,9 +187,6 @@
 }
 
 :root #clint .head .beard {
-  position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 20vmin;
   height: 0;
   border-top: 42vmin solid #9e4d32;
@@ -209,7 +202,6 @@
 }
 
 :root #clint .head .skin {
-  position: absolute;
   left: 3vmin;
   width: 17vmin;
   height: 18vmin;
@@ -217,13 +209,9 @@
 }
 
 :root #clint .head .skin:before {
-  position: absolute;
   bottom: -16vmin;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 17vmin;
   height: 0;
-  content: "";
   border-top: 16vmin solid #e9a87e;
   border-left: 10vmin solid transparent;
 }
@@ -241,11 +229,8 @@
 }
 
 :root #clint .head .moustache {
-  position: absolute;
   bottom: 8vmin;
   left: 9vmin;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 11vmin;
   margin-top: -2vmin;
   border-bottom: 12vmin solid #9e4d32;
@@ -253,13 +238,9 @@
 }
 
 :root #clint .head .moustache:before {
-  position: absolute;
   top: -2vmin;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 9vmin;
   margin-bottom: -2vmin;
-  content: "";
   border-bottom: 2vmin solid #9e4d32;
   border-left: 3vmin solid transparent;
 }
@@ -283,7 +264,6 @@
 }
 
 :root #clint .head .mouth {
-  position: absolute;
   bottom: 11vmin;
   left: 13vmin;
   width: 7vmin;
@@ -302,7 +282,6 @@
 }
 
 :root #clint .head .mole {
-  position: absolute;
   top: -1vmin;
   left: 0vmin;
   width: 2vmin;
@@ -312,11 +291,8 @@
 }
 
 :root #clint .head .cigar {
-  position: absolute;
   right: 13vmin;
   bottom: 14vmin;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 4vmin;
   height: 4vmin;
   border-style: solid;
@@ -331,11 +307,9 @@
 }
 
 :root #clint .head .cigar:before, :root #clint .head .cigar:after {
-  position: absolute;
   left: 0;
   width: 3vmin;
   height: 3vmin;
-  content: "";
   background-color: #f83f11;
   border-radius: 50%;
   --cherry-initial-position: 0vmin;

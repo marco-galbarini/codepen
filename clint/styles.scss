@@ -54,18 +54,25 @@ $color-cigar-border-3: #3a2a2a;
 }
 
 :root {
-  div {
+  * {
+    position: absolute;
+    box-sizing: border-box;
     margin: 0;
+
+    &:before,
+    &:after {
+      position: absolute;
+      box-sizing: border-box;
+      content: "";
+    }
   }
 
   #clint {
-    position: absolute;
     width: 120vmin;
     height: 100vmin;
     background-color: $color-background;
 
     .hat {
-      position: absolute;
       top: 10%;
       left: 50%;
       width: 72%;
@@ -73,7 +80,6 @@ $color-cigar-border-3: #3a2a2a;
       transform: translate(-50%, 0);
 
       .crown {
-        position: absolute;
         left: 26%;
         width: 24%;
         height: 80%;
@@ -92,17 +98,14 @@ $color-cigar-border-3: #3a2a2a;
         }
 
         &:before {
-          position: absolute;
           bottom: 0;
           width: 100%;
           height: 25%;
-          content: "";
           background-color: $color-band-dark;
         }
       }
 
       .brim {
-        position: absolute;
         bottom: 4%;
         left: 0;
         width: 50%;
@@ -128,7 +131,6 @@ $color-cigar-border-3: #3a2a2a;
         }
 
         .inside {
-          position: absolute;
           top: 40%;
           right: 0;
           width: 65%;
@@ -140,24 +142,19 @@ $color-cigar-border-3: #3a2a2a;
     }
 
     .head {
-      position: absolute;
       top: 38%;
       left: 50%;
       width: 40vmin;
       height: 42vmin;
-      box-sizing: border-box;
       transform: translate(-50%, 0);
 
       &:before,
       &:after {
-        position: absolute;
-        box-sizing: border-box;
         top: 0;
         width: 20vmin;
         height: 0;
         border-left: 19vmin solid transparent;
         border-top: 3vmin solid $color-hat-dark;
-        content: "";
         z-index: 100;
       }
 
@@ -168,8 +165,6 @@ $color-cigar-border-3: #3a2a2a;
       }
 
       .beard {
-        position: absolute;
-        box-sizing: border-box;
         width: 20vmin;
         height: 0;
         border-top: 42vmin solid $color-beard-dark;
@@ -184,19 +179,15 @@ $color-cigar-border-3: #3a2a2a;
       }
 
       .skin {
-        position: absolute;
         left: 3vmin;
         width: 17vmin;
         height: 18vmin;
         background-color: $color-skin-dark;
 
         &:before {
-          position: absolute;
           bottom: -16vmin;
-          box-sizing: border-box;
           width: 17vmin;
           height: 0;
-          content: "";
           border-top: 16vmin solid $color-skin-dark;
           border-left: 10vmin solid transparent;
         }
@@ -214,22 +205,17 @@ $color-cigar-border-3: #3a2a2a;
       }
 
       .moustache {
-        position: absolute;
         bottom: 8vmin;
         left: 9vmin;
-        box-sizing: border-box;
         width: 11vmin;
         margin-top: -2vmin;
         border-bottom: 12vmin solid $color-beard-dark;
         border-left: 2vmin solid transparent;
 
         &:before {
-          position: absolute;
           top: -2vmin;
-          box-sizing: border-box;
           width: 9vmin;
           margin-bottom: -2vmin;
-          content: "";
           border-bottom: 2vmin solid $color-beard-dark;
           border-left: 3vmin solid transparent;
         }
@@ -253,7 +239,6 @@ $color-cigar-border-3: #3a2a2a;
       }
 
       .mouth {
-        position: absolute;
         bottom: 11vmin;
         left: 13vmin;
         width: 7vmin;
@@ -271,7 +256,6 @@ $color-cigar-border-3: #3a2a2a;
       }
 
       .mole {
-        position: absolute;
         top: -1vmin;
         left: 0vmin;
         width: 2vmin;
@@ -281,10 +265,8 @@ $color-cigar-border-3: #3a2a2a;
       }
 
       .cigar {
-        position: absolute;
         right: 13vmin;
         bottom: 14vmin;
-        box-sizing: border-box;
         width: 4vmin;
         height: 4vmin;
         border-style: solid;
@@ -296,11 +278,9 @@ $color-cigar-border-3: #3a2a2a;
 
         &:before,
         &:after {
-          position: absolute;
           left: 0;
           width: 3vmin;
           height: 3vmin;
-          content: "";
           background-color: $color-cigar-2;
           border-radius: 50%;
           --cherry-initial-position: 0vmin;
