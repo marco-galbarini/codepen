@@ -64,6 +64,7 @@
           transform: skewY(-5deg);
 
           .inside {
+            top: 31%;
             left: 0;
             width: 58%;
             height: 46%;
@@ -73,7 +74,7 @@
 
         .inside {
           position: absolute;
-          top: 36%;
+          top: 40%;
           right: 0;
           width: 65%;
           height: 50%;
@@ -92,6 +93,25 @@
       box-sizing: border-box;
       transform: translate(-50%, 0);
       background-color: rgba(200, 200, 200, 0.6);
+
+      &:before,
+      &:after {
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        width: 20vmin;
+        height: 0;
+        border-left: 19vmin solid transparent;
+        border-top: 3vmin solid #5f2740;
+        content: "";
+        z-index: 100;
+      }
+
+      &:after {
+        right: 0;
+        border-top-color: #82434b;
+        transform: scaleX(-1);
+      }
 
       .beard {
         position: absolute;

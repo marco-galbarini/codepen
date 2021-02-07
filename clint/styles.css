@@ -71,6 +71,7 @@
 }
 
 :root #clint .hat .brim + .brim .inside {
+  top: 31%;
   left: 0;
   width: 58%;
   height: 46%;
@@ -79,7 +80,7 @@
 
 :root #clint .hat .brim .inside {
   position: absolute;
-  top: 36%;
+  top: 40%;
   right: 0;
   width: 65%;
   height: 50%;
@@ -98,6 +99,26 @@
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   background-color: rgba(200, 200, 200, 0.6);
+}
+
+:root #clint .head:before, :root #clint .head:after {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 0;
+  width: 20vmin;
+  height: 0;
+  border-left: 19vmin solid transparent;
+  border-top: 3vmin solid #5f2740;
+  content: "";
+  z-index: 100;
+}
+
+:root #clint .head:after {
+  right: 0;
+  border-top-color: #82434b;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 :root #clint .head .beard {
