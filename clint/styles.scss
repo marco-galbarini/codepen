@@ -218,11 +218,23 @@
 
       .mole {
         position: absolute;
-        left: 0vmin;
         top: -1vmin;
+        left: 0vmin;
         width: 2vmin;
         height: 2vmin;
         background-color: #b47c57;
+        border-radius: 50%;
+      }
+
+      .cigar {
+        position: absolute;
+        right: 13vmin;
+        bottom: 14vmin;
+        box-sizing: border-box;
+        width: 4vmin;
+        height: 4vmin;
+        background-color: #4d2126;
+        border: 0.5vmin solid #eee;
         border-radius: 50%;
       }
     }
