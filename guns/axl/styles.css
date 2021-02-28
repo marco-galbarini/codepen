@@ -1,0 +1,9 @@
+#axl {
+  width: 50vmin;
+  height: 50vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ddd;
+}
+/*# sourceMappingURL=styles.css.map */
