@@ -1,6 +1,48 @@
-#axl {
-  width: 50vmin;
-  height: 50vmin;
+body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#axl {
+  width: 80vmin;
+  position: absolute;
+  height: 80vmin;
   background: #ddd;
+
+  .head {
+    position: absolute;
+    top: 0;
+    left: 20vmin;
+    width: 52vmin;
+    height: 58vmin;
+    background-color: rgba(81, 247, 169, 0.74);
+
+    .face {
+      position: absolute;
+      width: 30vmin;
+      height: 28vmin;
+      top: 16vmin;
+      left: 7vmin;
+      background-color: #fcc8a3;
+      border: 1vmin solid #000;
+      border-radius: 5vmin;
+
+      .chin {
+      }
+    }
+  }
+
+  .torso {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 45vmin;
+    width: 18vmin;
+    height: 14vmin;
+    background-color: #fcc8a3;
+    border: 1vmin solid #000;
+    border-radius: 2vmin;
+  }
 }
