@@ -17,7 +17,7 @@ body {
     left: 20vmin;
     width: 52vmin;
     height: 58vmin;
-    background-color: rgba(81, 247, 169, 0.74);
+    // background-color: rgba(81, 247, 169, 0.74);
 
     .face {
       position: absolute;
@@ -30,6 +30,25 @@ body {
       border-radius: 5vmin;
 
       .chin {
+        position: absolute;
+        left: 2vmin;
+        bottom: -2vmin;
+        width: 4vmin;
+        height: 4vmin;
+        border: 1vmin solid #000;
+        border-radius: 1vmin;
+        transform: rotate(-20deg);
+
+        &:before {
+          position: absolute;
+          top: -2vmin;
+          left: -1vmin;
+          content: "";
+          background-color: #fcc8a3;
+          width: 8vmin;
+          height: 4vmin;
+          transform: rotate(25deg);
+        }
       }
     }
   }

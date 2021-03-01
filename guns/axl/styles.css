@@ -24,7 +24,6 @@ body {
   left: 20vmin;
   width: 52vmin;
   height: 58vmin;
-  background-color: rgba(81, 247, 169, 0.74);
 }
 
 #axl .head .face {
@@ -36,6 +35,30 @@ body {
   background-color: #fcc8a3;
   border: 1vmin solid #000;
   border-radius: 5vmin;
+}
+
+#axl .head .face .chin {
+  position: absolute;
+  left: 2vmin;
+  bottom: -2vmin;
+  width: 4vmin;
+  height: 4vmin;
+  border: 1vmin solid #000;
+  border-radius: 1vmin;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+#axl .head .face .chin:before {
+  position: absolute;
+  top: -2vmin;
+  left: -1vmin;
+  content: "";
+  background-color: #fcc8a3;
+  width: 8vmin;
+  height: 4vmin;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
 }
 
 #axl .torso {
