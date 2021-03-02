@@ -29,6 +29,33 @@ body {
       border: 1vmin solid #000;
       border-radius: 5vmin;
 
+      .glasses {
+        display: flex;
+        position: absolute;
+        top: 8vmin;
+        left: -8vmin;
+        justify-content: space-between;
+        width: 25vmin;
+        height: 12vmin;
+
+        .glass {
+          width: 12vmin;
+          height: 12vmin;
+          border-radius: 50%;
+          border: 0.8vmin solid #000;
+          box-sizing: border-box;
+          background: linear-gradient(
+            117deg,
+            rgba(255, 255, 255, 1) 36%,
+            rgba(0, 0, 0, 1) 36%,
+            rgba(0, 0, 0, 1) 59%,
+            rgba(255, 255, 255, 1) 59%,
+            rgba(255, 255, 255, 1) 74%,
+            rgba(0, 0, 0, 1) 74%
+          );
+        }
+      }
+
       .chin {
         position: absolute;
         left: 2vmin;
@@ -36,17 +63,35 @@ body {
         width: 4vmin;
         height: 4vmin;
         border: 1vmin solid #000;
+        background-color: #fcc8a3;
         border-radius: 1vmin;
         transform: rotate(-20deg);
 
+        .circle {
+          position: absolute;
+          width: 1vmin;
+          height: 2vmin;
+          border-radius: 1vmin;
+          background-color: #000;
+
+          &:nth-of-type(1) {
+            left: -1vmin;
+          }
+
+          &:nth-of-type(2) {
+            right: -1vmin;
+            bottom: 0;
+          }
+        }
+
         &:before {
           position: absolute;
-          top: -2vmin;
+          top: -3vmin;
           left: -1vmin;
           content: "";
           background-color: #fcc8a3;
           width: 8vmin;
-          height: 4vmin;
+          height: 5vmin;
           transform: rotate(25deg);
         }
       }

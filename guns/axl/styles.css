@@ -37,6 +37,30 @@ body {
   border-radius: 5vmin;
 }
 
+#axl .head .face .glasses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 8vmin;
+  left: -8vmin;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25vmin;
+  height: 12vmin;
+}
+
+#axl .head .face .glasses .glass {
+  width: 12vmin;
+  height: 12vmin;
+  border-radius: 50%;
+  border: 0.8vmin solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: linear-gradient(117deg, white 36%, black 36%, black 59%, white 59%, white 74%, black 74%);
+}
+
 #axl .head .face .chin {
   position: absolute;
   left: 2vmin;
@@ -44,19 +68,37 @@ body {
   width: 4vmin;
   height: 4vmin;
   border: 1vmin solid #000;
+  background-color: #fcc8a3;
   border-radius: 1vmin;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
 }
 
+#axl .head .face .chin .circle {
+  position: absolute;
+  width: 1vmin;
+  height: 2vmin;
+  border-radius: 1vmin;
+  background-color: #000;
+}
+
+#axl .head .face .chin .circle:nth-of-type(1) {
+  left: -1vmin;
+}
+
+#axl .head .face .chin .circle:nth-of-type(2) {
+  right: -1vmin;
+  bottom: 0;
+}
+
 #axl .head .face .chin:before {
   position: absolute;
-  top: -2vmin;
+  top: -3vmin;
   left: -1vmin;
   content: "";
   background-color: #fcc8a3;
   width: 8vmin;
-  height: 4vmin;
+  height: 5vmin;
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
 }
