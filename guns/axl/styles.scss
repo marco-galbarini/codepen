@@ -60,39 +60,54 @@ body {
         position: absolute;
         left: 2vmin;
         bottom: -2vmin;
-        width: 4vmin;
-        height: 4vmin;
+        width: 6.5vmin;
+        box-sizing: border-box;
+        height: 6vmin;
         border: 1vmin solid #000;
         background-color: #fcc8a3;
-        border-radius: 1vmin;
+        border-radius: 1.5vmin;
         transform: rotate(-20deg);
 
         .circle {
           position: absolute;
           width: 1vmin;
-          height: 2vmin;
+          height: 1.5vmin;
           border-radius: 1vmin;
           background-color: #000;
+          // background-color: red;
+          z-index: 1;
 
           &:nth-of-type(1) {
             left: -1vmin;
+            bottom: 2vmin;
           }
 
           &:nth-of-type(2) {
-            right: -1vmin;
-            bottom: 0;
+            left: 4.5vmin;
+            bottom: -0.25vmin;
           }
         }
 
-        &:before {
+        &:before,
+        &:after {
           position: absolute;
-          top: -3vmin;
-          left: -1vmin;
           content: "";
           background-color: #fcc8a3;
-          width: 8vmin;
+          // background-color: red;
+        }
+
+        &:before {
+          top: -2.5vmin;
+          right: 0.6vmin;
+          width: 5vmin;
+          height: 4vmin;
+        }
+
+        &:after {
+          top: -1.5vmin;
+          left: 3.6vmin;
+          width: 2vmin;
           height: 5vmin;
-          transform: rotate(25deg);
         }
       }
     }

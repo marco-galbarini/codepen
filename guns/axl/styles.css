@@ -65,11 +65,13 @@ body {
   position: absolute;
   left: 2vmin;
   bottom: -2vmin;
-  width: 4vmin;
-  height: 4vmin;
+  width: 6.5vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 6vmin;
   border: 1vmin solid #000;
   background-color: #fcc8a3;
-  border-radius: 1vmin;
+  border-radius: 1.5vmin;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
 }
@@ -77,30 +79,40 @@ body {
 #axl .head .face .chin .circle {
   position: absolute;
   width: 1vmin;
-  height: 2vmin;
+  height: 1.5vmin;
   border-radius: 1vmin;
   background-color: #000;
+  z-index: 1;
 }
 
 #axl .head .face .chin .circle:nth-of-type(1) {
   left: -1vmin;
+  bottom: 2vmin;
 }
 
 #axl .head .face .chin .circle:nth-of-type(2) {
-  right: -1vmin;
-  bottom: 0;
+  left: 4.5vmin;
+  bottom: -0.25vmin;
+}
+
+#axl .head .face .chin:before, #axl .head .face .chin:after {
+  position: absolute;
+  content: "";
+  background-color: #fcc8a3;
 }
 
 #axl .head .face .chin:before {
-  position: absolute;
-  top: -3vmin;
-  left: -1vmin;
-  content: "";
-  background-color: #fcc8a3;
-  width: 8vmin;
+  top: -2.5vmin;
+  right: 0.6vmin;
+  width: 5vmin;
+  height: 4vmin;
+}
+
+#axl .head .face .chin:after {
+  top: -1.5vmin;
+  left: 3.6vmin;
+  width: 2vmin;
   height: 5vmin;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
 }
 
 #axl .head .hair {
