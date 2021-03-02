@@ -41,24 +41,114 @@ body {
   position: absolute;
   left: 2vmin;
   bottom: -2vmin;
-  width: 4vmin;
-  height: 4vmin;
+  width: 6.5vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 6vmin;
   border: 1vmin solid #000;
-  border-radius: 1vmin;
+  background-color: #fcc8a3;
+  border-radius: 1.5vmin;
   -webkit-transform: rotate(-20deg);
           transform: rotate(-20deg);
 }
 
-#axl .head .face .chin:before {
+#axl .head .face .chin .circle {
   position: absolute;
-  top: -2vmin;
+  width: 1vmin;
+  height: 1.5vmin;
+  border-radius: 1vmin;
+  background-color: #000;
+  z-index: 1;
+}
+
+#axl .head .face .chin .circle:nth-of-type(1) {
   left: -1vmin;
+  bottom: 2vmin;
+}
+
+#axl .head .face .chin .circle:nth-of-type(2) {
+  left: 4.5vmin;
+  bottom: -0.25vmin;
+}
+
+#axl .head .face .chin:before, #axl .head .face .chin:after {
+  position: absolute;
   content: "";
   background-color: #fcc8a3;
-  width: 8vmin;
+}
+
+#axl .head .face .chin:before {
+  top: -2.5vmin;
+  right: 0.6vmin;
+  width: 5vmin;
   height: 4vmin;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
+}
+
+#axl .head .face .chin:after {
+  top: -1.5vmin;
+  left: 3.6vmin;
+  width: 2vmin;
+  height: 5vmin;
+}
+
+#axl .head .hair {
+  position: absolute;
+  left: 6vmin;
+  bottom: 2vmin;
+  width: 7vmin;
+  height: 40vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e85d3e;
+  border: 1vmin solid #000;
+}
+
+#axl .head .hair-2 {
+  position: absolute;
+  bottom: 0;
+  right: 11vmin;
+  width: 16vmin;
+  height: 42vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #e85d3e;
+  border: 1vmin solid #000;
+}
+
+#axl .head .bandanna {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 13vmin;
+  left: 5vmin;
+  width: 36vmin;
+  height: 14vmin;
+  background-color: #e13d41;
+  border: 0.75vmin solid #000;
+}
+
+#axl .head .glasses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 25vmin;
+  left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25vmin;
+  height: 12vmin;
+}
+
+#axl .head .glasses .glass {
+  width: 12vmin;
+  height: 12vmin;
+  border-radius: 50%;
+  border: 0.8vmin solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: linear-gradient(117deg, white 36%, black 36%, black 59%, white 59%, white 74%, black 74%);
 }
 
 #axl .torso {
