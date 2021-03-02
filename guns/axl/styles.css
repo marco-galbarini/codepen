@@ -37,30 +37,6 @@ body {
   border-radius: 5vmin;
 }
 
-#axl .head .face .glasses {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 8vmin;
-  left: -8vmin;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 25vmin;
-  height: 12vmin;
-}
-
-#axl .head .face .glasses .glass {
-  width: 12vmin;
-  height: 12vmin;
-  border-radius: 50%;
-  border: 0.8vmin solid #000;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: linear-gradient(117deg, white 36%, black 36%, black 59%, white 59%, white 74%, black 74%);
-}
-
 #axl .head .face .chin {
   position: absolute;
   left: 2vmin;
@@ -137,6 +113,42 @@ body {
           box-sizing: border-box;
   background-color: #e85d3e;
   border: 1vmin solid #000;
+}
+
+#axl .head .bandanna {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 13vmin;
+  left: 5vmin;
+  width: 36vmin;
+  height: 14vmin;
+  background-color: #e13d41;
+  border: 0.75vmin solid #000;
+}
+
+#axl .head .glasses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 25vmin;
+  left: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25vmin;
+  height: 12vmin;
+}
+
+#axl .head .glasses .glass {
+  width: 12vmin;
+  height: 12vmin;
+  border-radius: 50%;
+  border: 0.8vmin solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: linear-gradient(117deg, white 36%, black 36%, black 59%, white 59%, white 74%, black 74%);
 }
 
 #axl .torso {
