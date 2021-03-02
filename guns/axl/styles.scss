@@ -96,6 +96,28 @@ body {
         }
       }
     }
+
+    .hair {
+      position: absolute;
+      left: 6vmin;
+      bottom: 2vmin;
+      width: 7vmin;
+      height: 40vmin;
+      box-sizing: border-box;
+      background-color: #e85d3e;
+      border: 1vmin solid #000;
+    }
+
+    .hair-2 {
+      position: absolute;
+      bottom: 0;
+      right: 11vmin;
+      width: 16vmin;
+      height: 42vmin;
+      box-sizing: border-box;
+      background-color: #e85d3e;
+      border: 1vmin solid #000;
+    }
   }
 
   .torso {
