@@ -151,6 +151,13 @@ body {
   background: linear-gradient(117deg, white 36%, black 36%, black 59%, white 59%, white 74%, black 74%);
 }
 
+#axl .head .cap {
+  position: absolute;
+  width: 30vmin;
+  height: 15vmin;
+  background-color: #000;
+}
+
 #axl .torso {
   position: absolute;
   left: 50%;
