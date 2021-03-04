@@ -119,10 +119,10 @@ body {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  top: 13vmin;
+  top: 15vmin;
   left: 5vmin;
   width: 36vmin;
-  height: 14vmin;
+  height: 12vmin;
   background-color: #e13d41;
   border: 0.75vmin solid #000;
 }
@@ -137,7 +137,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 25vmin;
+  width: 24.5vmin;
   height: 12vmin;
 }
 
@@ -153,9 +153,45 @@ body {
 
 #axl .head .cap {
   position: absolute;
-  width: 30vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 37vmin;
   height: 15vmin;
+  left: 5vmin;
+  top: 8vmin;
   background-color: #000;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
+}
+
+#axl .head .cap:before {
+  position: absolute;
+  top: -5vmin;
+  content: "";
+  height: 0;
+  border-left: 16vmin solid transparent;
+  border-bottom: 5vmin solid #000;
+}
+
+#axl .head .cap:after {
+  position: absolute;
+  right: 0;
+  top: -5vmin;
+  content: "";
+  height: 0;
+  border-right: 21vmin solid transparent;
+  border-bottom: 5vmin solid #000;
+}
+
+#axl .head .cap .peak {
+  position: absolute;
+  right: -11.5vmin;
+  bottom: -0.5vmin;
+  width: 13vmin;
+  height: 1.8vmin;
+  background-color: #000;
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
 }
 
 #axl .torso {
@@ -169,5 +205,38 @@ body {
   background-color: #fcc8a3;
   border: 1vmin solid #000;
   border-radius: 2vmin;
+}
+
+#axl .briefs {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  bottom: 13vmin;
+  width: 21vmin;
+  height: 8vmin;
+}
+
+#axl .briefs .leg {
+  border-radius: 1.5vmin 0 0 1.5vmin;
+  border-color: #000;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 1vmin 0 1vmin 1vmin;
+  background-color: red;
+  width: 9.9vmin;
+  height: 8vmin;
+}
+
+#axl .briefs .leg:nth-child(2) {
+  border-radius: 0 1.5vmin 1.5vmin 0;
+  border-width: 1vmin 1vmin 1vmin 0;
 }
 /*# sourceMappingURL=styles.css.map */
