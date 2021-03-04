@@ -110,10 +110,10 @@ body {
     .bandanna {
       position: absolute;
       box-sizing: border-box;
-      top: 13vmin;
+      top: 15vmin;
       left: 5vmin;
       width: 36vmin;
-      height: 14vmin;
+      height: 12vmin;
       background-color: #e13d41;
       border: 0.75vmin solid #000;
     }
@@ -147,9 +147,42 @@ body {
 
     .cap {
       position: absolute;
-      width: 30vmin;
+      box-sizing: border-box;
+      width: 37vmin;
       height: 15vmin;
+      left: 5vmin;
+      top: 8vmin;
       background-color: #000;
+      transform: rotate(8deg);
+
+      &:before {
+        position: absolute;
+        top: -5vmin;
+        content: "";
+        height: 0;
+        border-left: 16vmin solid transparent;
+        border-bottom: 5vmin solid #000;
+      }
+
+      &:after {
+        position: absolute;
+        right: 0;
+        top: -5vmin;
+        content: "";
+        height: 0;
+        border-right: 21vmin solid transparent;
+        border-bottom: 5vmin solid #000;
+      }
+
+      .peak {
+        position: absolute;
+        right: -11.5vmin;
+        bottom: -0.5vmin;
+        width: 13vmin;
+        height: 1.8vmin;
+        background-color: #000;
+        transform: rotate(8deg);
+      }
     }
   }
 
