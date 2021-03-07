@@ -218,9 +218,9 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  bottom: 13vmin;
+  bottom: 12.5vmin;
   width: 21vmin;
-  height: 8vmin;
+  height: 8.5vmin;
 }
 
 #axl .briefs .leg {
@@ -232,7 +232,7 @@ body {
   border-width: 1vmin 0 1vmin 1vmin;
   background-color: #e03c3b;
   width: 9.9vmin;
-  height: 8vmin;
+  height: 8.5vmin;
 }
 
 #axl .briefs .leg:nth-child(2) {
@@ -257,7 +257,7 @@ body {
 }
 
 #axl .legs .leg {
-  width: 9.5vmin;
+  width: 9.2vmin;
   height: 100%;
   border-color: #000;
   border-style: solid;
