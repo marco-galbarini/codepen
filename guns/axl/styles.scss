@@ -224,4 +224,25 @@ body {
       }
     }
   }
+
+  .legs {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 19.5vmin;
+    height: 4vmin;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10vmin;
+
+    .leg {
+      width: 9.5vmin;
+      height: 100%;
+      border-color: #000;
+      border-style: solid;
+      border-width: 0 0.9vmin;
+      box-sizing: border-box;
+      background-color: #fcc8a3;
+    }
+  }
 }
