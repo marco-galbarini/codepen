@@ -224,6 +224,7 @@ body {
 }
 
 #axl .briefs .leg {
+  position: relative;
   border-radius: 1.5vmin 0 0 1.5vmin;
   border-color: #000;
   border-style: solid;
@@ -235,9 +236,47 @@ body {
   height: 8.5vmin;
 }
 
+#axl .briefs .leg:nth-child(1):before {
+  content: "";
+  position: absolute;
+  width: 2vmin;
+  height: 1vmin;
+  background-color: #e03c3b;
+  border-width: 0 1vmin 0 0;
+  bottom: -0.1vmin;
+  right: 0;
+  border-color: #000;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#axl .briefs .leg:nth-child(1):after {
+  content: "";
+  position: absolute;
+  width: 3vmin;
+  height: 3vmin;
+  right: -2vmin;
+  background-color: #e03c3b;
+}
+
 #axl .briefs .leg:nth-child(2) {
   border-radius: 0 1.5vmin 1.5vmin 0;
   border-width: 1vmin 1vmin 1vmin 0;
+}
+
+#axl .briefs .leg:nth-child(2):before {
+  content: "";
+  position: absolute;
+  width: 2vmin;
+  height: 1vmin;
+  background-color: #e03c3b;
+  border-width: 0 0 0 1vmin;
+  bottom: -0.1vmin;
+  border-color: #000;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #axl .legs {
