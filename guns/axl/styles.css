@@ -279,6 +279,35 @@ body {
           box-sizing: border-box;
 }
 
+#axl .briefs .frontispiece {
+  position: absolute;
+  border-color: #000;
+  border-style: solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 0 0 1vmin 1vmin;
+  border-top-left-radius: 0.5vmin 1vmin;
+  border-bottom-left-radius: 2vmin 2.5vmin;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+  top: 3vmin;
+  left: 8vmin;
+  width: 3.5vmin;
+  height: 4.5vmin;
+  background-color: #e03c3b;
+}
+
+#axl .briefs .frontispiece:before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  border-radius: 50%;
+  width: 0.9vmin;
+  height: 1vmin;
+  left: -0.9vmin;
+  top: -0.2vmin;
+}
+
 #axl .legs {
   position: absolute;
   display: -webkit-box;
