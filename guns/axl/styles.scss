@@ -311,4 +311,25 @@ body {
       background-color: #fcc8a3;
     }
   }
+
+  .shoes {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 27vmin;
+    height: 4.5vmin;
+    bottom: 3vmin;
+
+    .shoe {
+      width: 12vmin;
+      height: 4.5vmin;
+      background-color: #000;
+      border-radius: 1vmin;
+      border-color: #000;
+      border-style: solid;
+      border-width: 0.5vmin;
+      box-sizing: border-box;
+    }
+  }
 }

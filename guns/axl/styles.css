@@ -334,4 +334,29 @@ body {
           box-sizing: border-box;
   background-color: #fcc8a3;
 }
+
+#axl .shoes {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 27vmin;
+  height: 4.5vmin;
+  bottom: 3vmin;
+}
+
+#axl .shoes .shoe {
+  width: 12vmin;
+  height: 4.5vmin;
+  background-color: #000;
+  border-radius: 1vmin;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0.5vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 /*# sourceMappingURL=styles.css.map */
