@@ -357,14 +357,32 @@ body {
 
   .left-arm {
     position: absolute;
-    width: 8vmin;
-    height: 6vmin;
-    box-sizing: border-box;
-    border-color: #000;
-    border-style: solid;
-    border-width: 0.5vmin;
-    background-color: #fcc8a3;
+    display: flex;
+    justify-content: flex-end;
+    width: 15vmin;
+    height: 9vmin;
     top: 46vmin;
-    left: 20vmin;
+    left: 12vmin;
+    background-color: rgba(228, 56, 56, 0.506);
+    align-items: center;
+
+    .forearm {
+      width: 8vmin;
+      height: 6vmin;
+      box-sizing: border-box;
+      border-color: #000;
+      border-style: solid;
+      background-color: #fcc8a3;
+    }
+
+    .sweatband {
+      width: 4vmin;
+      height: 8vmin;
+      box-sizing: border-box;
+      border-color: #000;
+      border-style: solid;
+      border-width: 0.5vmin;
+      background-color: #ffffff;
+    }
   }
 }
