@@ -426,4 +426,10 @@ body {
   border-width: 0.5vmin;
   background-color: #ffffff;
 }
+
+#axl .left-arm .hand {
+  width: 4vmin;
+  height: 8vmin;
+  background-color: #fcc8a3;
+}
 /*# sourceMappingURL=styles.css.map */
