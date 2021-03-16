@@ -356,6 +356,7 @@ body {
   }
 
   .left-arm {
+    display: flex;
     position: absolute;
     width: 18vmin;
     height: 9vmin;
@@ -368,9 +369,11 @@ body {
       position: absolute;
       width: 8vmin;
       height: 6vmin;
+      left: 8vmin;
       box-sizing: border-box;
       border-color: #000;
       border-style: solid;
+      border-width: .7vmin;
       background-color: #fcc8a3;
     }
 
@@ -378,16 +381,16 @@ body {
       position: absolute;
       width: 4vmin;
       height: 8vmin;
+      left: 5vmin;
       box-sizing: border-box;
       border-color: #000;
       border-style: solid;
-      border-width: 0.5vmin;
+      border-width: 1vmin;
       background-color: #ffffff;
     }
 
     .hand {
       position: absolute;
-      left: 2vmin;
       width: 7vmin;
       height: 7vmin;
       border-radius: 50%;
@@ -395,7 +398,7 @@ body {
       box-sizing: border-box;
       border-color: #000;
       border-style: solid;
-      border-width: 0.5vmin;
+      border-width: 1vmin;
     }
   }
 }
