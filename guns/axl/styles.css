@@ -390,13 +390,7 @@ body {
 
 #axl .left-arm {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 15vmin;
+  width: 18vmin;
   height: 9vmin;
   top: 46vmin;
   left: 12vmin;
@@ -407,6 +401,7 @@ body {
 }
 
 #axl .left-arm .forearm {
+  position: absolute;
   width: 8vmin;
   height: 6vmin;
   -webkit-box-sizing: border-box;
@@ -417,6 +412,7 @@ body {
 }
 
 #axl .left-arm .sweatband {
+  position: absolute;
   width: 4vmin;
   height: 8vmin;
   -webkit-box-sizing: border-box;
@@ -428,8 +424,16 @@ body {
 }
 
 #axl .left-arm .hand {
-  width: 4vmin;
-  height: 8vmin;
+  position: absolute;
+  left: 2vmin;
+  width: 7vmin;
+  height: 7vmin;
+  border-radius: 50%;
   background-color: #fcc8a3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0.5vmin;
 }
 /*# sourceMappingURL=styles.css.map */

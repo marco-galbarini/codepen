@@ -357,9 +357,7 @@ body {
 
   .left-arm {
     position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    width: 15vmin;
+    width: 18vmin;
     height: 9vmin;
     top: 46vmin;
     left: 12vmin;
@@ -367,6 +365,7 @@ body {
     align-items: center;
 
     .forearm {
+      position: absolute;
       width: 8vmin;
       height: 6vmin;
       box-sizing: border-box;
@@ -376,6 +375,7 @@ body {
     }
 
     .sweatband {
+      position: absolute;
       width: 4vmin;
       height: 8vmin;
       box-sizing: border-box;
@@ -386,9 +386,16 @@ body {
     }
 
     .hand {
-      width: 4vmin;
-      height: 8vmin;
+      position: absolute;
+      left: 2vmin;
+      width: 7vmin;
+      height: 7vmin;
+      border-radius: 50%;
       background-color: #fcc8a3;
+      box-sizing: border-box;
+      border-color: #000;
+      border-style: solid;
+      border-width: 0.5vmin;
     }
   }
 }
