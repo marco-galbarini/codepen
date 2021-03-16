@@ -448,7 +448,7 @@ body {
 
 #axl .left-arm .hand .thumb {
   position: absolute;
-  width: 4vmin;
+  width: 4.2vmin;
   height: 2.5vmin;
   top: -.7vmin;
   border-radius: 1.5vmin;
@@ -460,5 +460,61 @@ body {
   border-width: 1vmin;
   -webkit-transform: rotate(105deg);
           transform: rotate(105deg);
+}
+
+#axl .left-arm .hand .index {
+  position: absolute;
+  width: 5.5vmin;
+  height: 2.5vmin;
+  left: -3vmin;
+  top: -1.5vmin;
+  border-radius: 1.5vmin;
+  background-color: #fcc8a3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1vmin;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#axl .left-arm .hand .pinky {
+  position: absolute;
+  width: 5vmin;
+  height: 2.5vmin;
+  left: -3.2vmin;
+  top: 3.3vmin;
+  border-radius: 1.5vmin;
+  background-color: #fcc8a3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1vmin;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
+}
+
+#axl .left-arm .hand .pinky:before {
+  content: "";
+  position: absolute;
+  width: 1.5vmin;
+  height: 1.5vmin;
+  background-color: #fcc8a3;
+  border-radius: .5vmin;
+  right: -1.2vmin;
+  top: -1.1vmin;
+}
+
+#axl .left-arm .hand .pinky:after {
+  content: "";
+  position: absolute;
+  width: 1.4vmin;
+  height: 1.4vmin;
+  background-color: #fcc8a3;
+  border-radius: .5vmin;
+  right: -1.4vmin;
+  bottom: -.8vmin;
 }
 /*# sourceMappingURL=styles.css.map */
