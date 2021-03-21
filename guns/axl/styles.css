@@ -91,7 +91,7 @@ body {
   height: 5vmin;
 }
 
-#axl .head .hair {
+#axl .head .hair-left {
   position: absolute;
   left: 6vmin;
   bottom: 2vmin;
@@ -103,7 +103,7 @@ body {
   border: 1vmin solid #000;
 }
 
-#axl .head .hair-2 {
+#axl .head .hair-right {
   position: absolute;
   bottom: 0;
   right: 11vmin;
@@ -429,6 +429,16 @@ body {
   border-style: solid;
   border-width: 1vmin;
   border-radius: 1vmin;
+  background-color: #95b4ee;
+}
+
+#axl .left-arm .sweatband:before {
+  position: absolute;
+  content: "";
+  width: 1vmin;
+  height: 6.3vmin;
+  left: .8vmin;
+  top: 0;
   background-color: #ffffff;
 }
 
