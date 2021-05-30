@@ -91,6 +91,66 @@ body {
   height: 5vmin;
 }
 
+#axl .head .face .horseshoe {
+  position: absolute;
+  width: 7vmin;
+  height: 3.4vmin;
+  top: 21.8vmin;
+  left: 1.1vmin;
+  border-top: .8vmin solid #e85d3d;
+  border-left: .8vmin solid #e85d3d;
+  border-right: .8vmin solid #e85d3d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.5vmin 1.5vmin 0 0;
+}
+
+#axl .head .face .horseshoe:before {
+  position: absolute;
+  content: "";
+  width: .75vmin;
+  height: .75vmin;
+  border-radius: 50%;
+  background-color: #e85d3d;
+  bottom: -.5vmin;
+  left: -.8vmin;
+}
+
+#axl .head .face .horseshoe:after {
+  position: absolute;
+  content: "";
+  width: .75vmin;
+  height: .75vmin;
+  border-radius: 50%;
+  background-color: #e85d3d;
+  bottom: -.5vmin;
+  right: -.8vmin;
+}
+
+#axl .head .face .mouth {
+  position: absolute;
+  width: 3.6vmin;
+  height: 3.1vmin;
+  background-color: #e23b3b;
+  left: 2.8vmin;
+  top: 23vmin;
+  border-radius: .8vmin;
+  -webkit-transform: rotate(-23deg);
+          transform: rotate(-23deg);
+  overflow: hidden;
+}
+
+#axl .head .face .mouth .teeth {
+  position: relative;
+  width: 4vmin;
+  height: 2vmin;
+  background-color: #fff;
+  top: -1.1vmin;
+  left: .2vmin;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+
 #axl .head .hair-left {
   position: absolute;
   left: 6vmin;
