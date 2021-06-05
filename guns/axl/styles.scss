@@ -22,15 +22,15 @@ body {
       position: absolute;
       width: 30vmin;
       height: 28vmin;
-      top: 16vmin;
-      left: 7vmin;
+      top: 15.5vmin;
+      left: 7.5vmin;
       background-color: #fcc8a3;
       border: 1vmin solid #000;
-      border-radius: 5vmin;
+      border-radius: 4.5vmin;
 
       .chin {
         position: absolute;
-        left: 2vmin;
+        left: 1.4vmin;
         bottom: -2vmin;
         width: 6.5vmin;
         box-sizing: border-box;
@@ -38,7 +38,7 @@ body {
         border: 1vmin solid #000;
         background-color: #fcc8a3;
         border-radius: 1.5vmin;
-        transform: rotate(-20deg);
+        transform: rotate(-23deg);
 
         .circle {
           position: absolute;
@@ -85,8 +85,8 @@ body {
         position: absolute;
         width: 7vmin;
         height: 3.4vmin;
-        top: 21.8vmin;
-        left: 1.1vmin;
+        top: 22.4vmin;
+        left: .8vmin;
         border-top: .8vmin solid #e85d3d;
         border-left: .8vmin solid #e85d3d;
         border-right: .8vmin solid #e85d3d;
@@ -121,8 +121,8 @@ body {
         width: 3.6vmin;
         height: 3.1vmin;
         background-color: #e23b3b;
-        left: 2.8vmin;
-        top: 23vmin;
+        left: 2.5vmin;
+        top: 23.7vmin;
         border-radius: .8vmin;
         transform: rotate(-23deg);
         overflow: hidden;
@@ -136,6 +136,19 @@ body {
           left: .2vmin;
           transform: rotate(18deg);
         }
+      }
+
+      .nose {
+        position: absolute;
+        top: 18.2vmin;
+        left: 1.1vmin;
+        width: 1.6vmin;
+        height: 1.3vmin;
+        transform: rotate(-22deg);
+        border-radius: 2vmin 0 0 5vmin;
+        border-top: .9vmin solid #000000;
+        border-bottom: .9vmin solid #000000;
+        border-left: .9vmin solid #000000;
       }
     }
 
@@ -152,7 +165,7 @@ body {
 
     .hair-right {
       position: absolute;
-      bottom: 0;
+      bottom: -.5vmin;
       right: 11vmin;
       width: 16vmin;
       height: 42vmin;
@@ -164,28 +177,30 @@ body {
     .bandanna {
       position: absolute;
       box-sizing: border-box;
-      top: 15vmin;
+      top: 15.5vmin;
       left: 5vmin;
-      width: 36vmin;
+      width: 36.7vmin;
       height: 12vmin;
       background-color: #e13d41;
       border: 0.75vmin solid #000;
+      border-left: 1.1vmin solid #000;
+      border-right: 1.1vmin solid #000;
     }
 
     .glasses {
       display: flex;
       position: absolute;
-      top: 25vmin;
-      left: 0;
+      top: 24.7vmin;
+      left: .5vmin;
       justify-content: space-between;
-      width: 24.5vmin;
+      width: 24vmin;
       height: 12vmin;
 
       .glass {
-        width: 12vmin;
-        height: 12vmin;
+        width: 11.8vmin;
+        height: 11.8vmin;
         border-radius: 50%;
-        border: 0.8vmin solid #000;
+        border: 0.6vmin solid #000;
         box-sizing: border-box;
         background: linear-gradient(
           117deg,
@@ -202,10 +217,10 @@ body {
     .cap {
       position: absolute;
       box-sizing: border-box;
-      width: 37vmin;
+      width: 37.5vmin;
       height: 15vmin;
       left: 5vmin;
-      top: 8vmin;
+      top: 7.3vmin;
       background-color: #000;
       transform: rotate(8deg);
 
@@ -214,7 +229,7 @@ body {
         top: -5vmin;
         content: "";
         height: 0;
-        border-left: 16vmin solid transparent;
+        border-left: 16.5vmin solid transparent;
         border-bottom: 5vmin solid #000;
       }
 
@@ -231,11 +246,11 @@ body {
       .peak {
         position: absolute;
         right: -11.5vmin;
-        bottom: -0.5vmin;
+        bottom: -1vmin;
         width: 13vmin;
         height: 1.8vmin;
         background-color: #000;
-        transform: rotate(8deg);
+        transform: rotate(9deg);
       }
     }
   }
@@ -244,12 +259,12 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
-    top: 45vmin;
+    top: 44.5vmin;
     width: 18vmin;
-    height: 14vmin;
+    height: 14.5vmin;
     background-color: #fcc8a3;
     border: 1vmin solid #000;
-    border-radius: 2vmin;
+    border-radius: 2.5vmin;
   }
 
   .briefs {
@@ -324,12 +339,12 @@ body {
       box-sizing: border-box;
       border-width: 0 0 1vmin 1vmin;
       border-top-left-radius: 0.5vmin 1vmin;
-      border-bottom-left-radius: 2vmin 2.5vmin;
-      transform: rotate(5deg);
-      top: 3vmin;
-      left: 8vmin;
+      border-bottom-left-radius: 2.5vmin 3vmin;
+      transform: rotate(10deg);
+      top: 3.2vmin;
+      left: 7.8vmin;
       width: 3.5vmin;
-      height: 4.5vmin;
+      height: 4vmin;
       background-color: #e03c3b;
 
       &:before {
@@ -356,11 +371,11 @@ body {
     bottom: 10vmin;
 
     .leg {
-      width: 9.2vmin;
+      width: 9.6vmin;
       height: 100%;
       border-color: #000;
       border-style: solid;
-      border-width: 0 0.9vmin;
+      border-width: 0 1vmin;
       box-sizing: border-box;
       background-color: #fcc8a3;
     }
@@ -369,18 +384,18 @@ body {
   .shoes {
     position: absolute;
     display: flex;
-    left: 50%;
+    left: 38.5vmin;
     transform: translateX(-50%);
-    width: 27vmin;
-    height: 4.5vmin;
-    bottom: 3vmin;
+    width: 25vmin;
+    height: 4.9vmin;
+    bottom: 2.4vmin;
 
     .shoe {
-      width: 12vmin;
-      height: 4.5vmin;
-      background-color: #000;
+      width: 50%;
+      height: 100%;
+      background-color: #000000;
       border-radius: 1vmin;
-      border-color: #000;
+      border-color: #000000;
       border-style: solid;
       border-width: 0.5vmin;
       box-sizing: border-box;
@@ -395,11 +410,11 @@ body {
     transform: translateX(-50%);
     width: 21vmin;
     height: 4.5vmin;
-    bottom: 7vmin;
+    bottom: 6.5vmin;
 
     .sock {
       width: 12.5vmin;
-      height: 4.5vmin;
+      height: 4.3vmin;
       background-color: #fff;
       border-radius: 1vmin;
       border-color: #000;
@@ -538,10 +553,10 @@ body {
   .right-arm {
     display: flex;
     position: absolute;
-    width: 23vmin;
+    width: 23.5vmin;
     height: 17vmin;
     top: 35vmin;
-    right: 1vmin;
+    right: 1.2vmin;
     background-color: rgba(30, 40, 129, 0.506);
     align-items: center;
 
@@ -560,15 +575,15 @@ body {
     .hand {
       position: absolute;
       width: 7vmin;
-      height: 7vmin;
-      left: 11vmin;
-      bottom: .5vmin;
+      height: 7.5vmin;
+      left: 11.5vmin;
+      bottom: .2vmin;
       border-radius: 50%;
       background-color: #fcc8a3;
       box-sizing: border-box;
       border-color: #000;
       border-style: solid;
-      border-width: 1vmin;
+      border-width: .9vmin;
 
       .ice-cream {
 
@@ -616,8 +631,8 @@ body {
 
         .cream-1 {
           position: absolute;
-          left: 4vmin;
-          top: -10vmin;
+          left: 4.3vmin;
+          top: -9.5vmin;
           width: 6vmin;
           height: 6vmin;
           border-radius: 3vmin;
@@ -630,10 +645,10 @@ body {
 
         .cream-2 {
           position: absolute;
-          left: 7vmin;
-          top: -10.5vmin;
-          width: 3.5vmin;
-          height: 3.5vmin;
+          left: 7.4vmin;
+          top: -9.8vmin;
+          width: 3.4vmin;
+          height: 3.4vmin;
           border-radius: 1.75vmin;
           background-color: #f46285;
           box-sizing: border-box;
@@ -644,10 +659,10 @@ body {
 
         .cream-3 {
           position: absolute;
-          left: 3vmin;
-          top: -8vmin;
-          width: 7.5vmin;
-          height: 7.5vmin;
+          left: 3.3vmin;
+          top: -7.5vmin;
+          width: 7.6vmin;
+          height: 7.6vmin;
           border-radius: 3.5vmin;
           background-color: #f445b1;
           box-sizing: border-box;
@@ -658,8 +673,8 @@ body {
 
         .cream-4 {
           position: absolute;
-          left: 6vmin;
-          top: -8.7vmin;
+          left: 6.1vmin;
+          top: -8.1vmin;
           width: 5vmin;
           height: 5vmin;
           border-radius: 2.5vmin;
@@ -672,10 +687,10 @@ body {
 
         .cream-5 {
           position: absolute;
-          left: 6vmin;
-          top: -3vmin;
+          left: 6.2vmin;
+          top: -2.8vmin;
           width: 2vmin;
-          height: 9vmin;
+          height: 9.5vmin;
           border-radius: 2.5vmin;
           background-color: #f445b1;
           box-sizing: border-box;
@@ -710,7 +725,7 @@ body {
         position: absolute;
         left: .25vmin;
         top: -.25vmin;
-        width: 4vmin;
+        width: 4.4vmin;
         height: 3vmin;
         border-radius: 1.5vmin;
         background-color: #fcc8a3;
@@ -737,7 +752,7 @@ body {
       position: absolute;
       width: 4.5vmin;
       height: 8vmin;
-      left: 8.5vmin;
+      left: 9.2vmin;
       bottom: 0;
       box-sizing: border-box;
       border-color: #000;
