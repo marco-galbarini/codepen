@@ -30,16 +30,16 @@ body {
   position: absolute;
   width: 30vmin;
   height: 28vmin;
-  top: 16vmin;
-  left: 7vmin;
+  top: 15.5vmin;
+  left: 7.5vmin;
   background-color: #fcc8a3;
   border: 1vmin solid #000;
-  border-radius: 5vmin;
+  border-radius: 4.5vmin;
 }
 
 #axl .head .face .chin {
   position: absolute;
-  left: 2vmin;
+  left: 1.4vmin;
   bottom: -2vmin;
   width: 6.5vmin;
   -webkit-box-sizing: border-box;
@@ -48,8 +48,8 @@ body {
   border: 1vmin solid #000;
   background-color: #fcc8a3;
   border-radius: 1.5vmin;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  -webkit-transform: rotate(-23deg);
+          transform: rotate(-23deg);
 }
 
 #axl .head .face .chin .circle {
@@ -91,7 +91,81 @@ body {
   height: 5vmin;
 }
 
-#axl .head .hair {
+#axl .head .face .horseshoe {
+  position: absolute;
+  width: 7vmin;
+  height: 3.4vmin;
+  top: 22.4vmin;
+  left: .8vmin;
+  border-top: .8vmin solid #e85d3d;
+  border-left: .8vmin solid #e85d3d;
+  border-right: .8vmin solid #e85d3d;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.5vmin 1.5vmin 0 0;
+}
+
+#axl .head .face .horseshoe:before {
+  position: absolute;
+  content: "";
+  width: .75vmin;
+  height: .75vmin;
+  border-radius: 50%;
+  background-color: #e85d3d;
+  bottom: -.5vmin;
+  left: -.8vmin;
+}
+
+#axl .head .face .horseshoe:after {
+  position: absolute;
+  content: "";
+  width: .75vmin;
+  height: .75vmin;
+  border-radius: 50%;
+  background-color: #e85d3d;
+  bottom: -.5vmin;
+  right: -.8vmin;
+}
+
+#axl .head .face .mouth {
+  position: absolute;
+  width: 3.6vmin;
+  height: 3.1vmin;
+  background-color: #e23b3b;
+  left: 2.5vmin;
+  top: 23.7vmin;
+  border-radius: .8vmin;
+  -webkit-transform: rotate(-23deg);
+          transform: rotate(-23deg);
+  overflow: hidden;
+}
+
+#axl .head .face .mouth .teeth {
+  position: relative;
+  width: 4vmin;
+  height: 2vmin;
+  background-color: #fff;
+  top: -1.1vmin;
+  left: .2vmin;
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+
+#axl .head .face .nose {
+  position: absolute;
+  top: 18.2vmin;
+  left: 1.1vmin;
+  width: 1.6vmin;
+  height: 1.3vmin;
+  -webkit-transform: rotate(-22deg);
+          transform: rotate(-22deg);
+  border-radius: 2vmin 0 0 5vmin;
+  border-top: .9vmin solid #000000;
+  border-bottom: .9vmin solid #000000;
+  border-left: .9vmin solid #000000;
+}
+
+#axl .head .hair-left {
   position: absolute;
   left: 6vmin;
   bottom: 2vmin;
@@ -103,9 +177,9 @@ body {
   border: 1vmin solid #000;
 }
 
-#axl .head .hair-2 {
+#axl .head .hair-right {
   position: absolute;
-  bottom: 0;
+  bottom: -.5vmin;
   right: 11vmin;
   width: 16vmin;
   height: 42vmin;
@@ -119,12 +193,14 @@ body {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  top: 15vmin;
+  top: 15.5vmin;
   left: 5vmin;
-  width: 36vmin;
+  width: 36.7vmin;
   height: 12vmin;
   background-color: #e13d41;
   border: 0.75vmin solid #000;
+  border-left: 1.1vmin solid #000;
+  border-right: 1.1vmin solid #000;
 }
 
 #axl .head .glasses {
@@ -132,20 +208,20 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 25vmin;
-  left: 0;
+  top: 24.7vmin;
+  left: .5vmin;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 24.5vmin;
+  width: 24vmin;
   height: 12vmin;
 }
 
 #axl .head .glasses .glass {
-  width: 12vmin;
-  height: 12vmin;
+  width: 11.8vmin;
+  height: 11.8vmin;
   border-radius: 50%;
-  border: 0.8vmin solid #000;
+  border: 0.6vmin solid #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: linear-gradient(117deg, white 36%, black 36%, black 59%, white 59%, white 74%, black 74%);
@@ -155,10 +231,10 @@ body {
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 37vmin;
+  width: 37.5vmin;
   height: 15vmin;
   left: 5vmin;
-  top: 8vmin;
+  top: 7.3vmin;
   background-color: #000;
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
@@ -169,7 +245,7 @@ body {
   top: -5vmin;
   content: "";
   height: 0;
-  border-left: 16vmin solid transparent;
+  border-left: 16.5vmin solid transparent;
   border-bottom: 5vmin solid #000;
 }
 
@@ -186,12 +262,50 @@ body {
 #axl .head .cap .peak {
   position: absolute;
   right: -11.5vmin;
-  bottom: -0.5vmin;
+  bottom: -1vmin;
   width: 13vmin;
   height: 1.8vmin;
   background-color: #000;
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+  -webkit-transform: rotate(9deg);
+          transform: rotate(9deg);
+}
+
+#axl .head .cap .strap {
+  position: absolute;
+  width: 8.5vmin;
+  height: 2.8vmin;
+  left: -3.8vmin;
+  top: 10.8vmin;
+  background-color: #000000;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  border-bottom-left-radius: 1.4vmin;
+  border-top-left-radius: 1.4vmin;
+  overflow: hidden;
+}
+
+#axl .head .cap .strap:before {
+  content: "";
+  position: absolute;
+  width: 3.6vmin;
+  height: 5vmin;
+  background: #404040;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  left: 2.9vmin;
+  top: -1vmin;
+}
+
+#axl .head .cap .button {
+  position: absolute;
+  width: 2.4vmin;
+  height: 4.5vmin;
+  background-color: #000000;
+  top: -9vmin;
+  left: 16.3vmin;
+  border-radius: 50%;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
 }
 
 #axl .torso {
@@ -199,12 +313,33 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  top: 45vmin;
+  top: 44.5vmin;
   width: 18vmin;
-  height: 14vmin;
+  height: 14.5vmin;
   background-color: #fcc8a3;
   border: 1vmin solid #000;
-  border-radius: 2vmin;
+  border-radius: 2.5vmin;
+}
+
+#axl .torso .nipples {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 3.4vmin;
+  top: 4.2vmin;
+  width: 9.2vmin;
+  height: 1.7vmin;
+}
+
+#axl .torso .nipples .nipple {
+  width: 1.7vmin;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e23b3b;
 }
 
 #axl .briefs {
@@ -287,13 +422,13 @@ body {
           box-sizing: border-box;
   border-width: 0 0 1vmin 1vmin;
   border-top-left-radius: 0.5vmin 1vmin;
-  border-bottom-left-radius: 2vmin 2.5vmin;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
-  top: 3vmin;
-  left: 8vmin;
+  border-bottom-left-radius: 2.5vmin 3vmin;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: 3.2vmin;
+  left: 7.8vmin;
   width: 3.5vmin;
-  height: 4.5vmin;
+  height: 4vmin;
   background-color: #e03c3b;
 }
 
@@ -325,11 +460,11 @@ body {
 }
 
 #axl .legs .leg {
-  width: 9.2vmin;
+  width: 9.6vmin;
   height: 100%;
   border-color: #000;
   border-style: solid;
-  border-width: 0 0.9vmin;
+  border-width: 0 1vmin;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fcc8a3;
@@ -340,20 +475,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 50%;
+  left: 38.5vmin;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 27vmin;
-  height: 4.5vmin;
-  bottom: 3vmin;
+  width: 25vmin;
+  height: 4.9vmin;
+  bottom: 2.4vmin;
 }
 
 #axl .shoes .shoe {
-  width: 12vmin;
-  height: 4.5vmin;
-  background-color: #000;
+  width: 50%;
+  height: 100%;
+  background-color: #000000;
   border-radius: 1vmin;
-  border-color: #000;
+  border-color: #000000;
   border-style: solid;
   border-width: 0.5vmin;
   -webkit-box-sizing: border-box;
@@ -373,12 +508,12 @@ body {
           transform: translateX(-50%);
   width: 21vmin;
   height: 4.5vmin;
-  bottom: 7vmin;
+  bottom: 6.5vmin;
 }
 
 #axl .socks .sock {
   width: 12.5vmin;
-  height: 4.5vmin;
+  height: 4.3vmin;
   background-color: #fff;
   border-radius: 1vmin;
   border-color: #000;
@@ -429,6 +564,16 @@ body {
   border-style: solid;
   border-width: 1vmin;
   border-radius: 1vmin;
+  background-color: #6687ff;
+}
+
+#axl .left-arm .sweatband:before {
+  position: absolute;
+  content: "";
+  width: 1vmin;
+  height: 6.3vmin;
+  left: .8vmin;
+  top: 0;
   background-color: #ffffff;
 }
 
@@ -516,5 +661,240 @@ body {
   border-radius: .5vmin;
   right: -1.4vmin;
   bottom: -.8vmin;
+}
+
+#axl .right-arm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 23.5vmin;
+  height: 17vmin;
+  top: 35vmin;
+  right: 1.2vmin;
+  background-color: rgba(30, 40, 129, 0.506);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#axl .right-arm .forearm {
+  position: absolute;
+  width: 10vmin;
+  height: 6vmin;
+  bottom: 1vmin;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: .7vmin;
+  background-color: #fcc8a3;
+}
+
+#axl .right-arm .hand {
+  position: absolute;
+  width: 7vmin;
+  height: 7.5vmin;
+  left: 11.5vmin;
+  bottom: .2vmin;
+  border-radius: 50%;
+  background-color: #fcc8a3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: .9vmin;
+}
+
+#axl .right-arm .hand .ice-cream .cone {
+  position: absolute;
+  left: 2.8vmin;
+  bottom: .1vmin;
+  border-top: 8vmin solid #fcc8a4;
+  border-right: 4.2vmin solid transparent;
+  -webkit-transform: rotate(16deg);
+          transform: rotate(16deg);
+}
+
+#axl .right-arm .hand .ice-cream .border-left {
+  position: absolute;
+  width: .7vmin;
+  height: 10vmin;
+  left: -.5vmin;
+  bottom: .2vmin;
+  border-radius: .4vmin;
+  background-color: #000;
+}
+
+#axl .right-arm .hand .ice-cream .border-right {
+  position: absolute;
+  width: .7vmin;
+  height: 10vmin;
+  left: 2.5vmin;
+  bottom: -.4vmin;
+  border-radius: .4vmin;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  background-color: #000;
+}
+
+#axl .right-arm .hand .ice-cream .border-right:before {
+  position: absolute;
+  bottom: -.6vmin;
+  left: -.6vmin;
+  content: "";
+  width: 1vmin;
+  height: 1vmin;
+  border-radius: 1vmin;
+  background-color: #000;
+}
+
+#axl .right-arm .hand .ice-cream .cream-1 {
+  position: absolute;
+  left: 4.3vmin;
+  top: -9.5vmin;
+  width: 6vmin;
+  height: 6vmin;
+  border-radius: 3vmin;
+  background-color: #826014;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: .8vmin;
+}
+
+#axl .right-arm .hand .ice-cream .cream-2 {
+  position: absolute;
+  left: 7.4vmin;
+  top: -9.8vmin;
+  width: 3.4vmin;
+  height: 3.4vmin;
+  border-radius: 1.75vmin;
+  background-color: #f46285;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: .5vmin;
+}
+
+#axl .right-arm .hand .ice-cream .cream-3 {
+  position: absolute;
+  left: 3.3vmin;
+  top: -7.5vmin;
+  width: 7.6vmin;
+  height: 7.6vmin;
+  border-radius: 3.5vmin;
+  background-color: #f445b1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: .8vmin;
+}
+
+#axl .right-arm .hand .ice-cream .cream-4 {
+  position: absolute;
+  left: 6.1vmin;
+  top: -8.1vmin;
+  width: 5vmin;
+  height: 5vmin;
+  border-radius: 2.5vmin;
+  background-color: #f445b1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: .7vmin;
+}
+
+#axl .right-arm .hand .ice-cream .cream-5 {
+  position: absolute;
+  left: 6.2vmin;
+  top: -2.8vmin;
+  width: 2vmin;
+  height: 9.5vmin;
+  border-radius: 2.5vmin;
+  background-color: #f445b1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: .8vmin;
+}
+
+#axl .right-arm .hand .ice-cream .cream-5:before {
+  content: "";
+  position: absolute;
+  background-color: #f445b1;
+  width: 1vmin;
+  height: 1.6vmin;
+  top: -.7vmin;
+  left: -.8vmin;
+  border-bottom-left-radius: .3vmin;
+}
+
+#axl .right-arm .hand .ice-cream .cream-5:after {
+  content: "";
+  position: absolute;
+  background-color: #f445b1;
+  width: 1.5vmin;
+  height: 1.2vmin;
+  top: -1.1vmin;
+  right: -.8vmin;
+}
+
+#axl .right-arm .hand .thumb {
+  position: absolute;
+  left: .25vmin;
+  top: -.25vmin;
+  width: 4.4vmin;
+  height: 3vmin;
+  border-radius: 1.5vmin;
+  background-color: #fcc8a3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1vmin;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#axl .right-arm .hand .thumb:before {
+  position: absolute;
+  width: 1.3vmin;
+  height: 4vmin;
+  left: -.5vmin;
+  top: -.5vmin;
+  content: "";
+  border-top-left-radius: 1vmin;
+  background-color: #fcc8a3;
+}
+
+#axl .right-arm .sweatband {
+  position: absolute;
+  width: 4.5vmin;
+  height: 8vmin;
+  left: 9.2vmin;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1vmin;
+  border-radius: 1vmin;
+  background-color: #e23b3b;
+}
+
+#axl .right-arm .sweatband:before {
+  position: absolute;
+  content: "";
+  width: 1vmin;
+  height: 6.3vmin;
+  left: .8vmin;
+  top: 0;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=styles.css.map */
