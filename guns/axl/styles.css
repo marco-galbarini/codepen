@@ -270,6 +270,44 @@ body {
           transform: rotate(9deg);
 }
 
+#axl .head .cap .strap {
+  position: absolute;
+  width: 8.5vmin;
+  height: 2.8vmin;
+  left: -3.8vmin;
+  top: 10.8vmin;
+  background-color: #000000;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  border-bottom-left-radius: 1.4vmin;
+  border-top-left-radius: 1.4vmin;
+  overflow: hidden;
+}
+
+#axl .head .cap .strap:before {
+  content: "";
+  position: absolute;
+  width: 3.6vmin;
+  height: 5vmin;
+  background: #404040;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  left: 2.9vmin;
+  top: -1vmin;
+}
+
+#axl .head .cap .button {
+  position: absolute;
+  width: 2.4vmin;
+  height: 4.5vmin;
+  background-color: #000000;
+  top: -9vmin;
+  left: 16.3vmin;
+  border-radius: 50%;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
 #axl .torso {
   position: absolute;
   left: 50%;
@@ -281,6 +319,27 @@ body {
   background-color: #fcc8a3;
   border: 1vmin solid #000;
   border-radius: 2.5vmin;
+}
+
+#axl .torso .nipples {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 3.4vmin;
+  top: 4.2vmin;
+  width: 9.2vmin;
+  height: 1.7vmin;
+}
+
+#axl .torso .nipples .nipple {
+  width: 1.7vmin;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e23b3b;
 }
 
 #axl .briefs {
