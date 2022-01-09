@@ -11,6 +11,10 @@ body {
   height: 100vh;
 }
 
+body *, body :after, body :before {
+  position: absolute;
+}
+
 #axl {
   width: 80vmin;
   position: absolute;
@@ -203,6 +207,40 @@ body {
   border-right: 1.1vmin solid #000;
 }
 
+#axl .head .bandanna .stripe {
+  width: .4vmin;
+  height: 2.6vmin;
+  background-color: #fff;
+}
+
+#axl .head .bandanna .stripe--1 {
+  top: 6.2vmin;
+  left: 3.7vmin;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+#axl .head .bandanna .stripe--2 {
+  top: 5.8vmin;
+  left: 10.4vmin;
+  -webkit-transform: rotate(59deg);
+          transform: rotate(59deg);
+}
+
+#axl .head .bandanna .stripe--3 {
+  top: 7.3vmin;
+  left: 18.9vmin;
+  -webkit-transform: rotate(-14deg);
+          transform: rotate(-14deg);
+}
+
+#axl .head .bandanna .stripe--4 {
+  top: 7.3vmin;
+  left: 27.2vmin;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
 #axl .head .glasses {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,6 +256,7 @@ body {
 }
 
 #axl .head .glasses .glass {
+  position: static;
   width: 11.8vmin;
   height: 11.8vmin;
   border-radius: 50%;
@@ -308,6 +347,49 @@ body {
           transform: rotate(50deg);
 }
 
+#axl .head .cap .bandanna-detail {
+  position: absolute;
+  top: 9vmin;
+  left: 7vmin;
+  width: 6.7vmin;
+  height: 1.9vmin;
+  background-color: #e13d41;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+#axl .head .cap .gleam-detail {
+  top: -.1vmin;
+  left: 1.2vmin;
+  width: 4vmin;
+  height: 5.8vmin;
+  border-top-left-radius: 2.7vmin 2vmin;
+  background-color: #a5a5a5;
+  overflow: hidden;
+}
+
+#axl .head .cap .gleam-detail:before {
+  content: "";
+  top: .4vmin;
+  left: 1.6vmin;
+  width: 4vmin;
+  height: 7vmin;
+  background-color: #000000;
+  -webkit-transform: rotate(32deg);
+          transform: rotate(32deg);
+}
+
+#axl .head .cap .gleam-detail:after {
+  content: "";
+  top: -1.5vmin;
+  left: -.5vmin;
+  width: 4vmin;
+  height: 2vmin;
+  background-color: #000000;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
 #axl .torso {
   position: absolute;
   left: 50%;
@@ -336,6 +418,7 @@ body {
 }
 
 #axl .torso .nipples .nipple {
+  position: static;
   width: 1.7vmin;
   height: 100%;
   border-radius: 50%;
@@ -358,7 +441,7 @@ body {
   height: 8.5vmin;
 }
 
-#axl .briefs .leg {
+#axl .briefs__leg {
   position: relative;
   border-radius: 1.5vmin 0 0 1.5vmin;
   border-color: #000;
@@ -371,7 +454,7 @@ body {
   height: 8.5vmin;
 }
 
-#axl .briefs .leg:nth-child(1):before {
+#axl .briefs__leg:nth-child(1):before {
   content: "";
   position: absolute;
   width: 2vmin;
@@ -386,7 +469,7 @@ body {
           box-sizing: border-box;
 }
 
-#axl .briefs .leg:nth-child(1):after {
+#axl .briefs__leg:nth-child(1):after {
   content: "";
   position: absolute;
   width: 3vmin;
@@ -395,12 +478,12 @@ body {
   background-color: #e03c3b;
 }
 
-#axl .briefs .leg:nth-child(2) {
+#axl .briefs__leg:nth-child(2) {
   border-radius: 0 1.5vmin 1.5vmin 0;
   border-width: 1vmin 1vmin 1vmin 0;
 }
 
-#axl .briefs .leg:nth-child(2):before {
+#axl .briefs__leg:nth-child(2):before {
   content: "";
   position: absolute;
   width: 2vmin;
@@ -460,6 +543,7 @@ body {
 }
 
 #axl .legs .leg {
+  position: static;
   width: 9.6vmin;
   height: 100%;
   border-color: #000;
@@ -484,6 +568,7 @@ body {
 }
 
 #axl .shoes .shoe {
+  position: static;
   width: 50%;
   height: 100%;
   background-color: #000000;
@@ -512,6 +597,7 @@ body {
 }
 
 #axl .socks .sock {
+  position: static;
   width: 12.5vmin;
   height: 4.3vmin;
   background-color: #fff;
@@ -591,22 +677,6 @@ body {
   border-width: 1vmin;
 }
 
-#axl .left-arm .hand .thumb {
-  position: absolute;
-  width: 4.2vmin;
-  height: 2.5vmin;
-  top: -.7vmin;
-  border-radius: 1.5vmin;
-  background-color: #fcc8a3;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-color: #000;
-  border-style: solid;
-  border-width: 1vmin;
-  -webkit-transform: rotate(105deg);
-          transform: rotate(105deg);
-}
-
 #axl .left-arm .hand .index {
   position: absolute;
   width: 5.5vmin;
@@ -663,6 +733,29 @@ body {
   bottom: -.8vmin;
 }
 
+#axl .left-arm .hand .thumb {
+  position: absolute;
+  width: 4.2vmin;
+  height: 2.5vmin;
+  top: -.7vmin;
+  border-radius: 1.5vmin;
+  background-color: #fcc8a3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1vmin;
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+}
+
+#axl .left-arm .hand .shadow--1 {
+  width: 2vmin;
+  height: 2vmin;
+  background-color: #2fc956;
+  left: 1vmin;
+}
+
 #axl .right-arm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -704,6 +797,10 @@ body {
   border-color: #000;
   border-style: solid;
   border-width: .9vmin;
+}
+
+#axl .right-arm .hand .ice-cream {
+  position: static;
 }
 
 #axl .right-arm .hand .ice-cream .cone {
