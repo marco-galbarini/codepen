@@ -263,7 +263,7 @@ body *, body :after, body :before {
   border: 0.6vmin solid #000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: linear-gradient(117deg, white 36%, black 36%, black 59%, white 59%, white 74%, black 74%);
+  background: linear-gradient(119deg, white 40%, black 40%, black 59%, white 59%, white 74%, black 74%);
 }
 
 #axl .head .cap {
@@ -639,6 +639,13 @@ body *, body :after, body :before {
   background-color: #fcc8a3;
 }
 
+#axl .left-arm .forearm .shadow--1 {
+  bottom: 0;
+  width: 100%;
+  height: 2vmin;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 #axl .left-arm .sweatband {
   position: absolute;
   width: 4.5vmin;
@@ -750,10 +757,12 @@ body *, body :after, body :before {
 }
 
 #axl .left-arm .hand .shadow--1 {
-  width: 2vmin;
-  height: 2vmin;
-  background-color: #2fc956;
-  left: 1vmin;
+  width: 3vmin;
+  height: 4vmin;
+  -webkit-box-shadow: -1.5vmin -0.3vmin 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: -1.5vmin -0.3vmin 0 0 rgba(0, 0, 0, 0.3);
+  left: .8vmin;
+  border-radius: 50%;
 }
 
 #axl .right-arm {
@@ -782,6 +791,13 @@ body *, body :after, body :before {
   border-style: solid;
   border-width: .7vmin;
   background-color: #fcc8a3;
+}
+
+#axl .right-arm .forearm .shadow--1 {
+  bottom: 0;
+  width: 100%;
+  height: .8vmin;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #axl .right-arm .hand {

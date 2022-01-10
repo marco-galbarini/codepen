@@ -3,6 +3,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  *, :after, :before {
+    position: absolute;
+  }
 }
 
 #axl {
@@ -185,6 +189,36 @@ body {
       border: 0.75vmin solid #000;
       border-left: 1.1vmin solid #000;
       border-right: 1.1vmin solid #000;
+      
+      .stripe {
+        width: .4vmin;
+        height: 2.6vmin;
+        background-color: #fff;
+
+        &--1 {
+          top: 6.2vmin;
+          left: 3.7vmin;
+          transform: rotate(-12deg);
+        }
+
+        &--2 {
+          top: 5.8vmin;
+          left: 10.4vmin;
+          transform: rotate(59deg);
+        }
+
+        &--3 {
+          top: 7.3vmin;
+          left: 18.9vmin;
+          transform: rotate(-14deg);
+        }
+
+        &--4 {
+          top: 7.3vmin;
+          left: 27.2vmin;
+          transform: rotate(60deg);
+        }
+      }
     }
 
     .glasses {
@@ -197,15 +231,16 @@ body {
       height: 12vmin;
 
       .glass {
+        position: static;
         width: 11.8vmin;
         height: 11.8vmin;
         border-radius: 50%;
         border: 0.6vmin solid #000;
         box-sizing: border-box;
         background: linear-gradient(
-          117deg,
-          rgba(255, 255, 255, 1) 36%,
-          rgba(0, 0, 0, 1) 36%,
+          119deg,
+          rgba(255, 255, 255, 1) 40%,
+          rgba(0, 0, 0, 1) 40%,
           rgba(0, 0, 0, 1) 59%,
           rgba(255, 255, 255, 1) 59%,
           rgba(255, 255, 255, 1) 74%,
@@ -276,7 +311,7 @@ body {
           top: -1vmin;
         }
       }
-
+      
       .button {
         position: absolute;
         width: 2.4vmin;
@@ -286,6 +321,48 @@ body {
         left: 16.3vmin;
         border-radius: 50%;
         transform: rotate(50deg);
+      }
+
+      .bandanna-detail {
+        position: absolute;
+        top: 9vmin;
+        left: 7vmin;
+        width: 6.7vmin;
+        height: 1.9vmin;
+        background-color: #e13d41;
+        transform: rotate(3deg);
+      }
+      
+      .gleam-detail {
+        top: -.1vmin;
+        left: 1.2vmin;
+        width: 4vmin;
+        height: 5.8vmin;
+        // background-color: #a5a5a5;
+        // border-top-left-radius: 2vmin;
+        border-top-left-radius: 2.7vmin 2vmin;
+        background-color: #a5a5a5;
+        overflow: hidden;
+        
+        &:before {
+          content: "";
+          top: .4vmin;
+          left: 1.6vmin;
+          width: 4vmin;
+          height: 7vmin;
+          background-color: #000000;
+          transform: rotate(32deg);
+        }
+
+        &:after {
+          content: "";
+          top: -1.5vmin;
+          left: -.5vmin;
+          width: 4vmin;
+          height: 2vmin;
+          background-color: #000000;
+          transform: rotate(-15deg);
+        }
       }
     }
   }
@@ -311,6 +388,7 @@ body {
       height: 1.7vmin;
 
       .nipple {
+        position: static;
         width: 1.7vmin;
         height: 100%;
         border-radius: 50%;
@@ -329,7 +407,7 @@ body {
     width: 21vmin;
     height: 8.5vmin;
 
-    .leg {
+    &__leg {
       position: relative;
       border-radius: 1.5vmin 0 0 1.5vmin;
       border-color: #000;
@@ -423,6 +501,7 @@ body {
     bottom: 10vmin;
 
     .leg {
+      position: static;
       width: 9.6vmin;
       height: 100%;
       border-color: #000;
@@ -443,6 +522,7 @@ body {
     bottom: 2.4vmin;
 
     .shoe {
+      position: static;
       width: 50%;
       height: 100%;
       background-color: #000000;
@@ -465,6 +545,7 @@ body {
     bottom: 6.5vmin;
 
     .sock {
+      position: static;
       width: 12.5vmin;
       height: 4.3vmin;
       background-color: #fff;
@@ -497,6 +578,16 @@ body {
       border-style: solid;
       border-width: .7vmin;
       background-color: #fcc8a3;
+
+      .shadow {
+
+        &--1 {
+          bottom: 0;
+          width: 100%;
+          height: 2vmin;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+      }
     }
 
     .sweatband {
@@ -533,20 +624,6 @@ body {
       border-color: #000;
       border-style: solid;
       border-width: 1vmin;
-
-      .thumb{
-        position: absolute;
-        width: 4.2vmin;
-        height: 2.5vmin;
-        top: -.7vmin;
-        border-radius: 1.5vmin;
-        background-color: #fcc8a3;
-        box-sizing: border-box;
-        border-color: #000;
-        border-style: solid;
-        border-width: 1vmin;
-        transform: rotate(105deg);
-      }
 
       .index {
         position: absolute;
@@ -598,6 +675,32 @@ body {
           right: -1.4vmin;
           bottom: -.8vmin;
         }
+
+      }
+
+      .thumb{
+        position: absolute;
+        width: 4.2vmin;
+        height: 2.5vmin;
+        top: -.7vmin;
+        border-radius: 1.5vmin;
+        background-color: #fcc8a3;
+        box-sizing: border-box;
+        border-color: #000;
+        border-style: solid;
+        border-width: 1vmin;
+        transform: rotate(105deg);
+      }
+
+      .shadow {
+
+        &--1 {
+          width: 3vmin;
+          height: 4vmin;
+          box-shadow: -1.5vmin -.3vmin 0 0 rgba(0, 0, 0, 0.3);
+          left: .8vmin;
+          border-radius: 50%;
+        }
       }
     }
   }
@@ -622,6 +725,16 @@ body {
       border-style: solid;
       border-width: .7vmin;
       background-color: #fcc8a3;
+
+      .shadow {
+
+        &--1 {
+          bottom: 0;
+          width: 100%;
+          height: .8vmin;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+      }
     }
 
     .hand {
@@ -638,6 +751,7 @@ body {
       border-width: .9vmin;
 
       .ice-cream {
+        position: static;
 
         .cone {
           position: absolute;
@@ -646,7 +760,6 @@ body {
           border-top: 8vmin solid #fcc8a4;
           border-right: 4.2vmin solid transparent;
           transform: rotate(16deg);
-
         }
 
         .border-left {
