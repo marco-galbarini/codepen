@@ -395,6 +395,21 @@ body {
         background-color: #e23b3b;
       }
     }
+
+    .belly {
+      position: absolute;
+      border-style: solid;
+      box-sizing: border-box;
+      border-width: .4vmin;
+      border-radius: 50%;
+      transform: rotate(5deg);
+      border-color: #eab692 transparent transparent transparent ;
+      top: 7.1vmin;
+      left: 2.5vmin;
+      width: 9.3vmin;
+      height: 7vmin;
+      background-color:#fcc8a3;
+    }
   }
 
   .briefs {
