@@ -6,6 +6,7 @@ body {
 
   *, :after, :before {
     position: absolute;
+    content: "";
   }
 }
 
@@ -154,6 +155,18 @@ body {
         border-bottom: .9vmin solid #000000;
         border-left: .9vmin solid #000000;
       }
+
+      .shadow {
+
+        &--1 {
+          top: 12.2vmin;
+          right: 9.1vmin;
+          width: 4.9vmin;
+          height: 31.6vmin;
+          background-color:rgba(0, 0, 0, 0.3);
+          border-bottom-right-radius: 2.5vmin;
+        }
+      }
     }
 
     .hair-left {
@@ -165,6 +178,42 @@ body {
       box-sizing: border-box;
       background-color: #e85d3e;
       border: 1vmin solid #000;
+
+      .shadow {
+
+        &--1 {
+          left: .7vmin;
+          bottom: 0;
+          width: .6vmin;
+          height: 6.1vmin;
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        &--2 {
+          right: 0;
+          bottom: 0;
+          width: 2.2vmin;
+          height: 40vmin;
+          background-color: #a0402a;
+
+          &:before{
+            right: .9vmin;
+            top: 27vmin;
+            width: 2.5vmin;
+            height: 5.5vmin;
+            transform: rotate(-35deg);
+            background-color: #a0402a;
+          }
+
+          &:after {
+            left: -2.7vmin;
+            top: 0;
+            width: 2.5vmin;
+            height: 28.1vmin;
+            background-color: #a0402a;
+          }
+        }
+      }
     }
 
     .hair-right {
@@ -217,6 +266,16 @@ body {
           top: 7.3vmin;
           left: 27.2vmin;
           transform: rotate(60deg);
+        }
+      }
+
+      .shadow {
+
+        &--1 {
+          width: 34vmin;
+          height: 2vmin;
+          background-color: rgba(0, 0, 0, 0.3);
+          bottom: -2vmin;
         }
       }
     }
@@ -338,8 +397,6 @@ body {
         left: 1.2vmin;
         width: 4vmin;
         height: 5.8vmin;
-        // background-color: #a5a5a5;
-        // border-top-left-radius: 2vmin;
         border-top-left-radius: 2.7vmin 2vmin;
         background-color: #a5a5a5;
         overflow: hidden;
@@ -600,7 +657,17 @@ body {
           bottom: 0;
           width: 100%;
           height: 2vmin;
-          background-color: rgba(0, 0, 0, 0.3);
+          background-color:rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      .gleam {
+
+        &--1 {
+          top: 0;
+          width: 100%;
+          height: .8vmin;
+          background-color:rgba(255, 255, 255, 0.3);
         }
       }
     }
@@ -693,7 +760,7 @@ body {
 
       }
 
-      .thumb{
+      .thumb {
         position: absolute;
         width: 4.2vmin;
         height: 2.5vmin;

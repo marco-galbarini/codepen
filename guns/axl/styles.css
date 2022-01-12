@@ -13,6 +13,7 @@ body {
 
 body *, body :after, body :before {
   position: absolute;
+  content: "";
 }
 
 #axl {
@@ -169,6 +170,15 @@ body *, body :after, body :before {
   border-left: .9vmin solid #000000;
 }
 
+#axl .head .face .shadow--1 {
+  top: 12.2vmin;
+  right: 9.1vmin;
+  width: 4.9vmin;
+  height: 31.6vmin;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom-right-radius: 2.5vmin;
+}
+
 #axl .head .hair-left {
   position: absolute;
   left: 6vmin;
@@ -179,6 +189,40 @@ body *, body :after, body :before {
           box-sizing: border-box;
   background-color: #e85d3e;
   border: 1vmin solid #000;
+}
+
+#axl .head .hair-left .shadow--1 {
+  left: .7vmin;
+  bottom: 0;
+  width: .6vmin;
+  height: 6.1vmin;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#axl .head .hair-left .shadow--2 {
+  right: 0;
+  bottom: 0;
+  width: 2.2vmin;
+  height: 40vmin;
+  background-color: #a0402a;
+}
+
+#axl .head .hair-left .shadow--2:before {
+  right: .9vmin;
+  top: 27vmin;
+  width: 2.5vmin;
+  height: 5.5vmin;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  background-color: #a0402a;
+}
+
+#axl .head .hair-left .shadow--2:after {
+  left: -2.7vmin;
+  top: 0;
+  width: 2.5vmin;
+  height: 28.1vmin;
+  background-color: #a0402a;
 }
 
 #axl .head .hair-right {
@@ -239,6 +283,13 @@ body *, body :after, body :before {
   left: 27.2vmin;
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
+}
+
+#axl .head .bandanna .shadow--1 {
+  width: 34vmin;
+  height: 2vmin;
+  background-color: rgba(0, 0, 0, 0.3);
+  bottom: -2vmin;
 }
 
 #axl .head .glasses {
@@ -661,6 +712,13 @@ body *, body :after, body :before {
   width: 100%;
   height: 2vmin;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+#axl .left-arm .forearm .gleam--1 {
+  top: 0;
+  width: 100%;
+  height: .8vmin;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 #axl .left-arm .sweatband {
