@@ -238,7 +238,7 @@ body {
       border: 0.75vmin solid #000;
       border-left: 1.1vmin solid #000;
       border-right: 1.1vmin solid #000;
-      
+
       .stripe {
         width: .4vmin;
         height: 2.6vmin;
@@ -346,7 +346,7 @@ body {
         background-color: #000;
         transform: rotate(9deg);
       }
-      
+
       .strap {
         position: absolute;
         width: 8.5vmin;
@@ -370,7 +370,7 @@ body {
           top: -1vmin;
         }
       }
-      
+
       .button {
         position: absolute;
         width: 2.4vmin;
@@ -391,34 +391,37 @@ body {
         background-color: #e13d41;
         transform: rotate(3deg);
       }
-      
-      .gleam-detail {
-        top: -.1vmin;
-        left: 1.2vmin;
-        width: 4vmin;
-        height: 5.8vmin;
-        border-top-left-radius: 2.7vmin 2vmin;
-        background-color: #a5a5a5;
-        overflow: hidden;
-        
-        &:before {
-          content: "";
-          top: .4vmin;
-          left: 1.6vmin;
-          width: 4vmin;
-          height: 7vmin;
-          background-color: #000000;
-          transform: rotate(32deg);
-        }
 
-        &:after {
-          content: "";
-          top: -1.5vmin;
-          left: -.5vmin;
+      .gleam {
+
+        &--1 {
+          top: -.1vmin;
+          left: 1.2vmin;
           width: 4vmin;
-          height: 2vmin;
-          background-color: #000000;
-          transform: rotate(-15deg);
+          height: 5.8vmin;
+          border-top-left-radius: 2.7vmin 2vmin;
+          background-color: #a5a5a5;
+          overflow: hidden;
+
+          &:before {
+            content: "";
+            top: .4vmin;
+            left: 1.6vmin;
+            width: 4vmin;
+            height: 7vmin;
+            background-color: #000000;
+            transform: rotate(32deg);
+          }
+
+          &:after {
+            content: "";
+            top: -1.5vmin;
+            left: -.5vmin;
+            width: 4vmin;
+            height: 2vmin;
+            background-color: #000000;
+            transform: rotate(-15deg);
+          }
         }
       }
     }
@@ -466,6 +469,28 @@ body {
       width: 9.3vmin;
       height: 7vmin;
       background-color:#fcc8a3;
+    }
+
+    .gleam {
+
+      &--1 {
+        bottom: .4vmin;
+        left: .9vmin;
+        width: 4.3vmin;
+        height: 2.6vmin;
+        border-bottom-left-radius: 1.3vmin;
+        background-color:rgba(255, 255, 255, 0.3);
+        overflow: hidden;
+      }
+
+      &:before {
+        width: 5vmin;
+        height: 3vmin;
+        top: -1.5vmin;
+        left: .5vmin;
+        background-color: #fcc8a3;
+        transform: rotate(30deg);
+      }
     }
   }
 
@@ -558,6 +583,37 @@ body {
         height: 1vmin;
         left: -0.9vmin;
         top: -0.2vmin;
+      }
+    }
+
+    .gleam {
+
+      &--1 {
+        top: 4.5vmin;
+        left: 9.1vmin;
+        width: 1.3vmin;
+        height: 1.6vmin;
+        border-bottom-left-radius: 1.3vmin;
+        background-color:rgba(255, 255, 255, 0.5);
+        // background-color:rgb(46, 255, 5);
+        overflow: hidden;
+
+        &:before {
+          width: 1vmin;
+          height: 1.9vmin;
+          top: -.4vmin;
+          left: .7vmin;
+          background-color: #e03c3b;
+          transform: rotate(-32deg);
+        }
+      }
+
+      &--2 {
+        bottom: .9vmin;
+        left: 1.3vmin;
+        width: .9vmin;
+        height: 4.9vmin;
+        background-color:rgba(255, 255, 255, 0.5);
       }
     }
   }

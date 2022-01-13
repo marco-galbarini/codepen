@@ -409,7 +409,7 @@ body *, body :after, body :before {
           transform: rotate(3deg);
 }
 
-#axl .head .cap .gleam-detail {
+#axl .head .cap .gleam--1 {
   top: -.1vmin;
   left: 1.2vmin;
   width: 4vmin;
@@ -419,7 +419,7 @@ body *, body :after, body :before {
   overflow: hidden;
 }
 
-#axl .head .cap .gleam-detail:before {
+#axl .head .cap .gleam--1:before {
   content: "";
   top: .4vmin;
   left: 1.6vmin;
@@ -430,7 +430,7 @@ body *, body :after, body :before {
           transform: rotate(32deg);
 }
 
-#axl .head .cap .gleam-detail:after {
+#axl .head .cap .gleam--1:after {
   content: "";
   top: -1.5vmin;
   left: -.5vmin;
@@ -491,6 +491,26 @@ body *, body :after, body :before {
   width: 9.3vmin;
   height: 7vmin;
   background-color: #fcc8a3;
+}
+
+#axl .torso .gleam--1 {
+  bottom: .4vmin;
+  left: .9vmin;
+  width: 4.3vmin;
+  height: 2.6vmin;
+  border-bottom-left-radius: 1.3vmin;
+  background-color: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+#axl .torso .gleam:before {
+  width: 5vmin;
+  height: 3vmin;
+  top: -1.5vmin;
+  left: .5vmin;
+  background-color: #fcc8a3;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
 }
 
 #axl .briefs {
@@ -592,6 +612,34 @@ body *, body :after, body :before {
   height: 1vmin;
   left: -0.9vmin;
   top: -0.2vmin;
+}
+
+#axl .briefs .gleam--1 {
+  top: 4.5vmin;
+  left: 9.1vmin;
+  width: 1.3vmin;
+  height: 1.6vmin;
+  border-bottom-left-radius: 1.3vmin;
+  background-color: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+#axl .briefs .gleam--1:before {
+  width: 1vmin;
+  height: 1.9vmin;
+  top: -.4vmin;
+  left: .7vmin;
+  background-color: #e03c3b;
+  -webkit-transform: rotate(-32deg);
+          transform: rotate(-32deg);
+}
+
+#axl .briefs .gleam--2 {
+  bottom: .9vmin;
+  left: 1.3vmin;
+  width: .9vmin;
+  height: 4.9vmin;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #axl .legs {
