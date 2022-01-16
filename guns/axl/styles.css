@@ -11,7 +11,7 @@ body {
   height: 100vh;
 }
 
-body *, body :after, body :before {
+body :after, body :before {
   position: absolute;
   content: "";
 }
@@ -170,6 +170,10 @@ body *, body :after, body :before {
   border-left: .9vmin solid #000000;
 }
 
+#axl .head .face .shadow {
+  position: absolute;
+}
+
 #axl .head .face .shadow--1 {
   top: 12.2vmin;
   right: 9.1vmin;
@@ -189,6 +193,10 @@ body *, body :after, body :before {
           box-sizing: border-box;
   background-color: #e85d3e;
   border: 1vmin solid #000;
+}
+
+#axl .head .hair-left .shadow {
+  position: absolute;
 }
 
 #axl .head .hair-left .shadow--1 {
@@ -252,6 +260,7 @@ body *, body :after, body :before {
 }
 
 #axl .head .bandanna .stripe {
+  position: absolute;
   width: .4vmin;
   height: 2.6vmin;
   background-color: #fff;
@@ -283,6 +292,10 @@ body *, body :after, body :before {
   left: 27.2vmin;
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
+}
+
+#axl .head .bandanna .shadow {
+  position: absolute;
 }
 
 #axl .head .bandanna .shadow--1 {
@@ -409,36 +422,32 @@ body *, body :after, body :before {
           transform: rotate(3deg);
 }
 
+#axl .head .cap .gleam {
+  position: absolute;
+}
+
 #axl .head .cap .gleam--1 {
   top: -.1vmin;
   left: 1.2vmin;
-  width: 4vmin;
-  height: 5.8vmin;
-  border-top-left-radius: 2.7vmin 2vmin;
-  background-color: #a5a5a5;
-  overflow: hidden;
+  width: 0;
+  height: 0;
+  border-top-left-radius: 50%;
+  border-left: 1.9vmin solid rgba(255, 255, 255, 0.5);
+  border-top: 3vmin solid rgba(255, 255, 255, 0.5);
+  border-right: 1.9vmin solid transparent;
+  border-bottom: 3vmin solid transparent;
+  -webkit-transform: skew(3deg);
+          transform: skew(3deg);
 }
 
 #axl .head .cap .gleam--1:before {
-  content: "";
-  top: .4vmin;
-  left: 1.6vmin;
-  width: 4vmin;
-  height: 7vmin;
-  background-color: #000000;
-  -webkit-transform: rotate(32deg);
-          transform: rotate(32deg);
-}
-
-#axl .head .cap .gleam--1:after {
-  content: "";
-  top: -1.5vmin;
-  left: -.5vmin;
-  width: 4vmin;
-  height: 2vmin;
-  background-color: #000000;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
+  top: -3.1vmin;
+  left: -1.7vmin;
+  width: 3.5vmin;
+  height: .8vmin;
+  background-color: #000;
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
 }
 
 #axl .torso {
@@ -493,24 +502,20 @@ body *, body :after, body :before {
   background-color: #fcc8a3;
 }
 
+#axl .torso .gleam {
+  position: absolute;
+}
+
 #axl .torso .gleam--1 {
   bottom: .4vmin;
   left: .9vmin;
-  width: 4.3vmin;
-  height: 2.6vmin;
-  border-bottom-left-radius: 1.3vmin;
-  background-color: rgba(255, 255, 255, 0.3);
-  overflow: hidden;
-}
-
-#axl .torso .gleam:before {
-  width: 5vmin;
-  height: 3vmin;
-  top: -1.5vmin;
-  left: .5vmin;
-  background-color: #fcc8a3;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  width: 0;
+  height: 0;
+  border-bottom-left-radius: 30%;
+  border-left: 2.3vmin solid rgba(255, 255, 255, 0.3);
+  border-right: 2.3vmin solid transparent;
+  border-bottom: 1.3vmin solid rgba(255, 255, 255, 0.3);
+  border-top: 1.3vmin solid transparent;
 }
 
 #axl .briefs {
@@ -614,21 +619,29 @@ body *, body :after, body :before {
   top: -0.2vmin;
 }
 
+#axl .briefs .gleam {
+  position: absolute;
+}
+
 #axl .briefs .gleam--1 {
-  top: 4.5vmin;
-  left: 9.1vmin;
-  width: 1.3vmin;
-  height: 1.6vmin;
-  border-bottom-left-radius: 1.3vmin;
-  background-color: rgba(255, 255, 255, 0.5);
-  overflow: hidden;
+  top: 4.2vmin;
+  left: 9.2vmin;
+  width: 0;
+  height: 0;
+  border-bottom-left-radius: 50%;
+  border-left: 0.5vmin solid rgba(255, 255, 255, 0.5);
+  border-right: .5vmin solid transparent;
+  border-bottom: 0.9vmin solid rgba(255, 255, 255, 0.5);
+  border-top: .9vmin solid transparent;
+  -webkit-transform: skew(10deg) rotate(5deg);
+          transform: skew(10deg) rotate(5deg);
 }
 
 #axl .briefs .gleam--1:before {
-  width: 1vmin;
-  height: 1.9vmin;
-  top: -.4vmin;
-  left: .7vmin;
+  width: .8vmin;
+  height: 2.2vmin;
+  top: -1.1vmin;
+  left: -.1vmin;
   background-color: #e03c3b;
   -webkit-transform: rotate(-32deg);
           transform: rotate(-32deg);
@@ -636,10 +649,22 @@ body *, body :after, body :before {
 
 #axl .briefs .gleam--2 {
   bottom: .9vmin;
-  left: 1.3vmin;
+  left: 1.4vmin;
   width: .9vmin;
   height: 4.9vmin;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+#axl .briefs .shadow {
+  position: absolute;
+}
+
+#axl .briefs .shadow--1 {
+  right: 1.4vmin;
+  bottom: 1.4vmin;
+  width: .9vmin;
+  height: 5vmin;
+  background-color: rgba(0, 0, 0, 0.26);
 }
 
 #axl .legs {
@@ -684,7 +709,7 @@ body *, body :after, body :before {
 }
 
 #axl .shoes .shoe {
-  position: static;
+  position: relative;
   width: 50%;
   height: 100%;
   background-color: #000000;
@@ -694,6 +719,23 @@ body *, body :after, body :before {
   border-width: 0.5vmin;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#axl .shoes .shoe .gleam {
+  position: absolute;
+}
+
+#axl .shoes .shoe .gleam--1 {
+  top: 0;
+  left: .1vmin;
+  width: 0;
+  height: 0;
+  border-top-left-radius: 50%;
+  overflow: hidden;
+  border-left: .8vmin solid #fff;
+  border-top: .8vmin solid #fff;
+  border-right: .8vmin solid transparent;
+  border-bottom: .8vmin solid transparent;
 }
 
 #axl .socks {
@@ -755,11 +797,19 @@ body *, body :after, body :before {
   background-color: #fcc8a3;
 }
 
+#axl .left-arm .forearm .shadow {
+  position: absolute;
+}
+
 #axl .left-arm .forearm .shadow--1 {
   bottom: 0;
   width: 100%;
   height: 2vmin;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+#axl .left-arm .forearm .gleam {
+  position: absolute;
 }
 
 #axl .left-arm .forearm .gleam--1 {
@@ -879,6 +929,10 @@ body *, body :after, body :before {
           transform: rotate(105deg);
 }
 
+#axl .left-arm .hand .shadow {
+  position: absolute;
+}
+
 #axl .left-arm .hand .shadow--1 {
   width: 3vmin;
   height: 4vmin;
@@ -914,6 +968,10 @@ body *, body :after, body :before {
   border-style: solid;
   border-width: .7vmin;
   background-color: #fcc8a3;
+}
+
+#axl .right-arm .forearm .shadow {
+  position: absolute;
 }
 
 #axl .right-arm .forearm .shadow--1 {
