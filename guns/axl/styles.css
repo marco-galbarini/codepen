@@ -996,6 +996,23 @@ body :after, body :before {
   border-width: .9vmin;
 }
 
+#axl .right-arm .hand .shadow {
+  position: absolute;
+}
+
+#axl .right-arm .hand .shadow--1 {
+  bottom: -.2vmin;
+  right: -.3vmin;
+  border-left: 4.5vmin solid transparent;
+  border-right: 1.8vmin solid transparent;
+  border-top: 2vmin solid transparent;
+  border-bottom: 3.8vmin solid rgba(0, 0, 0, 0.3);
+  border-bottom-right-radius: 1.5vmin;
+  border-bottom-left-radius: 3vmin;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
 #axl .right-arm .hand .ice-cream {
   position: static;
 }
@@ -1152,18 +1169,19 @@ body :after, body :before {
   right: -.2vmin;
   width: 0;
   height: 0;
-  border-left: 2.4vmin solid rgba(0, 0, 0, 0.3);
+  border-left: 2.4vmin solid rgba(0, 0, 0, 0.1);
   border-right: .6vmin solid transparent;
-  border-top: 3.4vmin solid rgba(0, 0, 0, 0.3);
+  border-top: 3.4vmin solid rgba(0, 0, 0, 0.1);
   border-bottom: 0vmin solid transparent;
+  border-bottom-right-radius: 50%;
 }
 
 #axl .right-arm .hand .ice-cream .cream-4 {
   position: absolute;
   left: 6.2vmin;
-  top: -1.8vmin;
+  top: -2vmin;
   width: 2vmin;
-  height: 8.2vmin;
+  height: 8.6vmin;
   border-radius: 0 0 2.5vmin 2.5vmin;
   background-color: #f445b1;
   -webkit-box-sizing: border-box;
@@ -1180,9 +1198,8 @@ body :after, body :before {
   background-color: #f445b1;
   width: 1vmin;
   height: 1.6vmin;
-  top: -1.2vmin;
+  top: -1.3vmin;
   left: -.8vmin;
-  border-bottom-left-radius: .3vmin;
 }
 
 #axl .right-arm .hand .ice-cream .cream-4:after {
