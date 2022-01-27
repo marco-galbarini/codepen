@@ -20,7 +20,16 @@ body :after, body :before {
   width: 80vmin;
   position: absolute;
   height: 80vmin;
-  background: #ddd;
+}
+
+#axl > .shadow--1 {
+  position: absolute;
+  bottom: 1vmin;
+  left: 22.5vmin;
+  width: 32vmin;
+  height: 3vmin;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #axl .head {
@@ -201,15 +210,15 @@ body :after, body :before {
 
 #axl .head .hair-left .shadow--1 {
   left: .7vmin;
-  bottom: 0;
+  bottom: -.1vmin;
   width: .6vmin;
   height: 6.1vmin;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 #axl .head .hair-left .shadow--2 {
-  right: 0;
-  bottom: 0;
+  right: -.1vmin;
+  bottom: -.1vmin;
   width: 2.2vmin;
   height: 40vmin;
   background-color: #a0402a;
@@ -243,6 +252,86 @@ body :after, body :before {
           box-sizing: border-box;
   background-color: #e85d3e;
   border: 1vmin solid #000;
+}
+
+#axl .head .hair-right .gleam {
+  position: absolute;
+}
+
+#axl .head .hair-right .gleam--1 {
+  bottom: 7.5vmin;
+  left: 2vmin;
+  width: 1vmin;
+  height: 18.5vmin;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#axl .head .hair-right .gleam--2 {
+  bottom: 12vmin;
+  left: 7vmin;
+  width: 1vmin;
+  height: 4vmin;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#axl .head .hair-right .gleam--3 {
+  bottom: 4.5vmin;
+  right: 2vmin;
+  width: 1vmin;
+  height: 16vmin;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#axl .head .hair-right .shadow {
+  position: absolute;
+}
+
+#axl .head .hair-right .shadow--1 {
+  bottom: 16.5vmin;
+  left: 3vmin;
+  width: .8vmin;
+  height: 7vmin;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#axl .head .hair-right .shadow--2 {
+  bottom: 3.5vmin;
+  left: 3vmin;
+  width: 1vmin;
+  height: 4vmin;
+  background-color: #000000;
+}
+
+#axl .head .hair-right .shadow--3 {
+  top: 12vmin;
+  left: 7vmin;
+  width: 1vmin;
+  height: 6vmin;
+  background-color: #000000;
+}
+
+#axl .head .hair-right .shadow--4 {
+  bottom: 10.5vmin;
+  right: 3.9vmin;
+  width: .9vmin;
+  height: 5.5vmin;
+  background-color: #000000;
+}
+
+#axl .head .hair-right .shadow--5 {
+  bottom: -.1vmin;
+  right: 2.8vmin;
+  width: .9vmin;
+  height: 5.2vmin;
+  background-color: #000000;
+}
+
+#axl .head .hair-right .shadow--6 {
+  bottom: 12vmin;
+  right: 1vmin;
+  width: 1vmin;
+  height: 5.2vmin;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #axl .head .bandanna {
@@ -749,22 +838,60 @@ body :after, body :before {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 21vmin;
+  width: 21.2vmin;
   height: 4.5vmin;
   bottom: 6.5vmin;
 }
 
 #axl .socks .sock {
-  position: static;
+  position: relative;
   width: 12.5vmin;
   height: 4.3vmin;
   background-color: #fff;
-  border-radius: 1vmin;
+  border-radius: 1.3vmin;
   border-color: #000;
   border-style: solid;
-  border-width: 0.8vmin;
+  border-width: .9vmin;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#axl .socks .sock .shadow {
+  position: absolute;
+}
+
+#axl .socks .sock .shadow--1 {
+  bottom: 0;
+  width: 100%;
+  height: 1vmin;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#axl .socks .sock:nth-child(1) .shadow--2 {
+  bottom: .9vmin;
+  left: -.1vmin;
+  width: 3.2vmin;
+  height: 1vmin;
+  border-radius: 0  .5vmin .5vmin 0;
+  background-color: #000000;
+}
+
+#axl .socks .sock:nth-child(1) .shadow--3 {
+  bottom: .9vmin;
+  right: 1.3vmin;
+  width: 2.1vmin;
+  height: 1vmin;
+  border-radius: .5vmin;
+  background-color: #000000;
+}
+
+#axl .socks .sock:nth-child(2) .shadow--2 {
+  bottom: .9vmin;
+  right: -.2vmin;
+  width: 3vmin;
+  height: 1vmin;
+  border-radius: .5vmin 0 0 .5vmin;
+  background-color: #000000;
 }
 
 #axl .left-arm {
@@ -776,7 +903,6 @@ body :after, body :before {
   height: 9vmin;
   top: 43.5vmin;
   left: 7vmin;
-  background-color: rgba(228, 56, 56, 0.506);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -951,7 +1077,6 @@ body :after, body :before {
   height: 17vmin;
   top: 35vmin;
   right: 1.2vmin;
-  background-color: rgba(30, 40, 129, 0.506);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1169,9 +1294,9 @@ body :after, body :before {
   right: -.2vmin;
   width: 0;
   height: 0;
-  border-left: 2.4vmin solid rgba(0, 0, 0, 0.1);
+  border-left: 2.4vmin solid rgba(0, 0, 0, 0.2);
   border-right: .6vmin solid transparent;
-  border-top: 3.4vmin solid rgba(0, 0, 0, 0.1);
+  border-top: 3.4vmin solid rgba(0, 0, 0, 0.2);
   border-bottom: 0vmin solid transparent;
   border-bottom-right-radius: 50%;
 }
