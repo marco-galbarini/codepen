@@ -1,3 +1,81 @@
+@keyframes ice-cream-melt {
+  0% {
+    height: 2vmin;
+  }
+  76% {
+    height: 8.6vmin;
+  }
+  81% {
+    height: 4vmin;
+  }
+  88% {
+    height: 2vmin;
+  }
+  100% {
+    height: 2vmin;
+  }
+}
+
+@keyframes ice-cream-drop {
+  0% {
+    top: 4.5vmin;
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  76% {
+    top: 4.5vmin;
+    opacity: 1;
+  }
+  90% {
+    top: 31.5vmin;
+  }
+  100% {
+    top: 31.5vmin;
+  }
+}
+
+@keyframes ice-cream-drop-size {
+  0% {
+    height: 2vmin;
+  }
+  75% {
+    opacity: 0;
+  }
+  76% {
+    height: 2vmin;
+    opacity: 1;
+  }
+  89% {
+    height: 4vmin;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes drop-on-floor {
+  0% {
+    opacity: 0;
+  }
+  89% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;;
+  }
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -1072,37 +1150,37 @@ body {
           border-top: 8vmin solid #fcc8a4;
           border-right: 4.2vmin solid transparent;
           transform: rotate(16deg);
-        }
 
-        .border-left {
-          position: absolute;
-          width: .7vmin;
-          height: 10vmin;
-          left: -.5vmin;
-          bottom: .2vmin;
-          border-radius: .4vmin;
-          background-color: #000;
-        }
-
-        .border-right {
-          position: absolute;
-          width: .7vmin;
-          height: 10vmin;
-          left: 2.5vmin;
-          bottom: -.4vmin;
-          border-radius: .4vmin;
-          transform: rotate(25deg);
-          background-color: #000;
-
-          &:before{
+          .border-left {
             position: absolute;
-            bottom: -.6vmin;
-            left: -.6vmin;
-            content: "";
-            width: 1vmin;
-            height: 1vmin;
-            border-radius: 1vmin;
+            width: .7vmin;
+            height: 10vmin;
+            left: -.5vmin;
+            bottom: .2vmin;
+            border-radius: .4vmin;
             background-color: #000;
+          }
+
+          .border-right {
+            position: absolute;
+            width: .7vmin;
+            height: 10vmin;
+            left: 2.5vmin;
+            bottom: -.4vmin;
+            border-radius: .4vmin;
+            transform: rotate(25deg);
+            background-color: #000;
+
+            &:before {
+              position: absolute;
+              bottom: -.6vmin;
+              left: -.6vmin;
+              content: "";
+              width: 1vmin;
+              height: 1vmin;
+              border-radius: 1vmin;
+              background-color: #000;
+            }
           }
         }
 
@@ -1229,6 +1307,10 @@ body {
           border-style: solid;
           border-width: .8vmin;
           border-top: .7vmin solid transparent;
+          animation-iteration-count: infinite;
+          animation-name: ice-cream-melt;
+          animation-duration: 20s;
+          animation-timing-function: ease-out;
 
           &:before {
             content: "";
@@ -1282,6 +1364,30 @@ body {
               transform: rotate(2deg);
             }
           }
+        }
+
+        .drop-on-floor {
+          position: absolute;
+          top: 32vmin;
+          left: 5.2vmin;
+          width: 4vmin;
+          height: 1vmin;
+          border-radius: 50%;
+          background-color: #f445b1;
+          animation: drop-on-floor 20s linear infinite;
+        }
+
+        .drop {
+          position: absolute;
+          border-radius: 1vmin;
+          left: 6.2vmin;
+          width: 2vmin;
+          border-color: #000000;
+          border-style: solid;
+          border-width: .7vmin;
+          background-color: #f445b1;
+          box-sizing: border-box;
+          animation: ice-cream-drop 20s ease-in infinite, ice-cream-drop-size 20s ease-out infinite;
         }
       }
 
