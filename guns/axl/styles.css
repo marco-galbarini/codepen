@@ -433,20 +433,10 @@ body :after, body :before {
 }
 
 #axl .head .cap:before {
-  position: absolute;
-  top: -5vmin;
-  content: "";
-  height: 0;
+  top: -4.9vmin;
+  width: 0;
+  position: 0;
   border-left: 16.5vmin solid transparent;
-  border-bottom: 5vmin solid #000;
-}
-
-#axl .head .cap:after {
-  position: absolute;
-  right: 0;
-  top: -5vmin;
-  content: "";
-  height: 0;
   border-right: 21vmin solid transparent;
   border-bottom: 5vmin solid #000;
 }
