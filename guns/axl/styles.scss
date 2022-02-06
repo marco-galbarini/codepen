@@ -1,4 +1,27 @@
 $animation-duration-ice-cream: 5s;
+$color-bandanna: #e13d41;
+$color-beard: #e85d3d;
+$color-black: #000;
+$color-black-10: rgba(0, 0, 0, .1);
+$color-black-20: rgba(0, 0, 0, .2);
+$color-black-30: rgba(0, 0, 0, .3);
+$color-black-50: rgba(0, 0, 0, .5);
+$color-blue: #6687ff;
+$color-body-background: #e6fcdc;
+$color-briefs: #e03c3b;
+$color-hair: #e85d3e;
+$color-hair-shadow: #a0402a;
+$color-ice-cream-1: #826014;
+$color-ice-cream-2: #f46285;
+$color-ice-cream-3: #f445b1;
+$color-ice-cream-cone: #ecb92c;
+$color-red: #e23b3b;
+$color-skin: #fcc8a3;
+$color-skin-shadow: #eab692;
+$color-white: #fff;
+$color-white-20: rgba(255, 255, 255, .2);
+$color-white-30: rgba(255, 255, 255, .3);
+$color-white-50: rgba(255, 255, 255, .5);
 
 @keyframes ice-cream-melt {
   0% {
@@ -74,6 +97,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: $color-body-background;
 
   :after, :before {
     position: absolute;
@@ -95,7 +119,7 @@ body {
       width: 32vmin;
       height: 3vmin;
       border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: $color-black-50;
     }
   }
 
@@ -112,8 +136,8 @@ body {
       height: 28vmin;
       top: 15.5vmin;
       left: 7.5vmin;
-      background-color: #fcc8a3;
-      border: 1vmin solid #000;
+      background-color: $color-skin;
+      border: 1vmin solid $color-black;
       border-radius: 4.5vmin;
 
       .chin {
@@ -123,8 +147,8 @@ body {
         width: 6.5vmin;
         box-sizing: border-box;
         height: 6vmin;
-        border: 1vmin solid #000;
-        background-color: #fcc8a3;
+        border: 1vmin solid $color-black;
+        background-color: $color-skin;
         border-radius: 1.5vmin;
         transform: rotate(-23deg);
 
@@ -133,7 +157,7 @@ body {
           width: 1vmin;
           height: 1.5vmin;
           border-radius: 1vmin;
-          background-color: #000;
+          background-color: $color-black;
           z-index: 1;
 
           &:nth-of-type(1) {
@@ -143,20 +167,18 @@ body {
 
           &:nth-of-type(2) {
             left: 4.5vmin;
-            bottom: -0.25vmin;
+            bottom: -.25vmin;
           }
         }
 
         &:before,
         &:after {
-          position: absolute;
-          content: "";
-          background-color: #fcc8a3;
+          background-color: $color-skin;
         }
 
         &:before {
           top: -2.5vmin;
-          right: 0.6vmin;
+          right: .6vmin;
           width: 5vmin;
           height: 4vmin;
         }
@@ -175,30 +197,26 @@ body {
         height: 3.4vmin;
         top: 22.4vmin;
         left: .8vmin;
-        border-top: .8vmin solid #e85d3d;
-        border-left: .8vmin solid #e85d3d;
-        border-right: .8vmin solid #e85d3d;
+        border-top: .8vmin solid $color-beard;
+        border-left: .8vmin solid $color-beard;
+        border-right: .8vmin solid $color-beard;
         box-sizing: border-box;
         border-radius: 1.5vmin 1.5vmin 0 0;
 
         &:before {
-          position: absolute;
-          content: "";
           width: .75vmin;
           height: .75vmin;
           border-radius: 50%;
-          background-color: #e85d3d;
+          background-color: $color-beard;
           bottom: -.5vmin;
           left: -.8vmin;
         }
 
         &:after {
-          position: absolute;
-          content: "";
           width: .75vmin;
           height: .75vmin;
           border-radius: 50%;
-          background-color: #e85d3d;
+          background-color: $color-beard;
           bottom: -.5vmin;
           right: -.8vmin;
         }
@@ -208,7 +226,7 @@ body {
         position: absolute;
         width: 3.6vmin;
         height: 3.1vmin;
-        background-color: #e23b3b;
+        background-color: $color-red;
         left: 2.5vmin;
         top: 23.7vmin;
         border-radius: .8vmin;
@@ -219,7 +237,7 @@ body {
           position: relative;
           width: 4vmin;
           height: 2vmin;
-          background-color: #fff;
+          background-color: $color-white;
           top: -1.1vmin;
           left: .2vmin;
           transform: rotate(18deg);
@@ -234,9 +252,9 @@ body {
         height: 1.3vmin;
         transform: rotate(-22deg);
         border-radius: 2vmin 0 0 5vmin;
-        border-top: .9vmin solid #000000;
-        border-bottom: .9vmin solid #000000;
-        border-left: .9vmin solid #000000;
+        border-top: .9vmin solid $color-black;
+        border-bottom: .9vmin solid $color-black;
+        border-left: .9vmin solid $color-black;
       }
 
       .shadow {
@@ -247,7 +265,7 @@ body {
           right: 9.1vmin;
           width: 4.9vmin;
           height: 31.6vmin;
-          background-color:rgba(0, 0, 0, 0.3);
+          background-color: $color-black-30;
           border-bottom-right-radius: 2.5vmin;
         }
       }
@@ -260,8 +278,8 @@ body {
       width: 7vmin;
       height: 40vmin;
       box-sizing: border-box;
-      background-color: #e85d3e;
-      border: 1vmin solid #000;
+      background-color: $color-hair;
+      border: 1vmin solid $color-black;
 
       .shadow {
         position: absolute;
@@ -271,7 +289,7 @@ body {
           bottom: -.1vmin;
           width: .6vmin;
           height: 6.1vmin;
-          background-color: rgba(0, 0, 0, 0.3);
+          background-color: $color-black-30;
         }
 
         &--2 {
@@ -279,7 +297,7 @@ body {
           bottom: -.1vmin;
           width: 2.2vmin;
           height: 40vmin;
-          background-color: #a0402a;
+          background-color: $color-hair-shadow;
 
           &:before{
             right: .9vmin;
@@ -287,7 +305,7 @@ body {
             width: 2.5vmin;
             height: 5.5vmin;
             transform: rotate(-35deg);
-            background-color: #a0402a;
+            background-color: $color-hair-shadow;
           }
 
           &:after {
@@ -295,7 +313,7 @@ body {
             top: 0;
             width: 2.5vmin;
             height: 28.1vmin;
-            background-color: #a0402a;
+            background-color: $color-hair-shadow;
           }
         }
       }
@@ -308,8 +326,8 @@ body {
       width: 16vmin;
       height: 42vmin;
       box-sizing: border-box;
-      background-color: #e85d3e;
-      border: 1vmin solid #000;
+      background-color: $color-hair;
+      border: 1vmin solid $color-black;
 
       .gleam {
         position: absolute;
@@ -319,7 +337,7 @@ body {
           left: 2vmin;
           width: 1vmin;
           height: 18.5vmin;
-          background-color: rgba(255, 255, 255, .2);
+          background-color: $color-white-20;
         }
 
         &--2 {
@@ -327,7 +345,7 @@ body {
           left: 7vmin;
           width: 1vmin;
           height: 4vmin;
-          background-color: rgba(255, 255, 255, .2);
+          background-color: $color-white-20;
         }
 
         &--3 {
@@ -335,7 +353,7 @@ body {
           right: 2vmin;
           width: 1vmin;
           height: 16vmin;
-          background-color: rgba(255, 255, 255, .2);
+          background-color: $color-white-20;
         }
       }
 
@@ -347,7 +365,7 @@ body {
           left: 3vmin;
           width: .8vmin;
           height: 7vmin;
-          background-color: rgba(0, 0, 0, .3);
+          background-color: $color-black-30;
         }
 
         &--2 {
@@ -355,7 +373,7 @@ body {
           left: 3vmin;
           width: 1vmin;
           height: 4vmin;
-          background-color: #000000;
+          background-color: $color-black;
         }
 
         &--3 {
@@ -363,7 +381,7 @@ body {
           left: 7vmin;
           width: 1vmin;
           height: 6vmin;
-          background-color: #000000;
+          background-color: $color-black;
         }
 
         &--4 {
@@ -371,7 +389,7 @@ body {
           right: 3.9vmin;
           width: .9vmin;
           height: 5.5vmin;
-          background-color: #000000;
+          background-color: $color-black;
         }
 
         &--5 {
@@ -379,7 +397,7 @@ body {
           right: 2.8vmin;
           width: .9vmin;
           height: 5.2vmin;
-          background-color: #000000;
+          background-color: $color-black;
         }
 
         &--6 {
@@ -387,7 +405,7 @@ body {
           right: 1vmin;
           width: 1vmin;
           height: 5.2vmin;
-          background-color: rgba(0, 0, 0, .3);
+          background-color: $color-black-30;
         }
       }
     }
@@ -399,16 +417,16 @@ body {
       left: 5vmin;
       width: 36.7vmin;
       height: 12vmin;
-      background-color: #e13d41;
-      border: 0.75vmin solid #000;
-      border-left: 1.1vmin solid #000;
-      border-right: 1.1vmin solid #000;
+      background-color: $color-bandanna;
+      border: .75vmin solid $color-black;
+      border-left: 1.1vmin solid $color-black;
+      border-right: 1.1vmin solid $color-black;
 
       .stripe {
         position: absolute;
         width: .4vmin;
         height: 2.6vmin;
-        background-color: #fff;
+        background-color: $color-white;
 
         &--1 {
           top: 6.2vmin;
@@ -441,7 +459,7 @@ body {
         &--1 {
           width: 34vmin;
           height: 2vmin;
-          background-color: rgba(0, 0, 0, 0.3);
+          background-color: $color-black-30;
           bottom: -2vmin;
         }
       }
@@ -461,16 +479,16 @@ body {
         width: 11.8vmin;
         height: 11.8vmin;
         border-radius: 50%;
-        border: 0.6vmin solid #000;
+        border: .6vmin solid $color-black;
         box-sizing: border-box;
         background: linear-gradient(
           119deg,
-          rgba(255, 255, 255, 1) 40%,
-          rgba(0, 0, 0, 1) 40%,
-          rgba(0, 0, 0, 1) 59%,
-          rgba(255, 255, 255, 1) 59%,
-          rgba(255, 255, 255, 1) 74%,
-          rgba(0, 0, 0, 1) 74%
+          $color-white 40%,
+          $color-black 40%,
+          $color-black 59%,
+          $color-white 59%,
+          $color-white 74%,
+          $color-black 74%
         );
       }
     }
@@ -482,7 +500,7 @@ body {
       height: 15vmin;
       left: 5vmin;
       top: 7.3vmin;
-      background-color: #000;
+      background-color: $color-black;
       transform: rotate(8deg);
 
       &:before {
@@ -491,7 +509,7 @@ body {
         position: 0;
         border-left: 16.5vmin solid transparent;
         border-right: 21vmin solid transparent;
-        border-bottom: 5vmin solid #000;
+        border-bottom: 5vmin solid $color-black;
       }
 
       .peak {
@@ -500,7 +518,7 @@ body {
         bottom: -1vmin;
         width: 13vmin;
         height: 1.8vmin;
-        background-color: #000;
+        background-color: $color-black;
         transform: rotate(9deg);
       }
 
@@ -510,18 +528,16 @@ body {
         height: 2.8vmin;
         left: -3.8vmin;
         top: 10.8vmin;
-        background-color: #000000;
+        background-color: $color-black;
         transform: rotate(2deg);
         border-bottom-left-radius: 1.4vmin;
         border-top-left-radius: 1.4vmin;
         overflow: hidden;
 
         &:before {
-          content: "";
-          position: absolute;
           width: 3.6vmin;
           height: 5vmin;
-          background: #404040;
+          background: $color-white-30;
           transform: rotate(25deg);
           left: 2.9vmin;
           top: -1vmin;
@@ -532,7 +548,7 @@ body {
         position: absolute;
         width: 2.4vmin;
         height: 4.5vmin;
-        background-color: #000000;
+        background-color: $color-black;
         top: -9vmin;
         left: 16.3vmin;
         border-radius: 50%;
@@ -545,7 +561,7 @@ body {
         left: 7vmin;
         width: 6.7vmin;
         height: 1.9vmin;
-        background-color: #e13d41;
+        background-color: $color-bandanna;
         transform: rotate(3deg);
       }
 
@@ -558,8 +574,8 @@ body {
           width: 0;
           height: 0;
           border-top-left-radius: 50%;
-          border-left: 1.9vmin solid rgba(255, 255, 255, 0.5);
-          border-top: 3vmin solid rgba(255, 255, 255, 0.5);
+          border-left: 1.9vmin solid $color-white-50;
+          border-top: 3vmin solid $color-white-50;
           border-right: 1.9vmin solid transparent;
           border-bottom: 3vmin solid transparent;
           transform: skew(3deg);
@@ -569,7 +585,7 @@ body {
             left: -1.7vmin;
             width: 3.5vmin;
             height: .8vmin;
-            background-color: #000;
+            background-color: $color-black;
             transform: rotate(-18deg);
           }
         }
@@ -584,8 +600,8 @@ body {
     top: 44.5vmin;
     width: 18vmin;
     height: 14.5vmin;
-    background-color: #fcc8a3;
-    border: 1vmin solid #000;
+    background-color: $color-skin;
+    border: 1vmin solid $color-black;
     border-radius: 2.5vmin;
 
     .nipples {
@@ -602,7 +618,7 @@ body {
         width: 1.7vmin;
         height: 100%;
         border-radius: 50%;
-        background-color: #e23b3b;
+        background-color: $color-red;
       }
     }
 
@@ -613,12 +629,12 @@ body {
       border-width: .4vmin;
       border-radius: 50%;
       transform: rotate(5deg);
-      border-color: #eab692 transparent transparent transparent ;
+      border-color: $color-skin-shadow transparent transparent transparent ;
       top: 7.1vmin;
       left: 2.5vmin;
       width: 9.3vmin;
       height: 7vmin;
-      background-color:#fcc8a3;
+      background-color: $color-skin;
     }
 
     .gleam {
@@ -630,9 +646,9 @@ body {
         width: 0;
         height: 0;
         border-bottom-left-radius: 30%;
-        border-left: 2.3vmin solid rgba(255, 255, 255, 0.3);
+        border-left: 2.3vmin solid $color-white-30;
         border-right: 2.3vmin solid transparent;
-        border-bottom: 1.3vmin solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1.3vmin solid $color-white-30;
         border-top: 1.3vmin solid transparent;
       }
     }
@@ -651,36 +667,32 @@ body {
     &__leg {
       position: relative;
       border-radius: 1.5vmin 0 0 1.5vmin;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       box-sizing: border-box;
       border-width: 1vmin 0 1vmin 1vmin;
-      background-color: #e03c3b;
+      background-color: $color-briefs;
       width: 9.9vmin;
       height: 8.5vmin;
 
       &:nth-child(1) {
         &:before {
-          content: "";
-          position: absolute;
           width: 2vmin;
           height: 1vmin;
-          background-color: #e03c3b;
+          background-color: $color-briefs;
           border-width: 0 1vmin 0 0;
-          bottom: -0.1vmin;
+          bottom: -.1vmin;
           right: 0;
-          border-color: #000;
+          border-color: $color-black;
           border-style: solid;
           box-sizing: border-box;
         }
 
         &:after {
-          content: "";
-          position: absolute;
           width: 3vmin;
           height: 3vmin;
           right: -2vmin;
-          background-color: #e03c3b;
+          background-color: $color-briefs;
         }
       }
 
@@ -689,14 +701,12 @@ body {
         border-width: 1vmin 1vmin 1vmin 0;
 
         &:before {
-          content: "";
-          position: absolute;
           width: 2vmin;
           height: 1vmin;
-          background-color: #e03c3b;
+          background-color: $color-briefs;
           border-width: 0 0 0 1vmin;
-          bottom: -0.1vmin;
-          border-color: #000;
+          bottom: -.1vmin;
+          border-color: $color-black;
           border-style: solid;
           box-sizing: border-box;
         }
@@ -705,28 +715,26 @@ body {
 
     .frontispiece {
       position: absolute;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       box-sizing: border-box;
       border-width: 0 0 1vmin 1vmin;
-      border-top-left-radius: 0.5vmin 1vmin;
+      border-top-left-radius: .5vmin 1vmin;
       border-bottom-left-radius: 2.5vmin 3vmin;
       transform: rotate(10deg);
       top: 3.2vmin;
       left: 7.8vmin;
       width: 3.5vmin;
       height: 4vmin;
-      background-color: #e03c3b;
+      background-color: $color-briefs;
 
       &:before {
-        content: "";
-        position: absolute;
-        background-color: #000;
+        background-color: $color-black;
         border-radius: 50%;
-        width: 0.9vmin;
+        width: .9vmin;
         height: 1vmin;
-        left: -0.9vmin;
-        top: -0.2vmin;
+        left: -.9vmin;
+        top: -.2vmin;
       }
     }
 
@@ -739,9 +747,9 @@ body {
         width: 0;
         height: 0;
         border-bottom-left-radius: 50%;
-        border-left: .5vmin solid rgba(255, 255, 255, 0.5);
+        border-left: .5vmin solid $color-white-50;
         border-right: .5vmin solid transparent;
-        border-bottom: .9vmin solid rgba(255, 255, 255, 0.5);
+        border-bottom: .9vmin solid $color-white-50;
         border-top: .9vmin solid transparent;
         transform: skew(10deg) rotate(5deg);
 
@@ -750,7 +758,7 @@ body {
           height: 2.2vmin;
           top: -1.1vmin;
           left: -.1vmin;
-          background-color: #e03c3b;
+          background-color: $color-briefs;
           transform: rotate(-32deg);
         }
       }
@@ -760,7 +768,7 @@ body {
         left: 1.4vmin;
         width: .9vmin;
         height: 4.9vmin;
-        background-color:rgba(255, 255, 255, 0.5);
+        background-color: $color-white-50;
       }
     }
 
@@ -772,7 +780,7 @@ body {
         bottom: 1.4vmin;
         width: .9vmin;
         height: 5vmin;
-        background-color: rgba(0, 0, 0, 0.26);
+        background-color: $color-black-20;
       }
     }
   }
@@ -791,11 +799,11 @@ body {
       position: static;
       width: 9.6vmin;
       height: 100%;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       border-width: 0 1vmin;
       box-sizing: border-box;
-      background-color: #fcc8a3;
+      background-color: $color-skin;
     }
   }
 
@@ -812,11 +820,11 @@ body {
       position: relative;
       width: 50%;
       height: 100%;
-      background-color: #000000;
+      background-color: $color-black;
       border-radius: 1vmin;
-      border-color: #000000;
+      border-color: $color-black;
       border-style: solid;
-      border-width: 0.5vmin;
+      border-width: .5vmin;
       box-sizing: border-box;
 
       .gleam {
@@ -829,8 +837,8 @@ body {
           height: 0;
           border-top-left-radius: 50%;
           overflow: hidden;
-          border-left: .8vmin solid #fff;
-          border-top: .8vmin solid #fff;
+          border-left: .8vmin solid $color-white;
+          border-top: .8vmin solid $color-white;
           border-right: .8vmin solid transparent;
           border-bottom: .8vmin solid transparent;
         }
@@ -852,9 +860,9 @@ body {
       position: relative;
       width: 12.5vmin;
       height: 4.3vmin;
-      background-color: #fff;
+      background-color: $color-white;
       border-radius: 1.3vmin;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       border-width: .9vmin;
       box-sizing: border-box;
@@ -866,7 +874,7 @@ body {
           bottom: 0;
           width: 100%;
           height: 1vmin;
-          background-color:rgba(0, 0, 0, .1);
+          background-color: $color-black-10;
         }
       }
 
@@ -880,7 +888,7 @@ body {
             width: 3.2vmin;
             height: 1vmin;
             border-radius: 0  .5vmin .5vmin 0;
-            background-color:#000000;
+            background-color: $color-black;
           }
 
           &--3 {
@@ -889,7 +897,7 @@ body {
             width: 2.1vmin;
             height: 1vmin;
             border-radius: .5vmin;
-            background-color:#000000;
+            background-color: $color-black;
           }
         }
       }
@@ -904,7 +912,7 @@ body {
             width: 3vmin;
             height: 1vmin;
             border-radius: .5vmin 0 0 .5vmin;
-            background-color:#000000;
+            background-color: $color-black;
           }
         }
       }
@@ -927,10 +935,10 @@ body {
       height: 6vmin;
       right: 0;
       box-sizing: border-box;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       border-width: .7vmin;
-      background-color: #fcc8a3;
+      background-color: $color-skin;
 
       .shadow {
         position: absolute;
@@ -939,7 +947,7 @@ body {
           bottom: 0;
           width: 100%;
           height: 2vmin;
-          background-color:rgba(0, 0, 0, 0.3);
+          background-color: $color-black-30;
         }
       }
 
@@ -950,7 +958,7 @@ body {
           top: 0;
           width: 100%;
           height: .8vmin;
-          background-color:rgba(255, 255, 255, 0.3);
+          background-color: $color-white-30;
         }
       }
     }
@@ -961,20 +969,18 @@ body {
       height: 8vmin;
       right: 7.5vmin;
       box-sizing: border-box;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       border-width: 1vmin;
       border-radius: 1vmin;
-      background-color: #6687ff;
+      background-color: $color-blue;
 
       &:before {
-        position: absolute;
-        content: "";
         width: 1vmin;
         height: 6.3vmin;
         left: .8vmin;
         top: 0;
-        background-color: #ffffff;
+        background-color: $color-white;
       }
     }
 
@@ -984,9 +990,9 @@ body {
       height: 7vmin;
       right: 10vmin;
       border-radius: 50%;
-      background-color: #fcc8a3;
+      background-color: $color-skin;
       box-sizing: border-box;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       border-width: 1vmin;
 
@@ -997,9 +1003,9 @@ body {
         left: -3vmin;
         top: -1.5vmin;
         border-radius: 1.5vmin;
-        background-color: #fcc8a3;
+        background-color: $color-skin;
         box-sizing: border-box;
-        border-color: #000;
+        border-color: $color-black;
         border-style: solid;
         border-width: 1vmin;
         transform: rotate(20deg);
@@ -1012,30 +1018,26 @@ body {
         left: -3.2vmin;
         top: 3.3vmin;
         border-radius: 1.5vmin;
-        background-color: #fcc8a3;
+        background-color: $color-skin;
         box-sizing: border-box;
-        border-color: #000;
+        border-color: $color-black;
         border-style: solid;
         border-width: 1vmin;
         transform: rotate(-25deg);
 
         &:before {
-          content: "";
-          position: absolute;
           width: 1.5vmin;
           height: 1.5vmin;
-          background-color: #fcc8a3;
+          background-color: $color-skin;
           border-radius: .5vmin;
           right: -1.2vmin;
           top: -1.1vmin;
         }
 
         &:after {
-          content: "";
-          position: absolute;
           width: 1.4vmin;
           height: 1.4vmin;
-          background-color: #fcc8a3;
+          background-color: $color-skin;
           border-radius: .5vmin;
           right: -1.4vmin;
           bottom: -.8vmin;
@@ -1048,9 +1050,9 @@ body {
         height: 2.5vmin;
         top: -.7vmin;
         border-radius: 1.5vmin;
-        background-color: #fcc8a3;
+        background-color: $color-skin;
         box-sizing: border-box;
-        border-color: #000;
+        border-color: $color-black;
         border-style: solid;
         border-width: 1vmin;
         transform: rotate(105deg);
@@ -1062,7 +1064,7 @@ body {
         &--1 {
           width: 3vmin;
           height: 4vmin;
-          box-shadow: -1.5vmin -.3vmin 0 0 rgba(0, 0, 0, 0.3);
+          box-shadow: -1.5vmin -.3vmin 0 0 $color-black-30;
           left: .8vmin;
           border-radius: 50%;
         }
@@ -1085,10 +1087,10 @@ body {
       height: 6vmin;
       bottom: 1vmin;
       box-sizing: border-box;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       border-width: .7vmin;
-      background-color: #fcc8a3;
+      background-color: $color-skin;
 
       .shadow {
         position: absolute;
@@ -1098,7 +1100,7 @@ body {
           left: -.1vmin;
           width: 100%;
           height: .8vmin;
-          background-color: rgba(0, 0, 0, 0.3);
+          background-color: $color-black-30;
         }
       }
     }
@@ -1110,9 +1112,9 @@ body {
       left: 11.5vmin;
       bottom: .2vmin;
       border-radius: 50%;
-      background-color: #fcc8a3;
+      background-color: $color-skin;
       box-sizing: border-box;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       border-width: .9vmin;
 
@@ -1125,7 +1127,7 @@ body {
           border-left: 4.5vmin solid transparent;
           border-right: 1.8vmin solid transparent;
           border-top: 2vmin solid transparent;
-          border-bottom: 3.8vmin solid rgba(0, 0, 0, 0.3);
+          border-bottom: 3.8vmin solid $color-black-30;
           border-bottom-right-radius: 1.5vmin;
           border-bottom-left-radius: 3vmin;
           transform: rotate(-20deg);
@@ -1139,7 +1141,7 @@ body {
           position: absolute;
           left: 2.8vmin;
           bottom: .1vmin;
-          border-top: 8vmin solid #fcc8a4;
+          border-top: 8vmin solid $color-ice-cream-cone;
           border-right: 4.2vmin solid transparent;
           transform: rotate(16deg);
 
@@ -1150,7 +1152,7 @@ body {
             left: -.5vmin;
             bottom: .2vmin;
             border-radius: .4vmin;
-            background-color: #000;
+            background-color: $color-black;
           }
 
           .border-right {
@@ -1161,17 +1163,15 @@ body {
             bottom: -.4vmin;
             border-radius: .4vmin;
             transform: rotate(25deg);
-            background-color: #000;
+            background-color: $color-black;
 
             &:before {
-              position: absolute;
               bottom: -.6vmin;
               left: -.6vmin;
-              content: "";
               width: 1vmin;
               height: 1vmin;
               border-radius: 1vmin;
-              background-color: #000;
+              background-color: $color-black;
             }
           }
         }
@@ -1183,9 +1183,9 @@ body {
           width: 6vmin;
           height: 6vmin;
           border-radius: 3vmin;
-          background-color: #826014;
+          background-color: $color-ice-cream-1;
           box-sizing: border-box;
-          border-color: #000;
+          border-color: $color-black;
           border-style: solid;
           border-width: .8vmin;
 
@@ -1198,9 +1198,9 @@ body {
               width: 0;
               height: 0;
               border-top-left-radius: 50%;
-              border-left: .8vmin solid rgba(255, 255, 255, 0.5);
+              border-left: .8vmin solid $color-white-50;
               border-right: .8vmin solid transparent;
-              border-top: .4vmin solid rgba(255, 255, 255, 0.5);
+              border-top: .4vmin solid $color-white-50;
               border-bottom: .4vmin solid transparent;
               transform: rotate(3deg);
             }
@@ -1214,9 +1214,9 @@ body {
           width: 3.4vmin;
           height: 3.4vmin;
           border-radius: 1.75vmin;
-          background-color: #f46285;
+          background-color: $color-ice-cream-2;
           box-sizing: border-box;
-          border-color: #000;
+          border-color: $color-black;
           border-style: solid;
           border-width: .5vmin;
 
@@ -1229,9 +1229,9 @@ body {
               width: 0;
               height: 0;
               border-top-left-radius: 50%;
-              border-left: .6vmin solid rgba(255, 255, 255, 0.5);
+              border-left: .6vmin solid $color-white-50;
               border-right: .6vmin solid transparent;
-              border-top: .3vmin solid rgba(255, 255, 255, 0.5);
+              border-top: .3vmin solid $color-white-50;
               border-bottom: .3vmin solid transparent;
               transform: rotate(10deg);
             }
@@ -1245,9 +1245,9 @@ body {
           width: 7.6vmin;
           height: 7.6vmin;
           border-radius: 3.5vmin;
-          background-color: #f445b1;
+          background-color: $color-ice-cream-3;
           box-sizing: border-box;
-          border-color: #000;
+          border-color: $color-black;
           border-style: solid;
           border-width: .8vmin;
 
@@ -1261,9 +1261,9 @@ body {
               height: 0;
               border-top-left-radius: 50%;
               border-bottom-left-radius: 50%;
-              border-left: .6vmin solid rgba(255, 255, 255, 0.5);
+              border-left: .6vmin solid $color-white-50;
               border-right: .6vmin solid transparent;
-              border-top: 1.8vmin solid rgba(255, 255, 255, 0.5);
+              border-top: 1.8vmin solid $color-white-50;
               border-bottom: 1.8vmin solid transparent;
               transform: rotate(2deg);
             }
@@ -1277,9 +1277,9 @@ body {
               right: -.2vmin;
               width: 0;
               height: 0;
-              border-left: 2.4vmin solid rgba(0, 0, 0, .2);
+              border-left: 2.4vmin solid $color-black-20;
               border-right: .6vmin solid transparent;
-              border-top: 3.4vmin solid rgba(0, 0, 0, .2);
+              border-top: 3.4vmin solid $color-black-20;
               border-bottom: 0vmin solid transparent;
               border-bottom-right-radius: 50%;
             }
@@ -1293,9 +1293,9 @@ body {
           width: 2vmin;
           height: 8.6vmin;
           border-radius: 0 0 2.5vmin 2.5vmin;
-          background-color: #f445b1;
+          background-color: $color-ice-cream-3;
           box-sizing: border-box;
-          border-color: #000;
+          border-color: $color-black;
           border-style: solid;
           border-width: .8vmin;
           border-top: .7vmin solid transparent;
@@ -1305,9 +1305,7 @@ body {
           animation-timing-function: ease-out;
 
           &:before {
-            content: "";
-            position: absolute;
-            background-color: #f445b1;
+            background-color: $color-ice-cream-3;
             width: 1vmin;
             height: 1.6vmin;
             top: -1.3vmin;
@@ -1315,17 +1313,15 @@ body {
           }
 
           &:after {
-            content: "";
-            position: absolute;
             height: 0;
             width: 0;
             box-sizing: border-box;
             top: -3vmin;
             right: -.9vmin;
-            border-left: 1vmin solid #f445b1;
+            border-left: 1vmin solid $color-ice-cream-3;
             border-right: .8vmin solid transparent;
-            border-bottom: 2vmin solid #f445b1;
-            border-top: 0.8vmin solid transparent;
+            border-bottom: 2vmin solid $color-ice-cream-3;
+            border-top: .8vmin solid transparent;
           }
         }
 
@@ -1336,9 +1332,9 @@ body {
           width: 5vmin;
           height: 5vmin;
           border-radius: 2.5vmin;
-          background-color: #f445b1;
+          background-color: $color-ice-cream-3;
           box-sizing: border-box;
-          border-color: #000;
+          border-color: $color-black;
           border-style: solid;
           border-width: .7vmin;
           border-bottom: .7vmin solid transparent;
@@ -1351,7 +1347,7 @@ body {
               left: .4vmin;
               width: 1.5vmin;
               height: 1.5vmin;
-              background-color: rgba(255, 255, 255, .5);
+              background-color: $color-white-50;
               border-radius: 50%;
               transform: rotate(2deg);
             }
@@ -1363,10 +1359,10 @@ body {
           border-radius: 1vmin;
           left: 6.2vmin;
           width: 2vmin;
-          border-color: #000000;
+          border-color: $color-black;
           border-style: solid;
           border-width: .7vmin;
-          background-color: #f445b1;
+          background-color: $color-ice-cream-3;
           box-sizing: border-box;
           animation: ice-cream-drop $animation-duration-ice-cream ease-in infinite, ice-cream-drop-size $animation-duration-ice-cream ease-out infinite;
         }
@@ -1375,8 +1371,7 @@ body {
           position: absolute;
           left: 5.2vmin;
           width: 4vmin;
-          background-color: hsla(150, 65%, 52%, 0.568);
-          background-color: #ffffff;
+          background-color: $color-body-background;
           height: 6vmin;
           top: 33vmin;
           border-radius: 2vmin 2vmin 0 0 / .5vmin .5vmin 0 0;
@@ -1390,7 +1385,7 @@ body {
           width: 4vmin;
           height: 1vmin;
           border-radius: 50%;
-          background-color: #f445b1;
+          background-color: $color-ice-cream-3;
           transform-origin: center center;
           animation: drop-on-floor $animation-duration-ice-cream linear infinite;
           animation-delay: $animation-duration-ice-cream;
@@ -1404,22 +1399,20 @@ body {
         width: 4.4vmin;
         height: 3vmin;
         border-radius: 1.5vmin;
-        background-color: #fcc8a3;
+        background-color: $color-skin;
         box-sizing: border-box;
-        border-color: #000;
+        border-color: $color-black;
         border-style: solid;
         border-width: 1vmin;
         transform: rotate(20deg);
 
         &:before {
-          position: absolute;
           width: 1.3vmin;
           height: 4vmin;
           left: -.5vmin;
           top: -.5vmin;
-          content: "";
           border-top-left-radius: 1vmin;
-          background-color: #fcc8a3;
+          background-color: $color-skin;
         }
       }
     }
@@ -1431,20 +1424,18 @@ body {
       left: 9.2vmin;
       bottom: 0;
       box-sizing: border-box;
-      border-color: #000;
+      border-color: $color-black;
       border-style: solid;
       border-width: 1vmin;
       border-radius: 1vmin;
-      background-color: #e23b3b;
+      background-color: $color-red;
 
       &:before {
-        position: absolute;
-        content: "";
         width: 1vmin;
         height: 6.3vmin;
         left: .8vmin;
         top: 0;
-        background-color: #ffffff;
+        background-color: $color-white;
       }
     }
   }
