@@ -4,11 +4,11 @@ $animation-duration-ice-cream: 5s;
   0% {
     height: 2vmin;
   }
-  80% {
+  79% {
     height: 8.6vmin;
   }
-  85% {
-    height: 6vmin;
+  80% {
+    height: 5vmin;
   }
   100% {
     height: 2vmin;
@@ -17,14 +17,19 @@ $animation-duration-ice-cream: 5s;
 
 @keyframes ice-cream-drop {
   0% {
-    top: 4.5vmin;
+    top: 4vmin;
     opacity: 0;
+    visibility: hidden;
+  }
+  75% {
+    top: 4vmin;
   }
   79% {
+    visibility: hidden;
     opacity: 0;
   }
   80% {
-    top: 4.5vmin;
+    visibility: visible;
     opacity: 1;
   }
   100% {
@@ -34,22 +39,21 @@ $animation-duration-ice-cream: 5s;
 
 @keyframes ice-cream-drop-size {
   0% {
-    height: 2vmin;
+    visibility: hidden;
+    height: 3vmin;
+    border-width: .7vmin;
   }
   79% {
     opacity: 0;
   }
   80% {
-    height: 2vmin;
-    opacity: 1;
-  }
-  99% {
-    height: 4vmin;
+    height: 3vmin;
     opacity: 1;
   }
   100% {
-    opacity: 0;
-    height: 0;
+    height: 5vmin;
+    opacity: 1;
+    border-width: .7vmin;
   }
 }
 
@@ -57,7 +61,7 @@ $animation-duration-ice-cream: 5s;
   0% {
     opacity: 1;
   }
-  80% {
+  70% {
     opacity: 0;
   }
   100% {
@@ -1036,7 +1040,6 @@ body {
           right: -1.4vmin;
           bottom: -.8vmin;
         }
-
       }
 
       .thumb {
@@ -1355,18 +1358,6 @@ body {
           }
         }
 
-        .drop-on-floor {
-          position: absolute;
-          top: 32vmin;
-          left: 5.2vmin;
-          width: 4vmin;
-          height: 1vmin;
-          border-radius: 50%;
-          background-color: #f445b1;
-          animation: drop-on-floor $animation-duration-ice-cream linear infinite;
-          animation-delay: $animation-duration-ice-cream;
-        }
-
         .drop {
           position: absolute;
           border-radius: 1vmin;
@@ -1378,6 +1369,31 @@ body {
           background-color: #f445b1;
           box-sizing: border-box;
           animation: ice-cream-drop $animation-duration-ice-cream ease-in infinite, ice-cream-drop-size $animation-duration-ice-cream ease-out infinite;
+        }
+
+        .floor {
+          position: absolute;
+          left: 5.2vmin;
+          width: 4vmin;
+          background-color: hsla(150, 65%, 52%, 0.568);
+          background-color: #ffffff;
+          height: 6vmin;
+          top: 33vmin;
+          border-radius: 2vmin 2vmin 0 0 / .5vmin .5vmin 0 0;
+        }
+
+        .drop-on-floor {
+          position: absolute;
+          opacity: 0;
+          top: 32vmin;
+          left: 5.2vmin;
+          width: 4vmin;
+          height: 1vmin;
+          border-radius: 50%;
+          background-color: #f445b1;
+          transform-origin: center center;
+          animation: drop-on-floor $animation-duration-ice-cream linear infinite;
+          animation-delay: $animation-duration-ice-cream;
         }
       }
 
