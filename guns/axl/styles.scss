@@ -18,6 +18,7 @@ $color-ice-cream-cone: #ecb92c;
 $color-red: #e23b3b;
 $color-skin: #fcc8a3;
 $color-skin-shadow: #eab692;
+$color-transparent: transparent;
 $color-white: #fff;
 $color-white-20: rgba(255, 255, 255, .2);
 $color-white-30: rgba(255, 255, 255, .3);
@@ -99,21 +100,22 @@ body {
   height: 100vh;
   background-color: $color-body-background;
 
-  :after, :before {
+  *, :after, :before {
     position: absolute;
+  }
+
+  :after, :before {
     content: "";
   }
 }
 
 #axl {
   width: 80vmin;
-  position: absolute;
   height: 80vmin;
 
   >.shadow {
 
     &--1 {
-      position: absolute;
       bottom: 1vmin;
       left: 22.5vmin;
       width: 32vmin;
@@ -124,14 +126,12 @@ body {
   }
 
   .head {
-    position: absolute;
     top: 0;
     left: 20vmin;
     width: 52vmin;
     height: 58vmin;
 
     .face {
-      position: absolute;
       width: 30vmin;
       height: 28vmin;
       top: 15.5vmin;
@@ -141,7 +141,6 @@ body {
       border-radius: 4.5vmin;
 
       .chin {
-        position: absolute;
         left: 1.4vmin;
         bottom: -2vmin;
         width: 6.5vmin;
@@ -153,7 +152,6 @@ body {
         transform: rotate(-23deg);
 
         .circle {
-          position: absolute;
           width: 1vmin;
           height: 1.5vmin;
           border-radius: 1vmin;
@@ -192,7 +190,6 @@ body {
       }
 
       .horseshoe {
-        position: absolute;
         width: 7vmin;
         height: 3.4vmin;
         top: 22.4vmin;
@@ -223,7 +220,6 @@ body {
       }
 
       .mouth {
-        position: absolute;
         width: 3.6vmin;
         height: 3.1vmin;
         background-color: $color-red;
@@ -245,7 +241,6 @@ body {
       }
 
       .nose {
-        position: absolute;
         top: 18.2vmin;
         left: 1.1vmin;
         width: 1.6vmin;
@@ -258,7 +253,6 @@ body {
       }
 
       .shadow {
-        position: absolute;
 
         &--1 {
           top: 12.2vmin;
@@ -272,7 +266,6 @@ body {
     }
 
     .hair-left {
-      position: absolute;
       left: 6vmin;
       bottom: 2vmin;
       width: 7vmin;
@@ -282,7 +275,6 @@ body {
       border: 1vmin solid $color-black;
 
       .shadow {
-        position: absolute;
 
         &--1 {
           left: .7vmin;
@@ -320,7 +312,6 @@ body {
     }
 
     .hair-right {
-      position: absolute;
       bottom: -.5vmin;
       right: 11vmin;
       width: 16vmin;
@@ -330,7 +321,6 @@ body {
       border: 1vmin solid $color-black;
 
       .gleam {
-        position: absolute;
 
         &--1 {
           bottom: 7.5vmin;
@@ -358,7 +348,6 @@ body {
       }
 
       .shadow {
-        position: absolute;
 
         &--1 {
           bottom: 16.5vmin;
@@ -411,7 +400,6 @@ body {
     }
 
     .bandanna {
-      position: absolute;
       box-sizing: border-box;
       top: 15.5vmin;
       left: 5vmin;
@@ -423,7 +411,6 @@ body {
       border-right: 1.1vmin solid $color-black;
 
       .stripe {
-        position: absolute;
         width: .4vmin;
         height: 2.6vmin;
         background-color: $color-white;
@@ -454,7 +441,6 @@ body {
       }
 
       .shadow {
-        position: absolute;
 
         &--1 {
           width: 34vmin;
@@ -467,7 +453,6 @@ body {
 
     .glasses {
       display: flex;
-      position: absolute;
       top: 24.7vmin;
       left: .5vmin;
       justify-content: space-between;
@@ -494,7 +479,6 @@ body {
     }
 
     .cap {
-      position: absolute;
       box-sizing: border-box;
       width: 37.5vmin;
       height: 15vmin;
@@ -507,13 +491,12 @@ body {
         top: -4.9vmin;
         width: 0;
         position: 0;
-        border-left: 16.5vmin solid transparent;
-        border-right: 21vmin solid transparent;
+        border-left: 16.5vmin solid $color-transparent;
+        border-right: 21vmin solid $color-transparent;
         border-bottom: 5vmin solid $color-black;
       }
 
       .peak {
-        position: absolute;
         right: -11.5vmin;
         bottom: -1vmin;
         width: 13vmin;
@@ -523,7 +506,6 @@ body {
       }
 
       .strap {
-        position: absolute;
         width: 8.5vmin;
         height: 2.8vmin;
         left: -3.8vmin;
@@ -545,7 +527,6 @@ body {
       }
 
       .button {
-        position: absolute;
         width: 2.4vmin;
         height: 4.5vmin;
         background-color: $color-black;
@@ -556,7 +537,6 @@ body {
       }
 
       .bandanna-detail {
-        position: absolute;
         top: 9vmin;
         left: 7vmin;
         width: 6.7vmin;
@@ -566,7 +546,6 @@ body {
       }
 
       .gleam {
-        position: absolute;
 
         &--1 {
           top: -.1vmin;
@@ -576,8 +555,8 @@ body {
           border-top-left-radius: 50%;
           border-left: 1.9vmin solid $color-white-50;
           border-top: 3vmin solid $color-white-50;
-          border-right: 1.9vmin solid transparent;
-          border-bottom: 3vmin solid transparent;
+          border-right: 1.9vmin solid $color-transparent;
+          border-bottom: 3vmin solid $color-transparent;
           transform: skew(3deg);
 
           &:before {
@@ -594,7 +573,6 @@ body {
   }
 
   .torso {
-    position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     top: 44.5vmin;
@@ -623,13 +601,12 @@ body {
     }
 
     .belly {
-      position: absolute;
       border-style: solid;
       box-sizing: border-box;
       border-width: .4vmin;
       border-radius: 50%;
       transform: rotate(5deg);
-      border-color: $color-skin-shadow transparent transparent transparent ;
+      border-color: $color-skin-shadow $color-transparent $color-transparent $color-transparent;
       top: 7.1vmin;
       left: 2.5vmin;
       width: 9.3vmin;
@@ -638,7 +615,6 @@ body {
     }
 
     .gleam {
-      position: absolute;
 
       &--1 {
         bottom: .4vmin;
@@ -647,15 +623,14 @@ body {
         height: 0;
         border-bottom-left-radius: 30%;
         border-left: 2.3vmin solid $color-white-30;
-        border-right: 2.3vmin solid transparent;
+        border-right: 2.3vmin solid $color-transparent;
         border-bottom: 1.3vmin solid $color-white-30;
-        border-top: 1.3vmin solid transparent;
+        border-top: 1.3vmin solid $color-transparent;
       }
     }
   }
 
   .briefs {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     left: 50%;
@@ -714,7 +689,6 @@ body {
     }
 
     .frontispiece {
-      position: absolute;
       border-color: $color-black;
       border-style: solid;
       box-sizing: border-box;
@@ -739,7 +713,6 @@ body {
     }
 
     .gleam {
-      position: absolute;
 
       &--1 {
         top: 4.2vmin;
@@ -748,9 +721,9 @@ body {
         height: 0;
         border-bottom-left-radius: 50%;
         border-left: .5vmin solid $color-white-50;
-        border-right: .5vmin solid transparent;
+        border-right: .5vmin solid $color-transparent;
         border-bottom: .9vmin solid $color-white-50;
-        border-top: .9vmin solid transparent;
+        border-top: .9vmin solid $color-transparent;
         transform: skew(10deg) rotate(5deg);
 
         &:before {
@@ -773,7 +746,6 @@ body {
     }
 
     .shadow {
-      position: absolute;
 
       &--1 {
         right: 1.4vmin;
@@ -786,7 +758,6 @@ body {
   }
 
   .legs {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 19.5vmin;
@@ -808,7 +779,6 @@ body {
   }
 
   .shoes {
-    position: absolute;
     display: flex;
     left: 38.5vmin;
     transform: translateX(-50%);
@@ -828,7 +798,6 @@ body {
       box-sizing: border-box;
 
       .gleam {
-        position: absolute;
 
         &--1 {
           top: 0;
@@ -839,15 +808,14 @@ body {
           overflow: hidden;
           border-left: .8vmin solid $color-white;
           border-top: .8vmin solid $color-white;
-          border-right: .8vmin solid transparent;
-          border-bottom: .8vmin solid transparent;
+          border-right: .8vmin solid $color-transparent;
+          border-bottom: .8vmin solid $color-transparent;
         }
       }
     }
   }
 
   .socks {
-    position: absolute;
     display: flex;
     justify-content: space-between;
     left: 50%;
@@ -868,7 +836,6 @@ body {
       box-sizing: border-box;
 
       .shadow {
-        position: absolute;
 
         &--1 {
           bottom: 0;
@@ -887,7 +854,7 @@ body {
             left: -.1vmin;
             width: 3.2vmin;
             height: 1vmin;
-            border-radius: 0  .5vmin .5vmin 0;
+            border-radius: 0 .5vmin .5vmin 0;
             background-color: $color-black;
           }
 
@@ -921,7 +888,6 @@ body {
 
   .left-arm {
     display: flex;
-    position: absolute;
     width: 21vmin;
     height: 9vmin;
     top: 43.5vmin;
@@ -930,7 +896,6 @@ body {
     transform: rotate(10deg);
 
     .forearm {
-      position: absolute;
       width: 9vmin;
       height: 6vmin;
       right: 0;
@@ -941,7 +906,6 @@ body {
       background-color: $color-skin;
 
       .shadow {
-        position: absolute;
 
         &--1 {
           bottom: 0;
@@ -952,7 +916,6 @@ body {
       }
 
       .gleam {
-        position: absolute;
 
         &--1 {
           top: 0;
@@ -964,7 +927,6 @@ body {
     }
 
     .sweatband {
-      position: absolute;
       width: 4.5vmin;
       height: 8vmin;
       right: 7.5vmin;
@@ -985,7 +947,6 @@ body {
     }
 
     .hand {
-      position: absolute;
       width: 7vmin;
       height: 7vmin;
       right: 10vmin;
@@ -997,7 +958,6 @@ body {
       border-width: 1vmin;
 
       .index {
-        position: absolute;
         width: 5.5vmin;
         height: 2.5vmin;
         left: -3vmin;
@@ -1012,7 +972,6 @@ body {
       }
 
       .pinky {
-        position: absolute;
         width: 5vmin;
         height: 2.5vmin;
         left: -3.2vmin;
@@ -1045,7 +1004,6 @@ body {
       }
 
       .thumb {
-        position: absolute;
         width: 4.2vmin;
         height: 2.5vmin;
         top: -.7vmin;
@@ -1059,7 +1017,6 @@ body {
       }
 
       .shadow {
-        position: absolute;
 
         &--1 {
           width: 3vmin;
@@ -1074,7 +1031,6 @@ body {
 
   .right-arm {
     display: flex;
-    position: absolute;
     width: 23.5vmin;
     height: 17vmin;
     top: 35vmin;
@@ -1082,7 +1038,6 @@ body {
     align-items: center;
 
     .forearm {
-      position: absolute;
       width: 10vmin;
       height: 6vmin;
       bottom: 1vmin;
@@ -1093,7 +1048,6 @@ body {
       background-color: $color-skin;
 
       .shadow {
-        position: absolute;
 
         &--1 {
           bottom: -.1vmin;
@@ -1106,7 +1060,6 @@ body {
     }
 
     .hand {
-      position: absolute;
       width: 7vmin;
       height: 7.5vmin;
       left: 11.5vmin;
@@ -1119,14 +1072,13 @@ body {
       border-width: .9vmin;
 
       .shadow {
-        position: absolute;
 
         &--1 {
           bottom: -.2vmin;
           right: -.3vmin;
-          border-left: 4.5vmin solid transparent;
-          border-right: 1.8vmin solid transparent;
-          border-top: 2vmin solid transparent;
+          border-left: 4.5vmin solid $color-transparent;
+          border-right: 1.8vmin solid $color-transparent;
+          border-top: 2vmin solid $color-transparent;
           border-bottom: 3.8vmin solid $color-black-30;
           border-bottom-right-radius: 1.5vmin;
           border-bottom-left-radius: 3vmin;
@@ -1138,15 +1090,13 @@ body {
         position: static;
 
         .cone {
-          position: absolute;
           left: 2.8vmin;
           bottom: .1vmin;
           border-top: 8vmin solid $color-ice-cream-cone;
-          border-right: 4.2vmin solid transparent;
+          border-right: 4.2vmin solid $color-transparent;
           transform: rotate(16deg);
 
           .border-left {
-            position: absolute;
             width: .7vmin;
             height: 10vmin;
             left: -.5vmin;
@@ -1156,7 +1106,6 @@ body {
           }
 
           .border-right {
-            position: absolute;
             width: .7vmin;
             height: 10vmin;
             left: 2.5vmin;
@@ -1177,7 +1126,6 @@ body {
         }
 
         .cream-1 {
-          position: absolute;
           left: 4.3vmin;
           top: -9.5vmin;
           width: 6vmin;
@@ -1190,7 +1138,6 @@ body {
           border-width: .8vmin;
 
           .gleam {
-            position: absolute;
 
             &--1 {
               top: .1vmin;
@@ -1199,16 +1146,15 @@ body {
               height: 0;
               border-top-left-radius: 50%;
               border-left: .8vmin solid $color-white-50;
-              border-right: .8vmin solid transparent;
+              border-right: .8vmin solid $color-transparent;
               border-top: .4vmin solid $color-white-50;
-              border-bottom: .4vmin solid transparent;
+              border-bottom: .4vmin solid $color-transparent;
               transform: rotate(3deg);
             }
           }
         }
 
         .cream-2 {
-          position: absolute;
           left: 7.4vmin;
           top: -9.8vmin;
           width: 3.4vmin;
@@ -1221,7 +1167,6 @@ body {
           border-width: .5vmin;
 
           .gleam {
-            position: absolute;
 
             &--1 {
               top: .1vmin;
@@ -1230,16 +1175,15 @@ body {
               height: 0;
               border-top-left-radius: 50%;
               border-left: .6vmin solid $color-white-50;
-              border-right: .6vmin solid transparent;
+              border-right: .6vmin solid $color-transparent;
               border-top: .3vmin solid $color-white-50;
-              border-bottom: .3vmin solid transparent;
+              border-bottom: .3vmin solid $color-transparent;
               transform: rotate(10deg);
             }
           }
         }
 
         .cream-3 {
-          position: absolute;
           left: 3.3vmin;
           top: -7.5vmin;
           width: 7.6vmin;
@@ -1252,7 +1196,6 @@ body {
           border-width: .8vmin;
 
           .gleam {
-            position: absolute;
 
             &--1 {
               top: 1vmin;
@@ -1262,15 +1205,14 @@ body {
               border-top-left-radius: 50%;
               border-bottom-left-radius: 50%;
               border-left: .6vmin solid $color-white-50;
-              border-right: .6vmin solid transparent;
+              border-right: .6vmin solid $color-transparent;
               border-top: 1.8vmin solid $color-white-50;
-              border-bottom: 1.8vmin solid transparent;
+              border-bottom: 1.8vmin solid $color-transparent;
               transform: rotate(2deg);
             }
           }
 
           .shadow {
-            position: absolute;
 
             &--1 {
               bottom: .1vmin;
@@ -1278,16 +1220,15 @@ body {
               width: 0;
               height: 0;
               border-left: 2.4vmin solid $color-black-20;
-              border-right: .6vmin solid transparent;
+              border-right: .6vmin solid $color-transparent;
               border-top: 3.4vmin solid $color-black-20;
-              border-bottom: 0vmin solid transparent;
+              border-bottom: 0vmin solid $color-transparent;
               border-bottom-right-radius: 50%;
             }
           }
         }
 
         .cream-4 {
-          position: absolute;
           left: 6.2vmin;
           top: -2vmin;
           width: 2vmin;
@@ -1298,7 +1239,7 @@ body {
           border-color: $color-black;
           border-style: solid;
           border-width: .8vmin;
-          border-top: .7vmin solid transparent;
+          border-top: .7vmin solid $color-transparent;
           animation-iteration-count: infinite;
           animation-name: ice-cream-melt;
           animation-duration: $animation-duration-ice-cream;
@@ -1319,14 +1260,13 @@ body {
             top: -3vmin;
             right: -.9vmin;
             border-left: 1vmin solid $color-ice-cream-3;
-            border-right: .8vmin solid transparent;
+            border-right: .8vmin solid $color-transparent;
             border-bottom: 2vmin solid $color-ice-cream-3;
-            border-top: .8vmin solid transparent;
+            border-top: .8vmin solid $color-transparent;
           }
         }
 
         .cream-5 {
-          position: absolute;
           left: 6.1vmin;
           top: -8.1vmin;
           width: 5vmin;
@@ -1337,10 +1277,9 @@ body {
           border-color: $color-black;
           border-style: solid;
           border-width: .7vmin;
-          border-bottom: .7vmin solid transparent;
+          border-bottom: .7vmin solid $color-transparent;
 
           .gleam {
-            position: absolute;
 
             &--1 {
               top: .6vmin;
@@ -1355,7 +1294,6 @@ body {
         }
 
         .drop {
-          position: absolute;
           border-radius: 1vmin;
           left: 6.2vmin;
           width: 2vmin;
@@ -1368,7 +1306,6 @@ body {
         }
 
         .floor {
-          position: absolute;
           left: 5.2vmin;
           width: 4vmin;
           background-color: $color-body-background;
@@ -1378,7 +1315,6 @@ body {
         }
 
         .drop-on-floor {
-          position: absolute;
           opacity: 0;
           top: 32vmin;
           left: 5.2vmin;
@@ -1393,7 +1329,6 @@ body {
       }
 
       .thumb {
-        position: absolute;
         left: .25vmin;
         top: -.25vmin;
         width: 4.4vmin;
@@ -1418,7 +1353,6 @@ body {
     }
 
     .sweatband {
-      position: absolute;
       width: 4.5vmin;
       height: 8vmin;
       left: 9.2vmin;
