@@ -42,8 +42,8 @@ $color-white-50: rgba(255, 255, 255, .5);
 @keyframes ice-cream-drop {
   0% {
     top: 4vmin;
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
   }
   75% {
     top: 4vmin;
@@ -63,8 +63,8 @@ $color-white-50: rgba(255, 255, 255, .5);
 
 @keyframes ice-cream-drop-size {
   0% {
-    visibility: hidden;
     height: 3vmin;
+    visibility: hidden;
     border-width: .7vmin;
   }
   79% {
@@ -76,8 +76,8 @@ $color-white-50: rgba(255, 255, 255, .5);
   }
   100% {
     height: 5vmin;
-    opacity: 1;
     border-width: .7vmin;
+    opacity: 1;
   }
 }
 
@@ -95,8 +95,8 @@ $color-white-50: rgba(255, 255, 255, .5);
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   background-color: $color-body-background;
 
@@ -120,8 +120,8 @@ body {
       left: 22.5vmin;
       width: 32vmin;
       height: 3vmin;
-      border-radius: 50%;
       background-color: $color-black-50;
+      border-radius: 50%;
     }
   }
 
@@ -132,40 +132,40 @@ body {
     height: 58vmin;
 
     .face {
-      width: 30vmin;
-      height: 28vmin;
       top: 15.5vmin;
       left: 7.5vmin;
+      width: 30vmin;
+      height: 28vmin;
       background-color: $color-skin;
       border: 1vmin solid $color-black;
       border-radius: 4.5vmin;
 
       .chin {
-        left: 1.4vmin;
         bottom: -2vmin;
-        width: 6.5vmin;
+        left: 1.4vmin;
         box-sizing: border-box;
+        width: 6.5vmin;
         height: 6vmin;
-        border: 1vmin solid $color-black;
         background-color: $color-skin;
+        border: 1vmin solid $color-black;
         border-radius: 1.5vmin;
         transform: rotate(-23deg);
 
         .circle {
+          z-index: 1;
           width: 1vmin;
           height: 1.5vmin;
-          border-radius: 1vmin;
           background-color: $color-black;
-          z-index: 1;
+          border-radius: 1vmin;
 
           &:nth-of-type(1) {
-            left: -1vmin;
             bottom: 2vmin;
+            left: -1vmin;
           }
 
           &:nth-of-type(2) {
-            left: 4.5vmin;
             bottom: -.25vmin;
+            left: 4.5vmin;
           }
         }
 
@@ -190,52 +190,52 @@ body {
       }
 
       .horseshoe {
-        width: 7vmin;
-        height: 3.4vmin;
         top: 22.4vmin;
         left: .8vmin;
-        border-top: .8vmin solid $color-beard;
-        border-left: .8vmin solid $color-beard;
-        border-right: .8vmin solid $color-beard;
         box-sizing: border-box;
+        width: 7vmin;
+        height: 3.4vmin;
+        border-top: .8vmin solid $color-beard;
+        border-right: .8vmin solid $color-beard;
+        border-left: .8vmin solid $color-beard;
         border-radius: 1.5vmin 1.5vmin 0 0;
 
         &:before {
-          width: .75vmin;
-          height: .75vmin;
-          border-radius: 50%;
-          background-color: $color-beard;
           bottom: -.5vmin;
           left: -.8vmin;
+          width: .75vmin;
+          height: .75vmin;
+          background-color: $color-beard;
+          border-radius: 50%;
         }
 
         &:after {
+          right: -.8vmin;
+          bottom: -.5vmin;
           width: .75vmin;
           height: .75vmin;
-          border-radius: 50%;
           background-color: $color-beard;
-          bottom: -.5vmin;
-          right: -.8vmin;
+          border-radius: 50%;
         }
       }
 
       .mouth {
+        top: 23.7vmin;
+        left: 2.5vmin;
         width: 3.6vmin;
         height: 3.1vmin;
+        overflow: hidden;
         background-color: $color-red;
-        left: 2.5vmin;
-        top: 23.7vmin;
         border-radius: .8vmin;
         transform: rotate(-23deg);
-        overflow: hidden;
 
         .teeth {
           position: relative;
+          top: -1.1vmin;
+          left: .2vmin;
           width: 4vmin;
           height: 2vmin;
           background-color: $color-white;
-          top: -1.1vmin;
-          left: .2vmin;
           transform: rotate(18deg);
         }
       }
@@ -245,11 +245,11 @@ body {
         left: 1.1vmin;
         width: 1.6vmin;
         height: 1.3vmin;
-        transform: rotate(-22deg);
-        border-radius: 2vmin 0 0 5vmin;
         border-top: .9vmin solid $color-black;
         border-bottom: .9vmin solid $color-black;
         border-left: .9vmin solid $color-black;
+        border-radius: 2vmin 0 0 5vmin;
+        transform: rotate(-22deg);
       }
 
       .shadow {
@@ -266,19 +266,19 @@ body {
     }
 
     .hair-left {
-      left: 6vmin;
       bottom: 2vmin;
+      left: 6vmin;
+      box-sizing: border-box;
       width: 7vmin;
       height: 40vmin;
-      box-sizing: border-box;
       background-color: $color-hair;
       border: 1vmin solid $color-black;
 
       .shadow {
 
         &--1 {
-          left: .7vmin;
           bottom: -.1vmin;
+          left: .7vmin;
           width: .6vmin;
           height: 6.1vmin;
           background-color: $color-black-30;
@@ -292,17 +292,17 @@ body {
           background-color: $color-hair-shadow;
 
           &:before{
-            right: .9vmin;
             top: 27vmin;
+            right: .9vmin;
             width: 2.5vmin;
             height: 5.5vmin;
-            transform: rotate(-35deg);
             background-color: $color-hair-shadow;
+            transform: rotate(-35deg);
           }
 
           &:after {
-            left: -2.7vmin;
             top: 0;
+            left: -2.7vmin;
             width: 2.5vmin;
             height: 28.1vmin;
             background-color: $color-hair-shadow;
@@ -312,11 +312,11 @@ body {
     }
 
     .hair-right {
-      bottom: -.5vmin;
       right: 11vmin;
+      bottom: -.5vmin;
+      box-sizing: border-box;
       width: 16vmin;
       height: 42vmin;
-      box-sizing: border-box;
       background-color: $color-hair;
       border: 1vmin solid $color-black;
 
@@ -339,8 +339,8 @@ body {
         }
 
         &--3 {
-          bottom: 4.5vmin;
           right: 2vmin;
+          bottom: 4.5vmin;
           width: 1vmin;
           height: 16vmin;
           background-color: $color-white-20;
@@ -374,24 +374,24 @@ body {
         }
 
         &--4 {
-          bottom: 10.5vmin;
           right: 3.9vmin;
+          bottom: 10.5vmin;
           width: .9vmin;
           height: 5.5vmin;
           background-color: $color-black;
         }
 
         &--5 {
-          bottom: -.1vmin;
           right: 2.8vmin;
+          bottom: -.1vmin;
           width: .9vmin;
           height: 5.2vmin;
           background-color: $color-black;
         }
 
         &--6 {
-          bottom: 12vmin;
           right: 1vmin;
+          bottom: 12vmin;
           width: 1vmin;
           height: 5.2vmin;
           background-color: $color-black-30;
@@ -400,15 +400,15 @@ body {
     }
 
     .bandanna {
-      box-sizing: border-box;
       top: 15.5vmin;
       left: 5vmin;
+      box-sizing: border-box;
       width: 36.7vmin;
       height: 12vmin;
       background-color: $color-bandanna;
       border: .75vmin solid $color-black;
-      border-left: 1.1vmin solid $color-black;
       border-right: 1.1vmin solid $color-black;
+      border-left: 1.1vmin solid $color-black;
 
       .stripe {
         width: .4vmin;
@@ -452,20 +452,18 @@ body {
     }
 
     .glasses {
-      display: flex;
       top: 24.7vmin;
       left: .5vmin;
+      display: flex;
       justify-content: space-between;
       width: 24vmin;
       height: 12vmin;
 
       .glass {
         position: static;
+        box-sizing: border-box;
         width: 11.8vmin;
         height: 11.8vmin;
-        border-radius: 50%;
-        border: .6vmin solid $color-black;
-        box-sizing: border-box;
         background: linear-gradient(
           119deg,
           $color-white 40%,
@@ -474,26 +472,26 @@ body {
           $color-white 59%,
           $color-white 74%,
           $color-black 74%
-        );
+          );
+        border: .6vmin solid $color-black;
+        border-radius: 50%;
       }
     }
 
     .cap {
+      top: 7.3vmin;
+      left: 5vmin;
       box-sizing: border-box;
       width: 37.5vmin;
       height: 15vmin;
-      left: 5vmin;
-      top: 7.3vmin;
       background-color: $color-black;
       transform: rotate(8deg);
 
       &:before {
         top: -4.9vmin;
-        width: 0;
-        position: 0;
-        border-left: 16.5vmin solid $color-transparent;
         border-right: 21vmin solid $color-transparent;
         border-bottom: 5vmin solid $color-black;
+        border-left: 16.5vmin solid $color-transparent;
       }
 
       .peak {
@@ -506,32 +504,32 @@ body {
       }
 
       .strap {
+        top: 10.8vmin;
+        left: -3.8vmin;
         width: 8.5vmin;
         height: 2.8vmin;
-        left: -3.8vmin;
-        top: 10.8vmin;
-        background-color: $color-black;
-        transform: rotate(2deg);
-        border-bottom-left-radius: 1.4vmin;
-        border-top-left-radius: 1.4vmin;
         overflow: hidden;
+        background-color: $color-black;
+        border-top-left-radius: 1.4vmin;
+        border-bottom-left-radius: 1.4vmin;
+        transform: rotate(2deg);
 
         &:before {
+          top: -1vmin;
+          left: 2.9vmin;
           width: 3.6vmin;
           height: 5vmin;
           background: $color-white-30;
           transform: rotate(25deg);
-          left: 2.9vmin;
-          top: -1vmin;
         }
       }
 
       .button {
+        top: -9vmin;
+        left: 16.3vmin;
         width: 2.4vmin;
         height: 4.5vmin;
         background-color: $color-black;
-        top: -9vmin;
-        left: 16.3vmin;
         border-radius: 50%;
         transform: rotate(50deg);
       }
@@ -550,13 +548,11 @@ body {
         &--1 {
           top: -.1vmin;
           left: 1.2vmin;
-          width: 0;
-          height: 0;
-          border-top-left-radius: 50%;
-          border-left: 1.9vmin solid $color-white-50;
           border-top: 3vmin solid $color-white-50;
           border-right: 1.9vmin solid $color-transparent;
           border-bottom: 3vmin solid $color-transparent;
+          border-left: 1.9vmin solid $color-white-50;
+          border-top-left-radius: 50%;
           transform: skew(3deg);
 
           &:before {
@@ -573,21 +569,21 @@ body {
   }
 
   .torso {
-    left: 50%;
-    transform: translate(-50%, 0);
     top: 44.5vmin;
+    left: 50%;
     width: 18vmin;
     height: 14.5vmin;
     background-color: $color-skin;
     border: 1vmin solid $color-black;
     border-radius: 2.5vmin;
+    transform: translate(-50%, 0);
 
     .nipples {
       position: relative;
+      top: 4.2vmin;
+      left: 3.4vmin;
       display: flex;
       justify-content: space-between;
-      left: 3.4vmin;
-      top: 4.2vmin;
       width: 9.2vmin;
       height: 1.7vmin;
 
@@ -595,23 +591,23 @@ body {
         position: static;
         width: 1.7vmin;
         height: 100%;
-        border-radius: 50%;
         background-color: $color-red;
+        border-radius: 50%;
       }
     }
 
     .belly {
-      border-style: solid;
-      box-sizing: border-box;
-      border-width: .4vmin;
-      border-radius: 50%;
-      transform: rotate(5deg);
-      border-color: $color-skin-shadow $color-transparent $color-transparent $color-transparent;
       top: 7.1vmin;
       left: 2.5vmin;
+      box-sizing: border-box;
       width: 9.3vmin;
       height: 7vmin;
       background-color: $color-skin;
+      border-color: $color-skin-shadow $color-transparent $color-transparent $color-transparent;
+      border-style: solid;
+      border-width: .4vmin;
+      border-radius: 50%;
+      transform: rotate(5deg);
     }
 
     .gleam {
@@ -619,54 +615,52 @@ body {
       &--1 {
         bottom: .4vmin;
         left: .9vmin;
-        width: 0;
-        height: 0;
-        border-bottom-left-radius: 30%;
-        border-left: 2.3vmin solid $color-white-30;
+        border-top: 1.3vmin solid $color-transparent;
         border-right: 2.3vmin solid $color-transparent;
         border-bottom: 1.3vmin solid $color-white-30;
-        border-top: 1.3vmin solid $color-transparent;
+        border-left: 2.3vmin solid $color-white-30;
+        border-bottom-left-radius: 30%;
       }
     }
   }
 
   .briefs {
+    bottom: 12.5vmin;
+    left: 50%;
     display: flex;
     justify-content: space-between;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 12.5vmin;
     width: 21vmin;
     height: 8.5vmin;
+    transform: translate(-50%, 0);
 
     &__leg {
       position: relative;
-      border-radius: 1.5vmin 0 0 1.5vmin;
-      border-color: $color-black;
-      border-style: solid;
       box-sizing: border-box;
-      border-width: 1vmin 0 1vmin 1vmin;
-      background-color: $color-briefs;
       width: 9.9vmin;
       height: 8.5vmin;
+      background-color: $color-briefs;
+      border-color: $color-black;
+      border-style: solid;
+      border-width: 1vmin 0 1vmin 1vmin;
+      border-radius: 1.5vmin 0 0 1.5vmin;
 
       &:nth-child(1) {
         &:before {
+          right: 0;
+          bottom: -.1vmin;
+          box-sizing: border-box;
           width: 2vmin;
           height: 1vmin;
           background-color: $color-briefs;
-          border-width: 0 1vmin 0 0;
-          bottom: -.1vmin;
-          right: 0;
           border-color: $color-black;
           border-style: solid;
-          box-sizing: border-box;
+          border-width: 0 1vmin 0 0;
         }
 
         &:after {
+          right: -2vmin;
           width: 3vmin;
           height: 3vmin;
-          right: -2vmin;
           background-color: $color-briefs;
         }
       }
@@ -676,39 +670,39 @@ body {
         border-width: 1vmin 1vmin 1vmin 0;
 
         &:before {
+          bottom: -.1vmin;
+          box-sizing: border-box;
           width: 2vmin;
           height: 1vmin;
           background-color: $color-briefs;
-          border-width: 0 0 0 1vmin;
-          bottom: -.1vmin;
           border-color: $color-black;
           border-style: solid;
-          box-sizing: border-box;
+          border-width: 0 0 0 1vmin;
         }
       }
     }
 
     .frontispiece {
+      top: 3.2vmin;
+      left: 7.8vmin;
+      box-sizing: border-box;
+      width: 3.5vmin;
+      height: 4vmin;
+      background-color: $color-briefs;
       border-color: $color-black;
       border-style: solid;
-      box-sizing: border-box;
       border-width: 0 0 1vmin 1vmin;
       border-top-left-radius: .5vmin 1vmin;
       border-bottom-left-radius: 2.5vmin 3vmin;
       transform: rotate(10deg);
-      top: 3.2vmin;
-      left: 7.8vmin;
-      width: 3.5vmin;
-      height: 4vmin;
-      background-color: $color-briefs;
 
       &:before {
-        background-color: $color-black;
-        border-radius: 50%;
+        top: -.2vmin;
+        left: -.9vmin;
         width: .9vmin;
         height: 1vmin;
-        left: -.9vmin;
-        top: -.2vmin;
+        background-color: $color-black;
+        border-radius: 50%;
       }
     }
 
@@ -717,20 +711,18 @@ body {
       &--1 {
         top: 4.2vmin;
         left: 9.2vmin;
-        width: 0;
-        height: 0;
-        border-bottom-left-radius: 50%;
-        border-left: .5vmin solid $color-white-50;
+        border-top: .9vmin solid $color-transparent;
         border-right: .5vmin solid $color-transparent;
         border-bottom: .9vmin solid $color-white-50;
-        border-top: .9vmin solid $color-transparent;
+        border-left: .5vmin solid $color-white-50;
+        border-bottom-left-radius: 50%;
         transform: skew(10deg) rotate(5deg);
 
         &:before {
-          width: .8vmin;
-          height: 2.2vmin;
           top: -1.1vmin;
           left: -.1vmin;
+          width: .8vmin;
+          height: 2.2vmin;
           background-color: $color-briefs;
           transform: rotate(-32deg);
         }
@@ -748,8 +740,8 @@ body {
     .shadow {
 
       &--1 {
-        right: 1.4vmin;
         bottom: 1.4vmin;
+        right: 1.4vmin;
         width: .9vmin;
         height: 5vmin;
         background-color: $color-black-20;
@@ -758,82 +750,80 @@ body {
   }
 
   .legs {
+    bottom: 10vmin;
+    left: 50%;
     display: flex;
     justify-content: space-between;
     width: 19.5vmin;
     height: 4vmin;
-    left: 50%;
     transform: translateX(-50%);
-    bottom: 10vmin;
 
     .leg {
       position: static;
+      box-sizing: border-box;
       width: 9.6vmin;
       height: 100%;
+      background-color: $color-skin;
       border-color: $color-black;
       border-style: solid;
       border-width: 0 1vmin;
-      box-sizing: border-box;
-      background-color: $color-skin;
     }
   }
 
   .shoes {
-    display: flex;
+    bottom: 2.4vmin;
     left: 38.5vmin;
-    transform: translateX(-50%);
+    display: flex;
     width: 25vmin;
     height: 4.9vmin;
-    bottom: 2.4vmin;
+    transform: translateX(-50%);
 
     .shoe {
       position: relative;
+      box-sizing: border-box;
       width: 50%;
       height: 100%;
       background-color: $color-black;
-      border-radius: 1vmin;
       border-color: $color-black;
       border-style: solid;
       border-width: .5vmin;
-      box-sizing: border-box;
+      border-radius: 1vmin;
 
       .gleam {
 
         &--1 {
           top: 0;
           left: .1vmin;
-          width: 0;
-          height: 0;
-          border-top-left-radius: 50%;
           overflow: hidden;
-          border-left: .8vmin solid $color-white;
           border-top: .8vmin solid $color-white;
           border-right: .8vmin solid $color-transparent;
           border-bottom: .8vmin solid $color-transparent;
+          border-left: .8vmin solid $color-white;
+          border-top-left-radius: 50%;
         }
       }
     }
   }
 
   .socks {
+    bottom: 6.5vmin;
+    left: 50%;
     display: flex;
     justify-content: space-between;
-    left: 50%;
-    transform: translateX(-50%);
     width: 21.2vmin;
     height: 4.5vmin;
-    bottom: 6.5vmin;
+    transform: translateX(-50%);
 
     .sock {
       position: relative;
+      box-sizing: border-box;
       width: 12.5vmin;
       height: 4.3vmin;
       background-color: $color-white;
-      border-radius: 1.3vmin;
       border-color: $color-black;
       border-style: solid;
       border-width: .9vmin;
-      box-sizing: border-box;
+      border-radius: 1.3vmin;
 
       .shadow {
 
@@ -854,17 +844,17 @@ body {
             left: -.1vmin;
             width: 3.2vmin;
             height: 1vmin;
-            border-radius: 0 .5vmin .5vmin 0;
             background-color: $color-black;
+            border-radius: 0 .5vmin .5vmin 0;
           }
 
           &--3 {
-            bottom: .9vmin;
             right: 1.3vmin;
+            bottom: .9vmin;
             width: 2.1vmin;
             height: 1vmin;
-            border-radius: .5vmin;
             background-color: $color-black;
+            border-radius: .5vmin;
           }
         }
       }
@@ -874,12 +864,12 @@ body {
         .shadow {
 
           &--2 {
-            bottom: .9vmin;
             right: -.2vmin;
+            bottom: .9vmin;
             width: 3vmin;
             height: 1vmin;
-            border-radius: .5vmin 0 0 .5vmin;
             background-color: $color-black;
+            border-radius: .5vmin 0 0 .5vmin;
           }
         }
       }
@@ -887,23 +877,23 @@ body {
   }
 
   .left-arm {
-    display: flex;
-    width: 21vmin;
-    height: 9vmin;
     top: 43.5vmin;
     left: 7vmin;
+    display: flex;
     align-items: center;
+    width: 21vmin;
+    height: 9vmin;
     transform: rotate(10deg);
 
     .forearm {
-      width: 9vmin;
-      height: 6vmin;
       right: 0;
       box-sizing: border-box;
+      width: 9vmin;
+      height: 6vmin;
+      background-color: $color-skin;
       border-color: $color-black;
       border-style: solid;
       border-width: .7vmin;
-      background-color: $color-skin;
 
       .shadow {
 
@@ -927,125 +917,125 @@ body {
     }
 
     .sweatband {
-      width: 4.5vmin;
-      height: 8vmin;
       right: 7.5vmin;
       box-sizing: border-box;
+      width: 4.5vmin;
+      height: 8vmin;
+      background-color: $color-blue;
       border-color: $color-black;
       border-style: solid;
       border-width: 1vmin;
       border-radius: 1vmin;
-      background-color: $color-blue;
 
       &:before {
+        top: 0;
+        left: .8vmin;
         width: 1vmin;
         height: 6.3vmin;
-        left: .8vmin;
-        top: 0;
         background-color: $color-white;
       }
     }
 
     .hand {
+      right: 10vmin;
+      box-sizing: border-box;
       width: 7vmin;
       height: 7vmin;
-      right: 10vmin;
-      border-radius: 50%;
       background-color: $color-skin;
-      box-sizing: border-box;
       border-color: $color-black;
       border-style: solid;
       border-width: 1vmin;
+      border-radius: 50%;
 
       .index {
+        top: -1.5vmin;
+        left: -3vmin;
+        box-sizing: border-box;
         width: 5.5vmin;
         height: 2.5vmin;
-        left: -3vmin;
-        top: -1.5vmin;
-        border-radius: 1.5vmin;
         background-color: $color-skin;
-        box-sizing: border-box;
         border-color: $color-black;
         border-style: solid;
         border-width: 1vmin;
+        border-radius: 1.5vmin;
         transform: rotate(20deg);
       }
 
       .pinky {
+        top: 3.3vmin;
+        left: -3.2vmin;
+        box-sizing: border-box;
         width: 5vmin;
         height: 2.5vmin;
-        left: -3.2vmin;
-        top: 3.3vmin;
-        border-radius: 1.5vmin;
         background-color: $color-skin;
-        box-sizing: border-box;
         border-color: $color-black;
         border-style: solid;
         border-width: 1vmin;
+        border-radius: 1.5vmin;
         transform: rotate(-25deg);
 
         &:before {
+          top: -1.1vmin;
+          right: -1.2vmin;
           width: 1.5vmin;
           height: 1.5vmin;
           background-color: $color-skin;
           border-radius: .5vmin;
-          right: -1.2vmin;
-          top: -1.1vmin;
         }
 
         &:after {
+          right: -1.4vmin;
+          bottom: -.8vmin;
           width: 1.4vmin;
           height: 1.4vmin;
           background-color: $color-skin;
           border-radius: .5vmin;
-          right: -1.4vmin;
-          bottom: -.8vmin;
         }
       }
 
       .thumb {
+        top: -.7vmin;
+        box-sizing: border-box;
         width: 4.2vmin;
         height: 2.5vmin;
-        top: -.7vmin;
-        border-radius: 1.5vmin;
         background-color: $color-skin;
-        box-sizing: border-box;
         border-color: $color-black;
         border-style: solid;
         border-width: 1vmin;
+        border-radius: 1.5vmin;
         transform: rotate(105deg);
       }
 
       .shadow {
 
         &--1 {
+          left: .8vmin;
           width: 3vmin;
           height: 4vmin;
-          box-shadow: -1.5vmin -.3vmin 0 0 $color-black-30;
-          left: .8vmin;
           border-radius: 50%;
+          box-shadow: -1.5vmin -.3vmin 0 0 $color-black-30;
         }
       }
     }
   }
 
   .right-arm {
-    display: flex;
-    width: 23.5vmin;
-    height: 17vmin;
     top: 35vmin;
     right: 1.2vmin;
+    display: flex;
     align-items: center;
+    width: 23.5vmin;
+    height: 17vmin;
 
     .forearm {
-      width: 10vmin;
-      height: 6vmin;
       bottom: 1vmin;
       box-sizing: border-box;
+      width: 10vmin;
+      height: 6vmin;
+      background-color: $color-skin;
       border-color: $color-black;
       border-style: solid;
       border-width: .7vmin;
-      background-color: $color-skin;
 
       .shadow {
 
@@ -1060,26 +1050,26 @@ body {
     }
 
     .hand {
+      bottom: .2vmin;
+      left: 11.5vmin;
+      box-sizing: border-box;
       width: 7vmin;
       height: 7.5vmin;
-      left: 11.5vmin;
-      bottom: .2vmin;
-      border-radius: 50%;
       background-color: $color-skin;
-      box-sizing: border-box;
       border-color: $color-black;
       border-style: solid;
       border-width: .9vmin;
+      border-radius: 50%;
 
       .shadow {
 
         &--1 {
-          bottom: -.2vmin;
           right: -.3vmin;
-          border-left: 4.5vmin solid $color-transparent;
-          border-right: 1.8vmin solid $color-transparent;
+          bottom: -.2vmin;
           border-top: 2vmin solid $color-transparent;
+          border-right: 1.8vmin solid $color-transparent;
           border-bottom: 3.8vmin solid $color-black-30;
+          border-left: 4.5vmin solid $color-transparent;
           border-bottom-right-radius: 1.5vmin;
           border-bottom-left-radius: 3vmin;
           transform: rotate(-20deg);
@@ -1090,124 +1080,118 @@ body {
         position: static;
 
         .cone {
-          left: 2.8vmin;
           bottom: .1vmin;
+          left: 2.8vmin;
           border-top: 8vmin solid $color-ice-cream-cone;
           border-right: 4.2vmin solid $color-transparent;
           transform: rotate(16deg);
 
           .border-left {
+            bottom: .2vmin;
+            left: -.5vmin;
             width: .7vmin;
             height: 10vmin;
-            left: -.5vmin;
-            bottom: .2vmin;
-            border-radius: .4vmin;
             background-color: $color-black;
+            border-radius: .4vmin;
           }
 
           .border-right {
+            bottom: -.4vmin;
+            left: 2.5vmin;
             width: .7vmin;
             height: 10vmin;
-            left: 2.5vmin;
-            bottom: -.4vmin;
+            background-color: $color-black;
             border-radius: .4vmin;
             transform: rotate(25deg);
-            background-color: $color-black;
 
             &:before {
               bottom: -.6vmin;
               left: -.6vmin;
               width: 1vmin;
               height: 1vmin;
-              border-radius: 1vmin;
               background-color: $color-black;
+              border-radius: 1vmin;
             }
           }
         }
 
         .cream-1 {
-          left: 4.3vmin;
           top: -9.5vmin;
+          left: 4.3vmin;
+          box-sizing: border-box;
           width: 6vmin;
           height: 6vmin;
-          border-radius: 3vmin;
           background-color: $color-ice-cream-1;
-          box-sizing: border-box;
           border-color: $color-black;
           border-style: solid;
           border-width: .8vmin;
+          border-radius: 3vmin;
 
           .gleam {
 
             &--1 {
               top: .1vmin;
               left: .9vmin;
-              width: 0;
-              height: 0;
-              border-top-left-radius: 50%;
-              border-left: .8vmin solid $color-white-50;
-              border-right: .8vmin solid $color-transparent;
               border-top: .4vmin solid $color-white-50;
+              border-right: .8vmin solid $color-transparent;
               border-bottom: .4vmin solid $color-transparent;
+              border-left: .8vmin solid $color-white-50;
+              border-top-left-radius: 50%;
               transform: rotate(3deg);
             }
           }
         }
 
         .cream-2 {
-          left: 7.4vmin;
           top: -9.8vmin;
+          left: 7.4vmin;
+          box-sizing: border-box;
           width: 3.4vmin;
           height: 3.4vmin;
-          border-radius: 1.75vmin;
           background-color: $color-ice-cream-2;
-          box-sizing: border-box;
           border-color: $color-black;
           border-style: solid;
           border-width: .5vmin;
+          border-radius: 1.75vmin;
 
           .gleam {
 
             &--1 {
               top: .1vmin;
               left: .4vmin;
-              width: 0;
-              height: 0;
-              border-top-left-radius: 50%;
-              border-left: .6vmin solid $color-white-50;
-              border-right: .6vmin solid $color-transparent;
               border-top: .3vmin solid $color-white-50;
+              border-right: .6vmin solid $color-transparent;
               border-bottom: .3vmin solid $color-transparent;
+              border-left: .6vmin solid $color-white-50;
+              border-top-left-radius: 50%;
               transform: rotate(10deg);
             }
           }
         }
 
         .cream-3 {
-          left: 3.3vmin;
           top: -7.5vmin;
+          left: 3.3vmin;
+          box-sizing: border-box;
           width: 7.6vmin;
           height: 7.6vmin;
-          border-radius: 3.5vmin;
           background-color: $color-ice-cream-3;
-          box-sizing: border-box;
           border-color: $color-black;
           border-style: solid;
           border-width: .8vmin;
+          border-radius: 3.5vmin;
 
           .gleam {
 
             &--1 {
               top: 1vmin;
               left: .3vmin;
-              width: 0;
-              height: 0;
+              border-top: 1.8vmin solid $color-white-50;
+              border-right: .6vmin solid $color-transparent;
+              border-bottom: 1.8vmin solid $color-transparent;
+              border-left: .6vmin solid $color-white-50;
               border-top-left-radius: 50%;
               border-bottom-left-radius: 50%;
-              border-left: .6vmin solid $color-white-50;
-              border-right: .6vmin solid $color-transparent;
-              border-top: 1.8vmin solid $color-white-50;
-              border-bottom: 1.8vmin solid $color-transparent;
               transform: rotate(2deg);
             }
           }
@@ -1215,69 +1199,65 @@ body {
           .shadow {
 
             &--1 {
-              bottom: .1vmin;
               right: -.2vmin;
-              width: 0;
-              height: 0;
-              border-left: 2.4vmin solid $color-black-20;
-              border-right: .6vmin solid $color-transparent;
+              bottom: .1vmin;
               border-top: 3.4vmin solid $color-black-20;
+              border-right: .6vmin solid $color-transparent;
               border-bottom: 0vmin solid $color-transparent;
+              border-left: 2.4vmin solid $color-black-20;
               border-bottom-right-radius: 50%;
             }
           }
         }
 
         .cream-4 {
-          left: 6.2vmin;
           top: -2vmin;
+          left: 6.2vmin;
+          box-sizing: border-box;
           width: 2vmin;
           height: 8.6vmin;
-          border-radius: 0 0 2.5vmin 2.5vmin;
           background-color: $color-ice-cream-3;
-          box-sizing: border-box;
           border-color: $color-black;
           border-style: solid;
           border-width: .8vmin;
+          border-radius: 0 0 2.5vmin 2.5vmin;
           border-top: .7vmin solid $color-transparent;
-          animation-iteration-count: infinite;
           animation-name: ice-cream-melt;
           animation-duration: $animation-duration-ice-cream;
           animation-timing-function: ease-out;
+          animation-iteration-count: infinite;
 
           &:before {
-            background-color: $color-ice-cream-3;
-            width: 1vmin;
-            height: 1.6vmin;
             top: -1.3vmin;
             left: -.8vmin;
+            width: 1vmin;
+            height: 1.6vmin;
+            background-color: $color-ice-cream-3;
           }
 
           &:after {
-            height: 0;
-            width: 0;
-            box-sizing: border-box;
             top: -3vmin;
             right: -.9vmin;
-            border-left: 1vmin solid $color-ice-cream-3;
+            box-sizing: border-box;
+            border-top: .8vmin solid $color-transparent;
             border-right: .8vmin solid $color-transparent;
             border-bottom: 2vmin solid $color-ice-cream-3;
-            border-top: .8vmin solid $color-transparent;
+            border-left: 1vmin solid $color-ice-cream-3;
           }
         }
 
         .cream-5 {
-          left: 6.1vmin;
           top: -8.1vmin;
+          left: 6.1vmin;
+          box-sizing: border-box;
           width: 5vmin;
           height: 5vmin;
-          border-radius: 2.5vmin;
           background-color: $color-ice-cream-3;
-          box-sizing: border-box;
           border-color: $color-black;
           border-style: solid;
           border-width: .7vmin;
           border-bottom: .7vmin solid $color-transparent;
+          border-radius: 2.5vmin;
 
           .gleam {
 
@@ -1294,34 +1274,34 @@ body {
         }
 
         .drop {
-          border-radius: 1vmin;
           left: 6.2vmin;
+          box-sizing: border-box;
           width: 2vmin;
+          background-color: $color-ice-cream-3;
           border-color: $color-black;
           border-style: solid;
           border-width: .7vmin;
-          background-color: $color-ice-cream-3;
-          box-sizing: border-box;
+          border-radius: 1vmin;
           animation: ice-cream-drop $animation-duration-ice-cream ease-in infinite, ice-cream-drop-size $animation-duration-ice-cream ease-out infinite;
         }
 
         .floor {
+          top: 33vmin;
           left: 5.2vmin;
           width: 4vmin;
-          background-color: $color-body-background;
           height: 6vmin;
-          top: 33vmin;
+          background-color: $color-body-background;
           border-radius: 2vmin 2vmin 0 0 / .5vmin .5vmin 0 0;
         }
 
         .drop-on-floor {
-          opacity: 0;
           top: 32vmin;
           left: 5.2vmin;
           width: 4vmin;
           height: 1vmin;
-          border-radius: 50%;
           background-color: $color-ice-cream-3;
+          border-radius: 50%;
+          opacity: 0;
           transform-origin: center center;
           animation: drop-on-floor $animation-duration-ice-cream linear infinite;
           animation-delay: $animation-duration-ice-cream;
@@ -1329,46 +1309,46 @@ body {
       }
 
       .thumb {
-        left: .25vmin;
         top: -.25vmin;
+        left: .25vmin;
+        box-sizing: border-box;
         width: 4.4vmin;
         height: 3vmin;
-        border-radius: 1.5vmin;
         background-color: $color-skin;
-        box-sizing: border-box;
         border-color: $color-black;
         border-style: solid;
         border-width: 1vmin;
+        border-radius: 1.5vmin;
         transform: rotate(20deg);
 
         &:before {
+          top: -.5vmin;
+          left: -.5vmin;
           width: 1.3vmin;
           height: 4vmin;
-          left: -.5vmin;
-          top: -.5vmin;
-          border-top-left-radius: 1vmin;
           background-color: $color-skin;
+          border-top-left-radius: 1vmin;
         }
       }
     }
 
     .sweatband {
+      bottom: 0;
+      left: 9.2vmin;
+      box-sizing: border-box;
       width: 4.5vmin;
       height: 8vmin;
-      left: 9.2vmin;
-      bottom: 0;
-      box-sizing: border-box;
+      background-color: $color-red;
       border-color: $color-black;
       border-style: solid;
       border-width: 1vmin;
       border-radius: 1vmin;
-      background-color: $color-red;
 
       &:before {
+        top: 0;
+        left: .8vmin;
         width: 1vmin;
         height: 6.3vmin;
-        left: .8vmin;
-        top: 0;
         background-color: $color-white;
       }
     }
