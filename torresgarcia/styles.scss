@@ -1,0 +1,57 @@
+
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+
+  #wrapper {
+    width: 480px;
+    height: 565px;
+    position: absolute;
+    top: 30px;
+    left: 305px;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 20% 20% 20%;
+    background-color: grey;
+
+    .man{
+      grid-column-start: 1;
+      background-color: #ff4444;
+    }
+    .sun{
+      grid-column-start: 3;
+      background-color: yellow;
+    }
+    .caliope{
+      grid-column-start: 4;
+      background-color: blue;
+    }
+    .orion{
+      grid-column-start: 5;
+      background-color: green;
+    }
+    .auriga{
+      grid-column-start: 6;
+      background-color: pink;
+    }
+    .sagitario{
+      grid-column-start: 7;
+      background-color: orange;
+    }
+    .caelum{
+      grid-column-start: 8;
+      background-color: brown;
+    }
+    .hidra{
+      grid-column-start: 9;
+      background-color: red;
+    }
+    .lira{
+      grid-column-start: 10;
+      background-color: white;
+    }
+  }
+}
