@@ -5,6 +5,19 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
+  background-color: black;
+
+  .image {
+    position: absolute;
+    top: 22px;
+    left: 300px;
+    
+    img{
+      z-index: 1;
+      width: 491px;
+      opacity: .4;
+    }
+  }
 
   #wrapper {
     width: 480px;
@@ -13,45 +26,118 @@ body {
     top: 30px;
     left: 305px;
     display: grid;
-    grid-template-columns: 20% 20% 20%;
-    grid-template-rows: 20% 20% 20%;
-    background-color: grey;
+    grid-template-rows: 153px 92px 25px 112px 27px 27px 26px 65px 38px;
+    // grid-template-columns: 100%;
+    grid-gap: 0px;
+    grid-template-columns: 190px 8px 14px 85px 130px 53px;
+    // background-color: grey;
 
-    .man{
-      grid-column-start: 1;
-      background-color: #ff4444;
-    }
-    .sun{
-      grid-column-start: 3;
-      background-color: yellow;
-    }
-    .caliope{
-      grid-column-start: 4;
-      background-color: blue;
-    }
-    .orion{
-      grid-column-start: 5;
-      background-color: green;
-    }
-    .auriga{
-      grid-column-start: 6;
-      background-color: pink;
-    }
-    .sagitario{
-      grid-column-start: 7;
-      background-color: orange;
-    }
-    .caelum{
-      grid-column-start: 8;
-      background-color: brown;
-    }
-    .hidra{
-      grid-column-start: 9;
+    .red {
       background-color: red;
     }
-    .lira{
-      grid-column-start: 10;
+
+    .white {
       background-color: white;
     }
+    .yellow {
+      background-color: gold;
+    }
+
+    .area-1 {
+      grid-row: 1 / span 3;  
+      grid-column: 1 / span 3;
+    }       
+    .area-2 {
+      grid-row: 1;  
+      grid-column: 4;
+    }
+    .area-3 {
+      grid-row: 2 / span 2;
+      grid-column: 4;
+      background-color: gold;
+    }
+    .area-4 {
+      grid-row: 1;
+      grid-column: 5 / span 2;
+    }
+    .area-5 {
+      grid-row: 2 / span 3;
+      grid-column: 5;
+      background-color: blue;
+    }
+    .area-6 {
+      grid-row: 2 / span 7;
+      grid-column: 6;
+      background-color: red;
+    }
+    .area-7 {
+      grid-row: 4;
+      grid-column: 1 / span 3;
+      background-color: white;
+    }
+
+    .area-8 {
+      grid-row: 4;
+      grid-column: 4;
+      background-color: rgb(92, 255, 47);
+    }
+
+
+    .row {
+      border-bottom: 1px solid rgb(0, 255, 64);
+      grid-column: 1 / span 6;
+
+      &.__1 {
+        grid-row-start: 1;
+      }
+      &.__2 {
+        grid-row-start: 2;
+      }
+      &.__3 {
+        grid-row-start: 3;
+      }
+      &.__4 {
+        grid-row-start: 4;
+      }
+      &.__5 {
+        grid-row-start: 5;
+      }
+      &.__6 {
+        grid-row-start: 6;
+      }
+      &.__7 {
+        grid-row-start: 7;
+      }
+      &.__8 {
+        grid-row-start: 8;
+      }
+      &.__9 {
+        grid-row-start: 9;
+      }
+    }
+
+    .column {
+      border-right: 1px solid rgb(0, 255, 64);
+      grid-row: 1 / span 9;
+
+      &.__1 {
+        grid-column-start: 1;
+      }
+      &.__2 {
+        grid-column-start: 2;
+      }
+      &.__3 {
+        grid-column-start: 3;
+      }
+      &.__4 {
+        grid-column-start: 4;
+      }
+      &.__5 {
+        grid-column-start: 5;
+      }
+      &.__6 {
+        grid-column-start: 6;
+      }
+    } 
   }
 }

@@ -3,6 +3,17 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
+  background-color: black;
+}
+body .image {
+  position: absolute;
+  top: 22px;
+  left: 300px;
+}
+body .image img {
+  z-index: 1;
+  width: 491px;
+  opacity: 0.4;
 }
 body #wrapper {
   width: 480px;
@@ -11,43 +22,106 @@ body #wrapper {
   top: 30px;
   left: 305px;
   display: grid;
-  grid-template-columns: 20% 20% 20%;
-  grid-template-rows: 20% 20% 20%;
-  background-color: grey;
+  grid-template-rows: 153px 92px 25px 112px 27px 27px 26px 65px 38px;
+  grid-gap: 0px;
+  grid-template-columns: 190px 8px 14px 85px 130px 53px;
 }
-body #wrapper .man {
-  grid-column-start: 1;
-  background-color: #ff4444;
-}
-body #wrapper .sun {
-  grid-column-start: 3;
-  background-color: yellow;
-}
-body #wrapper .caliope {
-  grid-column-start: 4;
-  background-color: blue;
-}
-body #wrapper .orion {
-  grid-column-start: 5;
-  background-color: green;
-}
-body #wrapper .auriga {
-  grid-column-start: 6;
-  background-color: pink;
-}
-body #wrapper .sagitario {
-  grid-column-start: 7;
-  background-color: orange;
-}
-body #wrapper .caelum {
-  grid-column-start: 8;
-  background-color: brown;
-}
-body #wrapper .hidra {
-  grid-column-start: 9;
+body #wrapper .red {
   background-color: red;
 }
-body #wrapper .lira {
-  grid-column-start: 10;
+body #wrapper .white {
   background-color: white;
+}
+body #wrapper .yellow {
+  background-color: gold;
+}
+body #wrapper .area-1 {
+  grid-row: 1/span 3;
+  grid-column: 1/span 3;
+}
+body #wrapper .area-2 {
+  grid-row: 1;
+  grid-column: 4;
+}
+body #wrapper .area-3 {
+  grid-row: 2/span 2;
+  grid-column: 4;
+  background-color: gold;
+}
+body #wrapper .area-4 {
+  grid-row: 1;
+  grid-column: 5/span 2;
+}
+body #wrapper .area-5 {
+  grid-row: 2/span 3;
+  grid-column: 5;
+  background-color: blue;
+}
+body #wrapper .area-6 {
+  grid-row: 2/span 7;
+  grid-column: 6;
+  background-color: red;
+}
+body #wrapper .area-7 {
+  grid-row: 4;
+  grid-column: 1/span 3;
+  background-color: white;
+}
+body #wrapper .area-8 {
+  grid-row: 4;
+  grid-column: 4;
+  background-color: rgb(92, 255, 47);
+}
+body #wrapper .row {
+  border-bottom: 1px solid rgb(0, 255, 64);
+  grid-column: 1/span 6;
+}
+body #wrapper .row.__1 {
+  grid-row-start: 1;
+}
+body #wrapper .row.__2 {
+  grid-row-start: 2;
+}
+body #wrapper .row.__3 {
+  grid-row-start: 3;
+}
+body #wrapper .row.__4 {
+  grid-row-start: 4;
+}
+body #wrapper .row.__5 {
+  grid-row-start: 5;
+}
+body #wrapper .row.__6 {
+  grid-row-start: 6;
+}
+body #wrapper .row.__7 {
+  grid-row-start: 7;
+}
+body #wrapper .row.__8 {
+  grid-row-start: 8;
+}
+body #wrapper .row.__9 {
+  grid-row-start: 9;
+}
+body #wrapper .column {
+  border-right: 1px solid rgb(0, 255, 64);
+  grid-row: 1/span 9;
+}
+body #wrapper .column.__1 {
+  grid-column-start: 1;
+}
+body #wrapper .column.__2 {
+  grid-column-start: 2;
+}
+body #wrapper .column.__3 {
+  grid-column-start: 3;
+}
+body #wrapper .column.__4 {
+  grid-column-start: 4;
+}
+body #wrapper .column.__5 {
+  grid-column-start: 5;
+}
+body #wrapper .column.__6 {
+  grid-column-start: 6;
 }/*# sourceMappingURL=styles.css.map */
