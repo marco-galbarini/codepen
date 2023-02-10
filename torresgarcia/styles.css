@@ -7,24 +7,24 @@ body {
 }
 body .image {
   position: absolute;
-  top: 22px;
-  left: 300px;
+  top: 2vmin;
+  left: 65vmin;
 }
 body .image img {
   z-index: 1;
-  width: 491px;
+  width: 82vmin;
   opacity: 0.4;
 }
 body #wrapper {
-  width: 480px;
-  height: 565px;
+  width: 80vmin;
+  height: 94vmin;
   position: absolute;
-  top: 30px;
-  left: 305px;
+  top: 3vmin;
+  left: 66vmin;
   display: grid;
-  grid-template-rows: 153px 92px 25px 112px 27px 27px 26px 65px 38px;
+  grid-template-rows: 26vmin 15vmin 4vmin 19vmin 5vmin 4vmin 4vmin 12vmin;
   grid-gap: 0px;
-  grid-template-columns: 88px 102px 22px 85px 130px 53px;
+  grid-template-columns: 14vmin 17vmin 4vmin 14vmin 22vmin;
 }
 body #wrapper .red {
   background-color: red;
@@ -36,9 +36,71 @@ body #wrapper .yellow {
   background-color: gold;
 }
 body #wrapper .area-1 {
+  position: relative;
   grid-row: 1/span 3;
   grid-column: 1/span 3;
-  background-color: rgb(215, 125, 125);
+  display: grid;
+  grid-template-rows: 8% 4% 8% 39%;
+  grid-template-columns: 27% 14% 6% 10% 5% 9%;
+}
+body #wrapper .area-1 .column {
+  grid-row: 1/span 5;
+  border-right: 2px solid rgb(38, 0, 255);
+}
+body #wrapper .area-1 .column.__1 {
+  grid-column-start: 1;
+}
+body #wrapper .area-1 .column.__2 {
+  grid-column-start: 2;
+}
+body #wrapper .area-1 .column.__3 {
+  grid-column-start: 3;
+}
+body #wrapper .area-1 .column.__4 {
+  grid-column-start: 4;
+}
+body #wrapper .area-1 .column.__5 {
+  grid-column-start: 5;
+}
+body #wrapper .area-1 .column.__6 {
+  grid-column-start: 6;
+}
+body #wrapper .area-1 .column.__7 {
+  grid-column-start: 7;
+}
+body #wrapper .area-1 .row {
+  grid-column: 1/span 7;
+  border-bottom: 2px solid rgb(22, 5, 255);
+}
+body #wrapper .area-1 .row.__1 {
+  grid-row-start: 1;
+}
+body #wrapper .area-1 .row.__2 {
+  grid-row-start: 2;
+}
+body #wrapper .area-1 .row.__3 {
+  grid-row-start: 3;
+}
+body #wrapper .area-1 .row.__4 {
+  grid-row-start: 4;
+}
+body #wrapper .area-1 .row.__5 {
+  grid-row-start: 5;
+}
+body #wrapper .area-1 .sub-area-1 {
+  position: relative;
+  grid-row: 4;
+  grid-column: 1;
+  background-color: gold;
+}
+body #wrapper .area-1 .sub-area-1 .line__1 {
+  position: absolute;
+  right: 1.2vmin;
+  top: 0.5vmin;
+  width: 3.2px;
+  height: 44px;
+  background-color: rgb(42, 252, 0);
+  transform: rotate(25deg);
 }
 body #wrapper .area-2 {
   grid-row: 1;
